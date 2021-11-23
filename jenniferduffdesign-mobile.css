@@ -1,0 +1,541 @@
+/* ------------------- GENERAL FORMATTING ------------------- */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: museo-slab, 'Courier New', monospace;
+}
+
+:root{
+    --drkYellow: #ffbf47;
+    --baseYellow: #ffcd70;
+    --ltYellow: #ffe2ad;
+}
+
+main {
+    margin: 0;
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    margin: 0vh 0 2vh 0;
+    /* border: 1px solid black; */
+}
+
+.accent {
+    color: var(--drkYellow);
+    font-weight: bolder;
+}
+
+section {
+    padding-top: 75px;
+    margin-top:0;
+    /* border: 1px solid black; */
+}
+
+section:first-child {
+    padding-top: 0;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+a:hover,
+button:hover {
+    cursor: pointer;
+}
+
+
+/* ------------------- NAV BAR ------------------- */
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 0;
+    z-index: 1;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px rgb(199, 199, 199);
+    /* border: 1px solid black; */
+}
+
+#fullLogo{
+    width: 200px;
+    margin: 10px 10px 5px 300px;
+}
+
+#fullLogo:hover{
+    cursor: pointer;
+}
+
+#navbar nav {
+    padding: 5px 11px;
+    width: 256px;
+    height: 20px;
+    border-radius: 0.2rem 0 0 0.2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* border: 1px solid black; */
+}
+
+#navbar ul{
+    display: grid;
+    grid-template-columns: 2.7rem 4.3rem 2.8rem 3.9rem;
+    grid-column-gap: 13px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+#navbar li{
+    display: inline-block;
+    vertical-align: baseline;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+#navbar a:hover {
+    font-weight: 900;
+    letter-spacing: 0;
+}
+
+
+/* ------------------- SPlASH PAGE ------------------- */
+#splashBox {
+    height: 70vh;
+    margin-top: 4.7vh;
+    /* border: 1px solid black; */
+}
+
+h1 {
+    font-family: museo-slab, "courier-new", monospace;
+    font-weight: 700;
+    font-size: 18.5vw;
+    font-style: normal;
+    line-height: 0.95em;
+    margin-top: 7vh;
+    margin-bottom: 9vh;
+    /* border: 1px solid black; */
+}
+
+#splashBox p {
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 6vw;
+    line-height: 8vw;
+    width: 90%;
+    text-indent: -6vw;
+    padding-left: 7vw;
+    margin-bottom: 13vh;
+}
+
+#scrollButton {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    background-color: var(--baseYellow);
+    border-radius: 0.5rem;
+    padding: 10px 15px;
+    letter-spacing: 0.5px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin-left: 7vw;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#scrollButton span {
+    padding-left: 3px;
+    font-size: 1.25rem;
+}
+
+#scrollButton:hover,
+#scrollButton:active,
+#scrollButton:focus {
+    background-color: var(--drkYellow);
+}
+
+
+/* ------------------- Back to Top Button ------------------- */
+#backToTopContainer{
+    position: fixed;
+    bottom: 0.5vh;
+    right: -1vw;
+    width: 23px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 5;
+    /* background-color: lightblue; */
+}
+
+#bttText{
+    font-size: 8px;
+    margin: 0 10px 2px -2px;
+    width: 25px;
+    text-align: center;
+    font-weight: 300;
+    color: rgb(173, 173, 173);
+    line-height: 8px;
+    /* background-color: gray; */
+}
+
+#circle{
+    margin: 0;
+    padding-top: 2.5px;
+    padding-left: 1.25px;
+    background-color: var(--baseYellow);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 25px #c0c0c0;
+    transition: height 0.5s ease-in-out, width 0.5s ease-in-out, padding 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#circle:hover{
+    height: 23px;
+    width: 23px;
+    padding-top: 4px;
+    padding-left: 2px;
+}
+
+#arrow{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: helvetica;
+    font-weight: 700;
+    color: rgb(39, 39, 39);    
+}
+
+
+/* ------------------- PORFOLIO ------------------- */
+#portfolio{
+    padding-top: 100px;
+
+}
+
+#portfolio h2{
+    margin-bottom: 10%;
+}
+
+#portfolioContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    grid-row-gap: 10vw;
+    margin: 0;
+    text-align: left;
+    vertical-align: baseline;
+}
+
+.projects {
+    padding: 10%;
+    background-color: var(--baseYellow);
+    font-weight: 600;
+    border-radius: 0.2rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.projects:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 10px 1px #daceb8;
+}
+
+.projectTitle {
+    font-size: 2rem;
+    width: 100%;
+    margin: 0 0 0.7rem 0;
+}
+
+.projectLangs{
+    font-weight: 200;
+    font-size: 0.7rem;
+    letter-spacing: 0.05rem;
+    margin: 0;
+}
+
+.projectDescription {
+    font-size: 0.95rem;
+    width: 100%;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin: 9% 0 15% 0;
+}
+
+.projects a{
+    display: block;
+    justify-content: left;
+    text-decoration: none;
+    padding: 0;
+    flex-wrap: nowrap;
+    margin: 2% 0 0 0;
+    text-align: left;
+    height: 18px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.projects a img{
+    width: 16px;
+    opacity: 0.6;
+    vertical-align: middle;
+    /* border: 1px solid black; */
+}
+
+.projects a span {
+    opacity: 0;
+    margin-left: 1%;
+    font-weight: 300;
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+    vertical-align: middle;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.projects a:hover span,
+.projects a:focus span,
+.projects a:active span{
+    opacity: 1; 
+    color: black;
+    text-decoration: underline solid 2.5px black;
+}
+
+.projects a:visited span{
+    opacity: 1; 
+    color: rgb(105, 105, 105);
+    text-decoration: underline solid 2.5px  rgb(105, 105, 105);
+}
+
+.githubLink{
+    width: 35%;
+    margin: 0;
+}
+
+.viewLive{
+    width: 23%;
+}
+
+.learnMore{
+    width: 29%;
+}
+
+/* ------------------- ABOUT ME ------------------- */
+#aboutMe p {
+    letter-spacing: 0.4px;
+    line-height: 2rem;
+    font-weight: 300;
+    margin-bottom: 5vh;
+    margin-top:0;
+}
+
+h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.75rem;
+    line-height: 2.4rem;
+    margin: 0 0 2.75vh 0;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    letter-spacing: 0.6px;
+    font-family: helvetica;
+}
+
+#aboutMe ul {
+    margin: 0;
+    letter-spacing: 0.5px;
+    line-height: 1.7rem;
+    font-weight: 300;
+    margin-left: 0;
+    padding-left: 7%;
+}
+
+.langs {
+    display: grid;
+    width: 98%;
+    grid-template-columns: 1fr;
+    grid-row-gap: 5vh;
+}
+
+.langsContents {
+    background-color: var(--ltYellow);
+    padding: 7%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0px var(--drkYellow);
+    position: relative;
+}
+
+
+/* ------------------- CONTACT FORM ------------------- */
+#contactForm {
+    font-family: museo-slab, monospace;
+    background-color: var(--baseYellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 7%;
+    border-radius: 5px;
+}
+
+.formField{
+    margin: 3% 0 10% 0;
+    font-family: "museo-slab", sans-serif;
+    font-weight: 200;
+    padding: 10px;
+    color: black;
+    background-color: var(--ltYellow);
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    max-width: 100%;
+}
+
+.formField:focus {
+    box-sizing: content-box;
+    outline: 3px solid var(--drkYellow);
+}
+
+#message {
+    resize: vertical;
+}
+
+.form-field:last-child {
+    margin-bottom: 0;
+}
+
+.form-field::placeholder {
+    color: rgb(95, 107, 112);
+    opacity: 1;
+}
+
+#contactForm label {
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: helvetica;
+    margin-left: 4%;
+}
+
+#submitButton {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    background-color: var(--ltYellow);
+    border-radius: 0.5rem;
+    padding: 5% 6%;
+    border: none;
+    margin-top: 3%;
+    width: 43%;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#submitButton:hover,
+#submitButton:active,
+#submitButton:focus {
+    transform: scale(1.02);
+    outline: none;
+    box-shadow: 0px 0px 10px 7px var(--drkYellow);
+
+}
+
+
+/* ------------------- FOOTER ------------------- */
+footer {
+    width: 100%;
+    height: 115px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: var(--ltYellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 25px 40px;
+}
+
+footer nav {
+    text-align: center;
+    margin: 0;
+}
+
+footer ul{
+    display: grid;
+    grid-template-columns: 2.5rem 3.7rem 2.6rem 3.3rem;
+    grid-column-gap: 13px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+footer li{
+    display: inline-block;
+    vertical-align: baseline;
+    text-align: center;
+    line-height: 0.9rem;
+    /* border: 1px solid black; */
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+}
+
+footer a:hover {
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#copyright {
+    font-weight: 300;
+    letter-spacing: 1.1px;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+}

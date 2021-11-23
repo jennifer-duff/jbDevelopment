@@ -1,0 +1,298 @@
+@media (min-width: 993px) and (max-width: 1312px) {
+    
+
+    /* ------------ GENERAL FORMATTING ------------ */
+    h2 {
+        font-size: 4rem;
+        margin-bottom: 5%;
+    }
+
+    section {
+        padding-top: 200px;
+        margin-bottom: 0;
+    }
+
+    section:first-child {
+        padding-top: 0;
+    }
+
+
+    /* ------------ NAVBAR ------------ */
+    #navbar {
+        height: 100px;
+        justify-content: space-between;
+    }
+
+    #fullLogo{
+        width: 400px;
+        margin: 10px 0 0 20px;
+    }
+
+    #navbar nav {
+        width: calc(3.6rem + 5.7rem + 3.7rem + 5rem + 1rem*3);
+        padding: 0.75rem 1rem;
+    }
+
+    #navbar ul{
+        grid-template-columns: 3.6rem 5.7rem 3.7rem 5rem;
+        grid-column-gap: 1rem;
+    }
+
+    #navbar li{
+        line-height: 1.25rem;
+        /* border: 1px solid black; */
+    }
+
+    #navbar a {
+        font-size: 1.25rem;
+
+    }
+
+
+    /* ------------ SPLASH BOX ------------ */
+    #splashBox {
+        /* border: 1px solid black; */
+        margin-top: 0px;
+        height: 86vh;
+        /* border: 1px solid black; */
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 14vw;
+        margin-top: 13vh;
+        margin-bottom: 12vh;
+        /* border: 1px solid black; */
+    }
+
+    #splashBox p {
+        font-weight: 300;
+        font-size: 3.75vh;
+        line-height: 5vh;
+        text-indent: -4vh;
+        padding-left: 5vh;
+        margin-bottom: 9vh;
+        width: 100%;
+    }
+
+    #scrollButton {
+        font-size: 2rem;
+        width: 250px;
+        padding: 15px 20px;
+        margin-left: 5vh;
+    }
+    #scrollButton span {
+        font-size: 2.15rem;
+        margin-left: 3px;
+    }
+
+
+    /* ------------ Back to Top Button ------------ */
+    #backToTopContainer{
+        position: fixed;
+        bottom: 2vh;
+        right: 1vw;
+        width: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        z-index: 5;
+        /* background-color: lightblue; */
+    }
+
+    #bttText{
+        font-size: 15px;
+        margin: 0 4px 15px 0;
+        width: 100%;
+        text-align: center;
+        font-weight: 300;
+        color: rgb(145, 145, 145);
+        /* background-color: gray; */
+    }
+
+    #circle{
+        padding-top: 12px;
+        padding-left: 2px;
+        background-color: var(--baseYellow);
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 25px -2px #c0c0c0;
+        transition: height 0.5s ease-in-out, width 0.5s ease-in-out, padding 0.5s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    #circle:hover{
+        height: 80px;
+        width: 80px;
+        padding-top: 18px;
+        padding-left: 2px;
+    }
+
+    #arrow{
+        text-decoration: none;
+        font-size: 50px;
+        font-family: helvetica;
+        font-weight: 700;
+        color: black;    
+    }
+
+
+    /* ------------ PORTFOLIO ------------ */
+    #portfolio{
+        margin-top: 0;
+        padding-top: 150px;
+    }
+    
+    #portfolio h2{
+        margin-bottom: 6%;
+    }
+
+    #portfolioContainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 4vw;
+        grid-row-gap: 4vw;
+    }
+
+    
+    .projectTitle {
+        font-size: 2.5rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .projectLangs{
+        font-size: 1.2rem;
+    }
+
+    .projectDescription {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        margin-bottom: 25%;
+    }
+
+    .projects a{
+        height: 25px;
+        /* border: 1px solid black; */
+    }
+
+    .projects a img{
+        width: 25px;
+    }
+
+    .projects a span {
+        font-size: 0.9rem;
+    }
+
+    .viewLive{
+        margin: 10% 0 5% 0;
+    }
+
+    .learnMore{
+        margin: 0;
+    }
+
+
+    /* ----------------- ABOUT ME --------------*/
+    #aboutMe p,
+    li {
+        font-size: 1.8rem;
+        line-height: 3.25rem;
+    }
+
+    h3 {
+        font-size: 2.75rem;
+        margin-bottom: 5%;
+    }
+
+    .langs {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10vw;
+    }
+
+    h4 {
+        font-size: 2.20rem;
+    }
+
+    .langsContents {
+        padding: 15%;
+        box-shadow: 7px 7px 0px var(--drkYellow);
+    }
+    
+
+    /* ------------ CONTACT ------------ */
+
+    #contactForm {
+        padding: 4%;
+        width: 70%;
+    }
+
+    #contactForm label {
+        font-size: 1.6rem;
+        margin-left: 1.5%;
+    }
+
+    .formField{
+        font-size: 1.4rem;
+        margin-bottom: 5%;
+        margin-top: 2%;
+    }
+
+    .formField:focus {
+        box-sizing: content-box;
+        outline: 3px solid var(--drkYellow);
+    }
+
+    #submitButton {
+        font-size: 1.5rem;
+        padding: 2% 3%;
+        width: 8rem;
+    }
+
+    
+    /* ------------ FOOTER ------------ */
+
+    footer {
+        height: 8rem;
+        padding: 3% 20%;
+    }
+
+    footer ul{
+        display: grid;
+        grid-template-columns: 3.7rem 6.5rem 3.9rem 5.3rem;
+        grid-column-gap: 2rem;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        vertical-align: baseline;
+        width: calc(3.7rem + 6.5rem + 3.9rem + 5.3rem + 2rem*3);
+        /* border: 1px solid black; */
+    }
+
+    footer li{
+        display: inline-block;
+        vertical-align: baseline;
+        text-align: center;
+        line-height: 0.9rem;
+        /* border: 1px solid black; */
+    }
+
+    footer a {
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 1.4rem;
+    }
+
+    #copyright {
+        font-size: 1rem;
+        margin-bottom: -15px;
+    }
+}
