@@ -97,6 +97,10 @@ button:active {
     vertical-align: baseline;
 }
 
+#navbar a div{
+    transition: background-color 0.2s ease-in-out;
+}
+
 #navbar a:hover div,
 #navbar a:active div,
 #navbar a:focus div{
@@ -108,9 +112,9 @@ button:active {
     z-index: -1;
 }
 
-#navbar a:visited{
+/* #navbar a:visited{
     color: rgb(77, 77, 77);
-}
+} */
 
     #homeLink div{
         width: 3.1rem;
@@ -224,6 +228,11 @@ button:active {
     /* background-color: lightblue; */
 }
 
+#backToTopLink{
+    text-decoration: none;
+    color: black;
+}
+
 #circle{
     margin-left: 0px;
     padding-top: 5px;
@@ -237,7 +246,7 @@ button:active {
     transition: height 0.5s ease-in-out, width 0.5s ease-in-out, padding 0.5s ease-in-out;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
 }
 
 #circle:hover{
@@ -252,7 +261,9 @@ button:active {
     font-size: 50px;
     font-family: helvetica;
     font-weight: 500;
-    color: black;    
+    color: black;   
+    line-height: 100%; 
+    margin-top: 10px;
 }
 
 
@@ -286,11 +297,11 @@ button:active {
     background-origin: border-box;
     background-size: 100%;
     box-shadow: 10px 10px 0 rgb(105, 105, 105);
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
 
 .infoContainer{
-    transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
     height: 24vw;
     padding: 10%;
     box-sizing: border-box;
@@ -303,32 +314,32 @@ button:active {
 }
 
 .projects:hover .infoContainer{
-    opacity: 0.95;
+    opacity: 0.96;
     cursor: default;
 }
 
 .projects:nth-child(1){
-    background-image: url(portfolio5_square.jpg);
+    background-image: url(Assets/portfolio5_square.jpg);
 }
 
 .projects:nth-child(2){
-    background-image: url(portfolio4_square.jpg)
+    background-image: url(Assets/portfolio4_square.jpg)
 }
 
 .projects:nth-child(3){
-    background-image: url(portfolio7_square.jpg)
+    background-image: url(Assets/portfolio7_square.jpg)
 }
 
 .projects:nth-child(4){
-    background-image: url(portfolio2_square.jpg)
+    background-image: url(Assets/portfolio2_square.jpg)
 }
 
 .projects:nth-child(5){
-    background-image: url(portfolio1_square.png)
+    background-image: url(Assets/portfolio1_square.png)
 }
 
 .projects:nth-child(6){
-    background-image: url(portfolio6_square.png)
+    background-image: url(Assets/portfolio6_square.png)
 }
 
 .projectTitle {
@@ -384,6 +395,10 @@ button:active {
     font-size: 16px;
     font-family: Helvetica, Arial, sans-serif;
     /* border: 1px solid black; */
+}
+
+.projects a span{
+    transition: 0.2s ease-in-out;
 }
 
 .projects a:hover span,
@@ -586,7 +601,7 @@ h4{
     border: 2px solid black;
     margin-top: 2%;
     width: 100px;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 #submitButton:hover,
@@ -667,6 +682,10 @@ footer a{
         width: 4.1rem;
     }
 
+footer a div{
+    transition: background-color 0.2s ease-in-out;
+}
+
 footer a:hover div,
 footer a:active div,
 footer a:focus div{
@@ -677,8 +696,8 @@ footer a:focus div{
     position: absolute;
     z-index: -1;
 }
-
+/* 
 footer a:visited{
     color: rgb(77, 77, 77);
-}
+} */
 
