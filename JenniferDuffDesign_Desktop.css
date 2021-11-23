@@ -162,7 +162,7 @@ button:active {
     position: relative;
     top: 600px;
     transform: rotate(180deg);
-    transition: color 0.20s ease-in-out;
+    transition: color 0.2s ease-in-out, transform 0.3s ease-in-out;
 }
 
 #checkItOut span{
@@ -175,6 +175,7 @@ button:active {
 #checkItOut:active,
 #checkItOut:focus{
     color: var(--drkYellow);
+    transform: scale(1.075) rotate(180deg);
 }
 
 #verticalLine{
@@ -212,7 +213,8 @@ button:active {
 #CircleOutlineSolid1{
     width: 100px;
     position: absolute;
-    bottom:5vw;
+    bottom:7vw;
+    left: 40%;
 }
 
 /* ---------Back to Top Button ------------*/
@@ -297,16 +299,22 @@ button:active {
     background-origin: border-box;
     background-size: 100%;
     box-shadow: 10px 10px 0 rgb(105, 105, 105);
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.6s ease-in-out;
 }
 
 .infoContainer{
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
     height: 24vw;
     padding: 10%;
     box-sizing: border-box;
     opacity: 0;
     background: var(--baseYellow);
+    display: grid;
+    grid-template-areas: 
+        "title title"
+        "description description"
+        "langs" "links";
+    grid-template-rows: 0.7fr 1fr 0.5fr;
 }
 
 .projects:hover{
@@ -344,40 +352,85 @@ button:active {
 
 .projectTitle {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 2.75rem;
-    margin: 0;
-}
-
-.projectLangs{
-    font-size: 0.9rem;
-    font-weight: 300;
-    line-height: 1.25rem;
-    margin: 0.8rem 0 0.3rem 0;
-    /* font-family: Helvetica, Arial, sans-serif; */
-    font-style: italic;
-    /* letter-spacing: 1px; */
+    font-size: 40pt;
+    margin: 0 0 30px 0;
+    width: 100%;
+    line-height: 100%;
 }
 
 .projectDescription {
-    font-size: 1.1rem;
+    font-size: 14pt;
     line-height: 1.4rem;
     font-weight: 300;
     margin: 0;
     letter-spacing: 0.5px;
+    width: 100%;
+    position: relative;
+    top: -20px;
     /* font-family: Helvetica, Arial, sans-serif; */
 }
-.linksContainer{
-    margin-top: 2.7rem;
-    border: 1px solid black;
+
+.lowerTile{
+    display: grid;
+    grid-template-areas: 
+        "a b";
+    column-gap: 20px;
+    height: 150px;
+}
+
+.projectLangs, .linksContainer{
+    box-sizing: border-box;
+    width: 1fr;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    width: 50%;
+    margin: 0;
+}
+
+.projectLangs{
+    border: 1px solid black;
+    display: inline-block;
+    grid-area: a;
+}
+
+.stackHeading{
+    margin: 0 0 -3px 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 12.5pt;
+}
+
+.stackUL{
+    font-size: 10.5pt;
+    font-weight: 300;
+    list-style-type: "> ";
+    padding-left: 10px;
+}
+
+.stackUL li{
+    padding-bottom: 15px;
+    line-height: 100%;
+}
+
+.stackUL li:last-of-type{
+    padding-bottom: 0px;
+}
+
+
+.linksContainer{
+    border: 1px solid black;
+    display: inline-block;
+    grid-area: b;
 }
 
 .projects a img{
     width: 16px;
     opacity: 0.6;
     vertical-align: middle;
-    margin-right: 5px;
+    margin: -2.5px 7px 0 0;
     /* border: 1px solid black; */
 }
 
@@ -385,20 +438,20 @@ button:active {
     display: block;
     justify-content: left;
     text-decoration: none;
-    padding: 0;
+    padding: 5px  0;
     flex-wrap: nowrap;
     text-align: left;
     height: 18px;
     width: 100%;
     color: black;
     font-weight: 100;
-    font-size: 16px;
+    font-size: 12pt;
     font-family: Helvetica, Arial, sans-serif;
     /* border: 1px solid black; */
 }
 
 .projects a span{
-    transition: 0.2s ease-in-out;
+    transition: text-decoration 0.2s ease-in-out;
 }
 
 .projects a:hover span,
