@@ -145,11 +145,57 @@ button:active {
     padding-top: 0;
 }
 
-#hi_im_jennifer {
+/* #hi_im_jennifer {
     width: 400px;
     position: relative;
     top: -100px;
+} */
+
+#introBox{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flext-start;
+    background-color: var(--baseYellow);
+    width: 540px;
+    height: 50px;
+    line-height: 153px;
+    margin: 0;
+    padding: 0;
+    margin-top: -100px;
 }
+
+.introWords{
+    margin-top:-90px;
+    font-size: 55pt;
+    font-weight: 300;
+}
+
+/* #jennifer{
+    margin-left: -130px;
+} */
+
+.introCursors{
+    display: inline-block;
+    width: 4px;
+    height: 70px;
+    background-color: black;
+    margin-left: 10px;
+    margin-top: -50px;
+    animation-name: blink;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink{
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+
 
 #checkItOut{
     margin: 0 0 0 -20px;
@@ -162,7 +208,7 @@ button:active {
     position: relative;
     top: 600px;
     transform: rotate(180deg);
-    transition: color 0.2s ease-in-out, transform 0.3s ease-in-out;
+    transition: font-weight 0.2s ease-in-out, transform 0.3s ease-in-out;
 }
 
 #checkItOut span{
@@ -174,7 +220,7 @@ button:active {
 #checkItOut:hover,
 #checkItOut:active,
 #checkItOut:focus{
-    color: var(--drkYellow);
+    font-weight: 700;
     transform: scale(1.075) rotate(180deg);
 }
 
