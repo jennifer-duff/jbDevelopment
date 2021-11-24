@@ -313,8 +313,10 @@ button:active {
     grid-template-areas: 
         "title title"
         "description description"
-        "langs" "links";
+        "langs links";
     grid-template-rows: 0.7fr 1fr 0.5fr;
+    grid-template-columns: 0.42fr 0.57fr;
+    column-gap: 5%;
 }
 
 .projects:hover{
@@ -356,6 +358,7 @@ button:active {
     margin: 0 0 30px 0;
     width: 100%;
     line-height: 100%;
+    grid-area: title;
 }
 
 .projectDescription {
@@ -367,13 +370,14 @@ button:active {
     width: 100%;
     position: relative;
     top: -20px;
+    grid-area: description;
     /* font-family: Helvetica, Arial, sans-serif; */
 }
 
 .lowerTile{
-    display: grid;
+    /* display: grid;
     grid-template-areas: 
-        "a b";
+        "a b"; */
     column-gap: 20px;
     height: 150px;
 }
@@ -392,7 +396,7 @@ button:active {
 .projectLangs{
     border: 1px solid black;
     display: inline-block;
-    grid-area: a;
+    grid-area: langs;
 }
 
 .stackHeading{
@@ -423,7 +427,7 @@ button:active {
 .linksContainer{
     border: 1px solid black;
     display: inline-block;
-    grid-area: b;
+    grid-area: links;
 }
 
 .projects a img{
