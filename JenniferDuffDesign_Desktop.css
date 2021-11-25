@@ -27,6 +27,7 @@ main {
     flex-direction: column;
 }
 
+/* section headers */
 h2 {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 700;
@@ -35,6 +36,26 @@ h2 {
     line-height: 2.3rem;
     margin: 0 0 40px 0;
 }
+
+.h2Animation{
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn{
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 
 section{
     margin: 0;
@@ -260,14 +281,14 @@ button:active {
     width: 100px;
     position: absolute;
     bottom:7vw;
-    left: 40%;
+    left: 3%;
 }
 
 /* ---------Back to Top Button ------------*/
 #backToTopContainer{
     position: fixed;
-    bottom: 1vh;
-    right: 1vw;
+    bottom: 5vh;
+    right: 2vw;
     width: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -315,7 +336,7 @@ button:active {
 }
 
 
-/* ------------------- Portfolio ------------------- */
+/* ------------------- Portfolio Section ------------------- */
 #dots{
     width: 75px;
     position: absolute;
@@ -541,7 +562,7 @@ button:active {
     left: 50px;
     transform: rotate(90deg);
 }
-/* ------------------- ABOUT ------------------- */
+/* ------------------- ABOUT SECTION ------------------- */
 
 #aboutParagraph{
     font-size: 1.4rem;
