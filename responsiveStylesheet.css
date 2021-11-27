@@ -303,5 +303,23 @@
 
 
 /* ------- Contact Section -------*/
+}
 
+@media (max-width: 650px) {
+    #navbar{
+        align-items: center;
+        padding: 20px;
+        height: auto; 
+    }
+    
+    #menuIcon{
+        display: inline;
+        width: 35px;
+        padding-right: 5px;
+        top: 0;
+    }
+
+    #navbar nav{
+        display: none;
+    }
 }

@@ -74,6 +74,9 @@ button:active {
 }
 
 /* ------------------- NAV BAR ------------------- */
+#menuIcon{
+    display: none;
+}
 
 #navbar {
     box-sizing: border-box;
@@ -85,15 +88,19 @@ button:active {
     position: fixed;
     background-color: rgba(255, 255, 255, 1);
     margin: 0;
-    padding: 20px 0 15px 17px; 
+    padding: 20px 0 20px 17px; 
     z-index: 2;
     border-bottom: 2px solid black;
+    height: auto;
 }
 
 #fullLogo{
+    box-sizing: border-box;
     width: 250px;
     margin: 0;
-    padding: 0 0 0 0;
+    padding: 0;
+    position: relative;
+    top: 5px;
 }
 
 #navbar nav {
@@ -109,7 +116,7 @@ button:active {
     /* border: 1px solid black; */
 }
 
-#navbar a {
+#navbar nav a {
     text-decoration: none;
     color: black;
     font-weight: 700;
@@ -330,8 +337,7 @@ button:active {
 
 #circle{
     margin-left: 0px;
-    padding-top: 5px;
-    padding-left: 2px;
+    padding: 10px;
     background-color: var(--baseYellow);
     height: 50px;
     width: 50px;
@@ -344,21 +350,19 @@ button:active {
     align-items: center;
 }
 
+#arrow{
+    text-decoration: none;
+    width: 15px;
+    transition: width 0.5s ease-in-out
+}
 #circle:hover{
     height: 60px;
     width: 60px;
-    padding-top: 8px;
-    padding-left: 1px;
+    padding: 5px;
 }
 
-#arrow{
-    text-decoration: none;
-    font-size: 50px;
-    font-family: helvetica;
-    font-weight: 500;
-    color: black;   
-    line-height: 100%; 
-    margin-top: 10px;
+#circle:hover #arrow{
+    width: 20px;
 }
 
 
