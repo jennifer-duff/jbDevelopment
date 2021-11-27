@@ -275,13 +275,13 @@ button:active {
     width: 1.4px;
     height: 600px;
     background-color: black;
-    margin: 0 0 0 0px;
+    margin: 0;
     padding: 0;
 }
 
 #splashList{
     font-family: "Helvetica";
-    font-size: 26px;
+    font-size: 22pt;
     list-style-type: none;
     text-decoration: 2px underline black;
     line-height: 55px;
@@ -313,8 +313,8 @@ button:active {
 /* ---------Back to Top Button ------------*/
 #backToTopContainer{
     position: fixed;
-    bottom: 10vh;
-    right: 2vw;
+    bottom: 100px;
+    right: 2.5vw;
     width: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -395,6 +395,15 @@ button:active {
     transition: transform 0.6s ease-in-out;
 }
 
+.projects:hover{
+    transform: scale(1.075);
+}
+
+.projects:hover .infoContainer{
+    opacity: 0.96;
+    cursor: default;
+}
+
 .infoContainer{
     transition: opacity 0.4s ease-in-out;
     height: 24vw;
@@ -412,48 +421,14 @@ button:active {
         "description"
         "langs"
         "links"; */
-    /* grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr; */
+    /* grid-template-rows: 0.50fr 0.20fr 0.15fr 0.35fr; */
     /* grid-template-columns: 1fr; */
-    /* column-gap: 5%; */
-}
-
-.projects:hover{
-    transform: scale(1.075);
-}
-
-.projects:hover .infoContainer{
-    opacity: 0.96;
-    cursor: default;
-}
-
-.projects:nth-child(1){
-    background-image: url(Assets/portfolio5_square.jpg);
-}
-
-.projects:nth-child(2){
-    background-image: url(Assets/portfolio4_square.jpg)
-}
-
-.projects:nth-child(3){
-    background-image: url(Assets/portfolio7_square.jpg)
-}
-
-.projects:nth-child(4){
-    background-image: url(Assets/portfolio2_square.jpg)
-}
-
-.projects:nth-child(5){
-    background-image: url(Assets/portfolio1_square.png)
-}
-
-.projects:nth-child(6){
-    background-image: url(Assets/portfolio6_square.png)
 }
 
 .projectTitle {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 40pt;
-    margin: 0 0 30px 0;
+    margin: 0;
     width: 100%;
     line-height: 100%;
     grid-area: title;
@@ -461,29 +436,27 @@ button:active {
 
 .projectDescription {
     font-size: 14pt;
-    line-height: 1.4rem;
+    line-height: 115%;
     font-weight: 300;
-    margin: 0;
     letter-spacing: 0.5px;
     width: 100%;
-    position: relative;
+    /* position: relative;
     top: -20px;
-    grid-area: description;
+    grid-area: description; */
     /* font-family: Helvetica, Arial, sans-serif; */
 }
 
-.lowerTile{
-    /* display: grid;
+/* .lowerTile{
+    display: grid;
     grid-template-areas: 
-        "a b"; */
+        "a b";
     height: 150px;
-}
+} */
 
 .projectLangs, .linksContainer{
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    margin: 0;
     padding: 0;
     width: 100%;
 }
@@ -492,24 +465,29 @@ button:active {
     /* border: 1px solid black; */
     /* display: inline-block; */
     grid-area: langs;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 12pt;
-    letter-spacing: 0.5px;
-    font-weight: 200;
-    text-align: left;
-    justify-content: flex-start;
-    padding: 0;
+    /* font-family: Helvetica, Arial, sans-serif;   */
+    /* text-align: left; */
+    padding: 10px;
     margin: 10px 0;
-    justify-self: flex-start;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    margin: 5% 0;
 }
 
-.projectLangs span{
+.stackHeader{
     padding: 0;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 600;
-    font-size: 14pt;
-    margin: 0 7px 0 0;
-    justify-self: flex-start;
+    font-size: 12pt;
+    margin: 0 0 3px 0;
+    width: 100%;
+}
+
+.langsList{
+    font-size: 11pt;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    margin: 0;
 }
 
 /* .stackHeading{
@@ -541,16 +519,16 @@ button:active {
     border: 1px solid black;
     display: inline-block;
     grid-area: links;
-    padding: 20px;
+    padding: 15px;
     justify-content: center;
     /* height: 150px; */
 }
 
 .projects a img{
-    width: 16px;
+    width: 20px;
     opacity: 0.6;
     vertical-align: middle;
-    margin: -2.5px 7px 0 0;
+    margin: -2px 10px 0 0;
     /* border: 1px solid black; */
 }
 
@@ -558,15 +536,16 @@ button:active {
     display: block;
     justify-content: left;
     text-decoration: none;
-    padding: 5px  0;
+    padding: 5px 0;
     flex-wrap: nowrap;
     text-align: left;
     height: 18px;
     width: 100%;
     color: black;
-    font-weight: 100;
-    font-size: 14pt;
-    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+    letter-spacing: 1px;
+    /* font-family: Helvetica, Arial, sans-serif; */
     /* border: 1px solid black; */
 }
 
@@ -587,7 +566,7 @@ button:active {
 }
 
 .carrot{
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .githubLink{
@@ -602,6 +581,30 @@ button:active {
 
 .learnMore{
     width: 29%;
+}
+
+.projects:nth-child(1){
+    background-image: url(Assets/portfolio5_square.jpg);
+}
+
+.projects:nth-child(2){
+    background-image: url(Assets/portfolio4_square.jpg)
+}
+
+.projects:nth-child(3){
+    background-image: url(Assets/portfolio7_square.jpg)
+}
+
+.projects:nth-child(4){
+    background-image: url(Assets/portfolio2_square.jpg)
+}
+
+.projects:nth-child(5){
+    background-image: url(Assets/portfolio1_square.png)
+}
+
+.projects:nth-child(6){
+    background-image: url(Assets/portfolio6_square.png)
 }
 
 #CircleOutlineSolid2{
@@ -796,6 +799,7 @@ footer{
     display: flex;
     justify-content: center;
     margin-bottom: 25px;
+    width: 100%;
 }
 
 
