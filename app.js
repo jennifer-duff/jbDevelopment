@@ -101,3 +101,43 @@ for (let i = 0; i < h2s.length; i++)
 {
     observer.observe(h2s[i]);
 }
+
+// --------------------- Hamburger Nav -------------------------
+let menuIcon = document.querySelector('#menuIcon');
+let hamburgerNav = document.querySelector('#hamburgerNav');
+let navLinks = hamburgerNav.childNodes;
+// console.log(hamburgerNavLinks);
+
+function showHamburgerMenu(){
+    hamburgerNav.style.display = 'flex';
+}
+
+function hideHamburgerMenu(){
+    hamburgerNav.style.display = 'none';
+}
+
+// menuIcon.addEventListener('click', function(){
+//     showHamburgerMenu();
+// })
+
+
+hamburgerNav.addEventListener('mouseleave', function(){
+    hideHamburgerMenu();
+})
+
+document.body.addEventListener('click', function(event){
+    if (event.target === menuIcon)
+    {
+        //console.log('Menu Icon clicked');
+        showHamburgerMenu();
+    }
+    else if(event.target === hamburgerNav || event.target === hamburgerNav.childNodes)
+    {
+        showHamburgerMenu();
+        //console.log('hamburgerNav clicked');
+    }
+    else{
+        hideHamburgerMenu();
+        //console.log('body clicked');
+    }
+})
