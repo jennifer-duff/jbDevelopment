@@ -76,23 +76,24 @@ button:active {
 /* ------------------- NAV BAR ------------------- */
 
 #navbar {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
-    height: 60px;
+    /* height: 60px; */
     position: fixed;
     background-color: rgba(255, 255, 255, 1);
     margin: 0;
-    padding: 10px; 
+    padding: 20px 0 15px 17px; 
     z-index: 2;
     border-bottom: 2px solid black;
 }
 
 #fullLogo{
-    width: 325px;
+    width: 250px;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 0;
 }
 
 #navbar nav {
