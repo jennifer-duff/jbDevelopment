@@ -1,0 +1,17 @@
+@media (max-width: 1700px) {
+    .projectTitle {
+        font-size: 35pt;
+        margin-bottom: 40px;
+    }
+
+    .projectDescription{
+        font-size: 12pt;
+    }
+
+    /* .projectLangs, .linksContainer{
+        padding: 15px;
+    } */
+    .project a{
+        font-size: 10pt;
+    }
+}
