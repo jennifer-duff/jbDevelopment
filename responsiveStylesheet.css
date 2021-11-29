@@ -592,11 +592,12 @@
 
     #lineBox{
         justify-self: flex-end;
-        margin: -50px 0 0 0;
+        align-self: flex-start;
+        margin: 50px 0 0 0;
     }
 
     #verticalLine{
-        width: 1px;
+        width: 2px;
         
     }
 
@@ -612,7 +613,8 @@
     #splashList{
         font-size: 13pt;
         padding-left: 40px;
-        margin: -50px 0 0 0;
+        align-self: flex-start;
+        margin: 125px 0 0 0;
     }
 
     #RectangleCircleOutline{
@@ -622,9 +624,8 @@
     }
 
     #CircleOutlineSolid1{
-        width: 50px;
-        top: 95%;
-        
+        width: 60px;
+        top: 98%;
     }
 
     /*----------- Portfolio -----------*/
