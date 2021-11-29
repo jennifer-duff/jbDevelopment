@@ -625,7 +625,9 @@
 
     #CircleOutlineSolid1{
         width: 60px;
-        top: 98%;
+        top: 98vh;
+        left: 65px;
+        z-index: -1;
     }
 
     /*----------- Portfolio -----------*/
