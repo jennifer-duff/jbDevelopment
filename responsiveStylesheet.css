@@ -650,6 +650,54 @@
         top: 40px;
     }
 
+    .projects{
+        width: 83vw;
+        height: 83vw;
+        
+    }
+
+    .projects:hover{
+        transform: scale(1.035) translateX(5px) ;
+    }
+
+    .infoContainer{
+        height: 83vw;
+    }
+
+
+    .projectTitle{
+        font-size: 25pt;
+        margin-bottom: 0;
+    }
+
+    .projectDescription{
+        font-size: 10pt;
+    }
+
+    .projectLangs{
+        padding: 8px;
+    }
+
+    .stackHeader{
+        font-size: 9pt;
+        margin-bottom: -1px;
+    }
+
+    .langsList{
+        font-size: 9pt;
+    }
+
+    .linksContainer{
+        padding: 8px;
+    }
+
+    .linksContainer a{
+        font-size: 9pt;
+    }
+
+    .projects a img{
+        width: 15px;
+    }
     /*----------- About Me -----------*/
     #aboutParagraph{
         font-size: 12pt;
@@ -664,6 +712,7 @@
 
     .stackSubHeading{
         font-size: 16pt;
+        font-weight: 200;
     }
 
     #arrows{
@@ -719,55 +768,7 @@
         height: 200px;
         width: 200px;
     }
-    /*----------- Portfolio -----------*/
-    .projects{
-        width: 83vw;
-        height: 83vw;
-        
-    }
-
-    .projects:hover{
-        transform: scale(1.035) translateX(5px) ;
-    }
-
-    .infoContainer{
-        height: 83vw;
-    }
-
-
-    .projectTitle{
-        font-size: 25pt;
-        margin-bottom: 0;
-    }
-
-    .projectDescription{
-        font-size: 10pt;
-    }
-
-    .projectLangs{
-        padding: 8px;
-    }
-
-    .stackHeader{
-        font-size: 9pt;
-        margin-bottom: -1px;
-    }
-
-    .langsList{
-        font-size: 9pt;
-    }
-
-    .linksContainer{
-        padding: 8px;
-    }
-
-    .linksContainer a{
-        font-size: 9pt;
-    }
-
-    .projects a img{
-        width: 15px;
-    }
+    
 
     /*----------- Contact -----------*/
     #contact{
@@ -782,7 +783,7 @@
     #contactForm{
         padding: 20px 30px 40px 20px;
         left: 15px;
-        bottom: 15px;
+        bottom: 19px;
         height: 400px;
         justify-content: space-between;
     }

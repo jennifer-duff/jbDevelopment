@@ -82,16 +82,16 @@ async function typeAndDelete(){
 // })
 
 // --------------------- H2 SlideIn Animation Trigger -------------------------
-const h2s = document.querySelectorAll('h2');
+const h2s = document.querySelectorAll('.h2Wrapper');
+console.log(h2s);
 
 function callback (entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting){
-            //console.log(entry.target);
-            entry.target.classList.add('h2Animation');
+            entry.target.childNodes[1].classList.add('h2Animation');
             return;
         }
-        entry.target.classList.remove('h2Animation');
+        entry.target.childNodes[1].classList.remove('h2Animation');
     })
 }
 
@@ -161,7 +161,6 @@ document.body.addEventListener('click', function(event){
 let backToTop = document.querySelector('#backToTopContainer');
 let sections = document.querySelectorAll('section');
 let navLinksDivs = document.querySelectorAll('nav a div');
-console.dir(navLinksDivs[4]);
 
 //set initial section heights
 let portfolioSection = sections[1];
