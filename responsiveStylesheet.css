@@ -577,14 +577,14 @@
     #introBox{
         /* height: 12vw; */
         height: auto;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
     }
 
     .introWords{
-        font-size: 22pt;
+        font-size: 27pt;
         letter-spacing: 3px;
         border-right: 2px solid black;
-        top: -18px;
+        top: -24px;
         /* positioN: static; */
         /* height: 150%; */
         line-height: 115%;
@@ -626,8 +626,8 @@
 
     #CircleOutlineSolid1{
         width: 60px;
-        top: 102vh;
-        left: 65px;
+        bottom: 1vh;
+        left: 35px;
         z-index: -1;
     }
 
