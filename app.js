@@ -83,7 +83,6 @@ async function typeAndDelete(){
 
 // --------------------- H2 SlideIn Animation Trigger -------------------------
 const h2s = document.querySelectorAll('.h2Wrapper');
-console.log(h2s);
 
 function callback (entries) {
     entries.forEach(entry => {
