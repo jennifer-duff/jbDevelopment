@@ -369,8 +369,8 @@
 
     #hamburgerNav{
         position: absolute;
-        justify-content: flex-start;
         flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
         top: 10px;
         right: 10px;
@@ -379,9 +379,10 @@
         margin: 0;
         border: 2px solid black;
         width: 100px;
-        height: auto;
+        height: 150px;
         background-color: white;
         box-shadow: 10px 10px 0 rgb(105, 105, 105);
+        z-index: 3;
     }
 
     #hamburgerNav a{
@@ -393,24 +394,36 @@
         text-align: left;
         vertical-align: baseline;
         width: 100%;
-        line-height: 200%;
+        position: relative;
+        z-index: 2
+        /* line-height: 200%; */
     }
 
-    #homeLink div{
-        width: 100%;
+    #hamburgerNav div{
+        /* background-color: var(--drkYellow);  */
+        height: 7px;
+        top: 1px;
+        padding: 0;
+        position: relative;
+        z-index: -1;
+        transition: opacity 0.3s ease-in-out;
     }
 
-    #portfolioLink div{
-        width: 100%;
-    }
+        #hamHomeUnderline{
+            width: 48px;
+        }
 
-    #aboutLink div{
-            width: 100%;
-    }
+        #hamPortfolioUnderline{
+            width: 73px;
+        }
 
-    #contactLink div{
-        width: 100%;
-    }
+        #hamAboutUnderline{
+            width: 50px;
+        }
+
+        #hamContactUnderline{
+            width: 65px;
+        }
     /*----------- splash box -----------*/
     #introBox{
         height: 65px;

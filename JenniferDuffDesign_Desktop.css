@@ -78,6 +78,10 @@ button:active {
     display: none;
 }
 
+#hamburgerNav{
+    display: none;
+}
+
 #navbar {
     box-sizing: border-box;
     display: flex;
@@ -116,7 +120,7 @@ button:active {
     /* border: 1px solid black; */
 }
 
-#headerNav a {
+header nav a {
     text-decoration: none;
     color: black;
     font-weight: 700;
@@ -124,21 +128,26 @@ button:active {
     font-size: 1.1rem;
     text-align: center;
     vertical-align: baseline;
-}
-
-#navbar a div{
     transition: background-color 0.2s ease-in-out;
 }
 
-#navbar a:hover div,
-#navbar a:active div,
-#navbar a:focus div{
+header nav a:hover{
+    background-color: var(--drkYellow);
+}
+
+/* #navbar a div{
+    transition: background-color 0.2s ease-in-out;
+} */
+
+header nav a div{
     background-color: var(--drkYellow); 
     height: 7px;
     margin-top: -8px;
     padding: 0;
     position: absolute;
     z-index: -1;
+    transition: opacity 0.3s ease-in-out;
+    width: auto;
 }
 
 /* #navbar a:visited{
@@ -851,9 +860,11 @@ footer a{
     font-size: 12pt;
     text-align: center;
     vertical-align: baseline;
+    transition: background-color 0.2s ease-in-out;
 }
 
-    /* #homeLink div{
+
+    #homeLink div{
         width: 3.1rem;
     }
 
@@ -867,15 +878,14 @@ footer a{
 
     #contactLink div{
         width: 4.1rem;
-    } */
+    }
+
+footer a:hover{
+    background-color: var(--drkYellow);
+}
 
 footer a div{
     transition: background-color 0.2s ease-in-out;
-}
-
-footer a:hover div,
-footer a:active div,
-footer a:focus div{
     background-color: var(--drkYellow); 
     height: 7px;
     margin-top: -8px;
@@ -883,8 +893,8 @@ footer a:focus div{
     position: absolute;
     z-index: -1;
 }
-/* 
-footer a:visited{
+
+/* footer a:visited{
     color: rgb(77, 77, 77);
 } */
 

@@ -105,7 +105,7 @@ for (let i = 0; i < h2s.length; i++)
 // --------------------- Hamburger Nav -------------------------
 let menuIcon = document.querySelector('#menuIcon');
 let hamburgerNav = document.querySelector('#hamburgerNav');
-let navLinks = hamburgerNav.childNodes;
+// let navLinks = hamburgerNav.childNodes;
 // console.log(hamburgerNavLinks);
 
 function showHamburgerMenu(){
@@ -115,11 +115,6 @@ function showHamburgerMenu(){
 function hideHamburgerMenu(){
     hamburgerNav.style.display = 'none';
 }
-
-// menuIcon.addEventListener('click', function(){
-//     showHamburgerMenu();
-// })
-
 
 hamburgerNav.addEventListener('mouseleave', function(){
     hideHamburgerMenu();
@@ -139,5 +134,135 @@ document.body.addEventListener('click', function(event){
     else{
         hideHamburgerMenu();
         //console.log('body clicked');
+    }
+})
+
+
+// let mediaQuery1 = window.matchMedia('(max-width: 650px)');
+// let mediaQuery2 = window.matchMedia('(max-width: 475px)');
+
+// mediaQuery1.onchange = (e) => {
+//     if (e.matches)
+//     {
+//         console.log('hiding hamburger menu');
+//         hideHamburgerMenu();
+//     }
+// }
+
+// mediaQuery2.onchange = (e) => {
+//     if (e.matches)
+//     {
+//         console.log('hiding hamburger menu');
+//         hideHamburgerMenu();
+//     }
+// }
+
+//------------------- Handle Navigation ------------------------
+let backToTop = document.querySelector('#backToTopContainer');
+let sections = document.querySelectorAll('section');
+let navLinksDivs = document.querySelectorAll('nav a div');
+console.dir(navLinksDivs[4]);
+
+//set initial section heights
+let portfolioSection = sections[1];
+let portfolioOffset = portfolioSection.offsetTop;
+//console.log(`portfolioOffset: ${portfolioOffset}`);
+
+let aboutSection = sections[2];
+let aboutOffset = aboutSection.offsetTop;
+//console.log(`aboutSectionOffset: ${aboutOffset}`);
+
+let contactSection = sections[3];
+let contactOffset = contactSection.offsetTop;
+//console.log(`contactSectionOffset: ${contactOffset}`);
+
+
+//listen for window resizing & update section heights accordingly
+window.addEventListener('resize', function() {
+    portfolioOffset = portfolioSection.offsetTop;
+    aboutOffset = aboutSection.offsetTop;
+    contactOffset = contactSection.offsetTop;
+})
+
+//set underline starting positions
+for (let i = 0; i < navLinksDivs.length; i++)
+{
+    if ( i === 0 || i === 4)
+    {
+        navLinksDivs[i].style.opacity = 1;
+    }
+    else
+    {
+        navLinksDivs[i].style.opacity = 0;
+    }
+}
+
+//listen for scrolling and change underline accordingly
+window.addEventListener('scroll', function(){
+    let currScrollPos = window.scrollY;
+
+    if (currScrollPos < portfolioOffset)
+    {
+        //console.log(`splashBox section: ${currScrollPos}`);
+        for (let i = 0; i < navLinksDivs.length; i++)
+        {
+            if ( i === 0 || i === 4)
+            {
+                //console.log(navLinksDivs[i]);
+                navLinksDivs[i].style.opacity = 1;
+            }
+            else
+            {
+                navLinksDivs[i].style.opacity = 0;
+            }
+        }
+    }
+
+    else if((currScrollPos >= portfolioOffset && currScrollPos < aboutOffset))
+    {
+        //console.log(`portfolio section: ${currScrollPos}`);
+        for (let i = 0; i < navLinksDivs.length; i++)
+        {
+            if ( i === 1 || i === 5)
+            {
+                navLinksDivs[i].style.opacity = 1;
+            }
+            else
+            {
+                navLinksDivs[i].style.opacity = 0;
+            }
+        }
+    }
+
+    else if((currScrollPos >= aboutOffset && currScrollPos < contactOffset))
+    {
+        //console.log(`about section: ${currScrollPos}`);
+        for (let i = 0; i < navLinksDivs.length; i++)
+        {
+            if ( i === 2 || i === 6)
+            {
+                navLinksDivs[i].style.opacity = 1;
+            }
+            else
+            {
+                navLinksDivs[i].style.opacity = 0;
+            }
+        }
+    }
+
+    else if((currScrollPos >= contactOffset))
+    {
+        //console.log(`contact section: ${currScrollPos}`);
+        for (let i = 0; i < navLinksDivs.length; i++)
+        {
+            if ( i === 3 || i === 7)
+            {
+                navLinksDivs[i].style.opacity = 1;
+            }
+            else
+            {
+                navLinksDivs[i].style.opacity = 0;
+            }
+        }
     }
 })
