@@ -599,6 +599,7 @@
     #verticalLine{
         width: 2px;
         
+        
     }
 
     #checkItOut{
@@ -613,7 +614,7 @@
 
     #splashList{
         font-size: 13pt;
-        padding-left: 40px;
+        padding-left: 50px;
         align-self: flex-start;
         margin: 125px 0 0 0;
     }
@@ -625,8 +626,8 @@
     }
 
     #CircleOutlineSolid1{
-        width: 60px;
-        bottom: 1vh;
+        width: 50px;
+        bottom: -5vh;
         left: 35px;
         z-index: -1;
     }
