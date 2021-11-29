@@ -603,6 +603,7 @@
 
     #checkItOut{
         font-size: 9pt;
+
     }
 
     #checkItOut span{
@@ -625,9 +626,14 @@
 
     #CircleOutlineSolid1{
         width: 60px;
-        top: 98vh;
+        top: 102vh;
         left: 65px;
         z-index: -1;
+    }
+
+    #verticalLine{
+        width: 2px;
+        
     }
 
     /*----------- Portfolio -----------*/
