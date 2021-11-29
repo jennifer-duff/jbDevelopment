@@ -195,6 +195,7 @@ for (let i = 0; i < navLinksDivs.length; i++)
     {
         navLinksDivs[i].style.opacity = 0;
     }
+    backToTop.style.opacity = 0;
 }
 
 //listen for scrolling and change underline accordingly
@@ -216,6 +217,7 @@ window.addEventListener('scroll', function(){
                 navLinksDivs[i].style.opacity = 0;
             }
         }
+        backToTop.style.opacity = 0;
     }
 
     else if((currScrollPos >= portfolioOffset && currScrollPos < aboutOffset))
@@ -232,6 +234,7 @@ window.addEventListener('scroll', function(){
                 navLinksDivs[i].style.opacity = 0;
             }
         }
+        backToTop.style.opacity = 1;
     }
 
     else if((currScrollPos >= aboutOffset && currScrollPos < contactOffset))
@@ -248,6 +251,7 @@ window.addEventListener('scroll', function(){
                 navLinksDivs[i].style.opacity = 0;
             }
         }
+        backToTop.style.opacity = 1;
     }
 
     else if((currScrollPos >= contactOffset))
@@ -264,5 +268,6 @@ window.addEventListener('scroll', function(){
                 navLinksDivs[i].style.opacity = 0;
             }
         }
+        backToTop.style.opacity = 1;
     }
 })

@@ -336,6 +336,7 @@ header nav a div{
     flex-wrap: wrap;
     justify-content: center;
     z-index: 5;
+    transition: opacity 0.2s ease-in-out;
     /* background-color: lightblue; */
 }
 
