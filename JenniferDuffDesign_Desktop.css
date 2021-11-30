@@ -650,7 +650,7 @@ header nav a div{
 h3{
     font-family: Helvetica, Arial, sans-serif;
     font-size: 2.25rem;
-    margin: -50px 0 5.7rem 0;
+    margin: 0 0 75px 0;
     display: flex;
     justify-content: center;
 }
@@ -666,12 +666,13 @@ h4{
 #langs{
     display: flex;
     justify-content: center;
-    height: 350px;
-    margin-top: -50px;
+    height: 300px;
+    margin-top: 0px;
 }
 
 .langGroup{
     margin: 0 50px;
+    height: 300px;
 }
 
 .langsContents{
@@ -707,6 +708,96 @@ h4{
     z-index: 2;
     top: 310px;
     left: -20px; */
+}
+#resumeHeader{
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+
+#resume{
+    border: 2px solid black;
+    box-shadow: 10px 10px 0 var(--baseYellow);
+    padding: 5%;
+    width: 800px;
+    margin: 0 auto;
+}
+
+h5{
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 18pt;
+    margin-bottom: 5px;
+}
+
+h5:first-of-type{
+    margin-top: 20px;
+}
+
+.resumeUnderline{
+    background-color: var(--baseYellow);
+    height: 10px;
+    position: relative;
+    z-index: -1;
+    top: -16px;
+}
+
+.resumeUnderline:nth-of-type(1)
+{
+    width: 117px;
+}
+
+.resumeUnderline:nth-of-type(2)
+{
+    width: 195px;
+}
+
+.resumeUnderline:nth-of-type(3)
+{
+    width: 155px;
+}
+
+.resumeUnderline:nth-of-type(4)
+{
+    width: 63px;
+}
+
+#resume ul{
+    line-height: 150%;
+    margin-top: 0;
+}
+
+#resume ul li{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#resume ul li:nth-of-type(2n){
+    padding: 10px 0;
+}
+
+.resumeBold{
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 13pt;
+}
+
+.resumeSubheader{
+    letter-spacing: 0.5px;
+    font-size: 12.5;
+}
+
+#FM{
+    margin-bottom: 10px;
+}
+
+#Pepperdine{
+    margin-top: 10px;
+}
+
+#resume ul .subBullets{
+    font-family: museo-slab, 'Courier New', monospace;
+    font-weight: 300;
+    font-size: 11pt;
+    letter-spacing: 0.5px;
 }
 
 /* ------------------- CONTACT ------------------- */

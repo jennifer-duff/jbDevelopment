@@ -182,6 +182,10 @@
         /* margin-top: 20px */
     }
 
+    #resume{
+        width: 90%;
+    }
+
 }
 
 @media (max-width: 1075px) {
@@ -432,6 +436,7 @@
         #hamContactUnderline{
             width: 68px;
         }
+
     /*----------- splash box -----------*/
     #introBox{
         height: 65px;
@@ -519,6 +524,11 @@
 
     .borderSquare{
         margin: 0;
+    }
+
+    #resume ul{
+        list-style-position: outside;
+        padding-left: 5%;
     }
 
     /* ------- Footer -------*/
