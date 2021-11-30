@@ -756,6 +756,7 @@ h4{
     border: 2px solid black;
     font-size: 12pt;
     max-width: 100%;
+    border-radius: 0%;
     transition: background-color 0.1s ease-in-out;
 }
 
@@ -767,6 +768,7 @@ h4{
 
 #message {
     resize: vertical;
+    border-radius: 0%;
 }
 
 .formField:last-child {
@@ -794,6 +796,7 @@ h4{
     border: 2px solid black;
     margin-top: 2%;
     width: 100px;
+    border-radius: 0%;
     transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
