@@ -59,7 +59,7 @@ h2 {
 
 section{
     margin: 0;
-    padding: 200px 0 0 0;
+    padding: 175px 0 0 0;
 }
 
 a:hover,
@@ -856,7 +856,7 @@ footer nav {
     /* border: 1px solid black; */
 }
 
-footer a{
+footer nav a{
     text-decoration: none;
     color: black;
     font-weight: 700;
@@ -884,7 +884,7 @@ footer a{
         width: 4.1rem;
     }
 
-footer a:hover{
+footer nav a:hover{
     background-color: var(--drkYellow);
 }
 

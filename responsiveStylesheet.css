@@ -471,12 +471,34 @@
     }
 
     /* ------- About Section -------*/
+    #aboutParagraph{
+        font-size: 14pt;
+        line-height: 200%;
+    }
+    
+    #arrows{
+        display: none;
+    }
+
+    #wavyArrows{
+        display: block;
+        width: 150px;
+        margin: 20px 0 20px 0;
+    }
+    
+    h3{
+        font-size: 20pt;
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+
     #langs{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         height: calc(2 * 250px + 100px);
+        margin-top: -5px;
     }
 
     .langGroup{
@@ -723,16 +745,6 @@
     .stackSubHeading{
         font-size: 16pt;
         font-weight: 200;
-    }
-
-    #arrows{
-        display: none;
-    }
-
-    #wavyArrows{
-        display: block;
-        width: 150px;
-        margin: 20px 0 20px 0;
     }
     
     #langs{
