@@ -343,7 +343,7 @@
         height: 250px;
         position: relative;
         top: -275px;
-        padding: 10%;
+        padding: 18%;
     }
 }
 
@@ -374,11 +374,11 @@
         align-items: center;
         top: 10px;
         right: 10px;
-        padding: 30px;
+        padding: 20px;
         margin: 0;
         border: 2px solid black;
         width: 90px;
-        height: 180px;
+        height: auto;
         background-color: white;
         box-shadow: 10px 10px 0 rgb(105, 105, 105);
         z-index: 3;
@@ -389,19 +389,28 @@
         color: black;
         font-weight: 700;
         font-family: Helvetica, Arial, sans-serif;
-        font-size: 16pt;
+        font-size: 14pt;
         text-align: left;
         vertical-align: baseline;
         width: 100%;
         position: relative;
-        z-index: 2
+        z-index: 2;
+        margin: 0;
         /* line-height: 200%; */
+    }
+
+    #hamburgerNav a:nth-of-type(2){
+        padding: 20px 0 10px 0;
+    }
+
+    #hamburgerNav a:nth-of-type(3){
+        padding: 10px 0 20px 0;
     }
 
     #hamburgerNav div{
         /* background-color: var(--drkYellow);  */
-        height: 10px;
-        top: -2px;
+        height: 7px;
+        top: 0px;
         padding: 0;
         position: relative;
         z-index: -1;
@@ -409,19 +418,19 @@
     }
 
         #hamHomeUnderline{
-            width: 58px;
+            width: 50px;
         }
 
         #hamPortfolioUnderline{
-            width: 88px;
+            width: 76px;
         }
 
         #hamAboutUnderline{
-            width: 60px;
+            width: 52px;
         }
 
         #hamContactUnderline{
-            width: 78px;
+            width: 68px;
         }
     /*----------- splash box -----------*/
     #introBox{
@@ -513,7 +522,7 @@
     }
 
     section{
-        padding-top: 150px;
+        padding-top: 115px;
     }
 
     section:last-of-type{
@@ -641,7 +650,7 @@
         width: 50px;
         left: auto;
         right: 10px;
-        bottom: -90px;
+        bottom: -140px;
     }
 
     #CircleOutlineSolid2{
@@ -698,6 +707,7 @@
     .projects a img{
         width: 15px;
     }
+    
     /*----------- About Me -----------*/
     #aboutParagraph{
         font-size: 12pt;
@@ -706,7 +716,7 @@
 
     h3{
         font-size: 20pt;
-        margin-bottom: 70px;
+        margin-bottom: 15px;
         margin-top: 0;
     }
 
@@ -722,12 +732,14 @@
     #wavyArrows{
         display: block;
         width: 150px;
-        margin: 10px 0 10px 0;
+        margin: 20px 0 20px 0;
     }
     
     #langs{
         height: 450px;
-        width: 100%;
+        width: 230px;
+        flex: wrap;
+        margin: 0 auto;
     }
     
     .langGroup{
@@ -772,7 +784,7 @@
 
     /*----------- Contact -----------*/
     #contact{
-        height: 550px;
+        height: 500px;
     }
     
     #contactOutline{

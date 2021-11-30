@@ -1,55 +1,55 @@
 'use strict'
 
 // --------------------- Title Typing Animation -------------------------
-var i = 0;
-var text = 'hi, i\'m jennifer';
-var typeSpeed = 115;
-let typeTime = 0;
-let delay;
-let totalRuntime = 0;
+// var i = 0;
+// var text = 'hi, i\'m jennifer';
+// var typeSpeed = 115;
+// let typeTime = 0;
+// let delay;
+// let totalRuntime = 0;
 
-let typeTimeoutID;
-let postTypePauseID;
-let deleteTimeoutID;
-let postDeletePauseID;
-let iterationDelayID;
+// let typeTimeoutID;
+// let postTypePauseID;
+// let deleteTimeoutID;
+// let postDeletePauseID;
+// let iterationDelayID;
 
 
-async function typeWriter() {
-    clearTimeout(typeTimeoutID);
-    let numLetters = text.length;
-    typeTime = numLetters * typeSpeed;
-    delay = typeTime + 1500;
-    totalRuntime = typeTime + delay + typeTime + delay;
+// async function typeWriter() {
+//     clearTimeout(typeTimeoutID);
+//     let numLetters = text.length;
+//     typeTime = numLetters * typeSpeed;
+//     delay = typeTime + 1500;
+//     totalRuntime = typeTime + delay + typeTime + delay;
 
-    if (i < text.length) {
-        document.querySelector('.introWords').innerHTML += text.charAt(i);
-        i++;
-        typeTimeoutID = setTimeout(typeWriter, typeSpeed);
-    }
-    await new Promise(resolve => postTypePauseID = setTimeout(resolve, (delay + 500)));
-}
+//     if (i < text.length) {
+//         document.querySelector('.introWords').innerHTML += text.charAt(i);
+//         i++;
+//         typeTimeoutID = setTimeout(typeWriter, typeSpeed);
+//     }
+//     await new Promise(resolve => postTypePauseID = setTimeout(resolve, (delay + 500)));
+// }
 
-async function deleting() {
-    clearTimeout(deleteTimeoutID);
-    let textCopy = text;
-    if (i > 0) {
-        textCopy = textCopy.slice(0, (i-1));
-        document.querySelector('.introWords').innerHTML = textCopy;
-        i--;
-        deleteTimeoutID = setTimeout(deleting, typeSpeed);
-    }
-    await new Promise(resolve => postDeletePauseID = setTimeout(resolve, delay));
-}
+// async function deleting() {
+//     clearTimeout(deleteTimeoutID);
+//     let textCopy = text;
+//     if (i > 0) {
+//         textCopy = textCopy.slice(0, (i-1));
+//         document.querySelector('.introWords').innerHTML = textCopy;
+//         i--;
+//         deleteTimeoutID = setTimeout(deleting, typeSpeed);
+//     }
+//     await new Promise(resolve => postDeletePauseID = setTimeout(resolve, delay));
+// }
 
-async function typeAndDelete(){
-    await typeWriter();
-    //await new Promise(resolve => setTimeout(resolve, (delay + 500)));
-    await deleting();
-    //await new Promise(resolve => setTimeout(resolve, delay));
-    iterationDelayID = setTimeout(typeAndDelete, 500);
+// async function typeAndDelete(){
+//     await typeWriter();
+//     //await new Promise(resolve => setTimeout(resolve, (delay + 500)));
+//     await deleting();
+//     //await new Promise(resolve => setTimeout(resolve, delay));
+//     iterationDelayID = setTimeout(typeAndDelete, 500);
     //requestAnimationFrame(typeAndDelete);
-}
+//}
 //typeAndDelete();
 
 
@@ -163,23 +163,23 @@ let navLinksDivs = document.querySelectorAll('nav a div');
 
 //set initial section heights
 let portfolioSection = sections[1];
-let portfolioOffset = portfolioSection.offsetTop;
+let portfolioOffset = portfolioSection.offsetTop - 100;
 //console.log(`portfolioOffset: ${portfolioOffset}`);
 
 let aboutSection = sections[2];
-let aboutOffset = aboutSection.offsetTop;
+let aboutOffset = aboutSection.offsetTop - 100;
 //console.log(`aboutSectionOffset: ${aboutOffset}`);
 
 let contactSection = sections[3];
-let contactOffset = contactSection.offsetTop;
+let contactOffset = contactSection.offsetTop - 100;
 //console.log(`contactSectionOffset: ${contactOffset}`);
 
 
 //listen for window resizing & update section heights accordingly
 window.addEventListener('resize', function() {
-    portfolioOffset = portfolioSection.offsetTop;
-    aboutOffset = aboutSection.offsetTop;
-    contactOffset = contactSection.offsetTop;
+    portfolioOffset = portfolioSection.offsetTop - 100;
+    aboutOffset = aboutSection.offsetTop - 100;
+    contactOffset = contactSection.offsetTop - 100;
 })
 
 //set underline starting positions
