@@ -889,10 +889,12 @@ h5:first-of-type{
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 600;
     background-color: var(--baseYellow);
-    padding: 12px 10px;
+    /* padding: 12px 10px; */
+    padding: auto;
     border: 2px solid black;
     margin-top: 2%;
     width: 100px;
+    height: 50px;
     border-radius: 0%;
     transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
