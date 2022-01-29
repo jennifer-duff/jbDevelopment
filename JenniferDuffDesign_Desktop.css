@@ -303,6 +303,8 @@ header nav a div{
 }
 
 #splashList{
+    appearance: none;
+    -webkit-appearance: none;
     font-family: "Helvetica";
     font-size: 22pt;
     list-style-type: none;
@@ -316,6 +318,8 @@ header nav a div{
 }
 
 #splashList li{
+    appearance: none;
+    -webkit-appearance: none;
     text-decoration: 2px solid underline black;
 }
 
@@ -743,6 +747,7 @@ h3{
 
 .stackSubHeading{
     appearance: none;
+    -webkit-appearance: none;
     font-family: var(--sansSerifFont);;
     font-size: 16pt;
     font-weight: 600;
@@ -968,6 +973,7 @@ h3{
 
 #submitButton {
     appearance: none;
+    -webkit-appearance: none;
     font-size: 14pt;
     text-align: center;
     font-family: var(--sansSerifFont);;
