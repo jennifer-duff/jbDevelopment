@@ -82,23 +82,24 @@
 // })
 
 // --------------------- H2 SlideIn Animation Trigger -------------------------
-const h2s = document.querySelectorAll('.h2Wrapper');
+const headings = document.querySelectorAll('.headingWrapper');
+//const h3s = document.
 
 function callback (entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting){
-            entry.target.childNodes[1].classList.add('h2Animation');
+            entry.target.childNodes[1].classList.add('headingAnimation');
             return;
         }
-        entry.target.childNodes[1].classList.remove('h2Animation');
+        entry.target.childNodes[1].classList.remove('headingAnimation');
     })
 }
 
 const observer = new IntersectionObserver(callback);
 
-for (let i = 0; i < h2s.length; i++)
+for (let i = 0; i < headings.length; i++)
 {
-    observer.observe(h2s[i]);
+    observer.observe(headings[i]);
 }
 
 // --------------------- Hamburger Nav -------------------------
@@ -163,23 +164,23 @@ let navLinksDivs = document.querySelectorAll('nav a div');
 
 //set initial section heights
 let portfolioSection = sections[1];
-let portfolioOffset = portfolioSection.offsetTop - 100;
+let portfolioOffset = portfolioSection.offsetTop - 200;
 //console.log(`portfolioOffset: ${portfolioOffset}`);
 
 let aboutSection = sections[2];
-let aboutOffset = aboutSection.offsetTop - 100;
+let aboutOffset = aboutSection.offsetTop - 200;
 //console.log(`aboutSectionOffset: ${aboutOffset}`);
 
 let contactSection = sections[3];
-let contactOffset = contactSection.offsetTop - 100;
+let contactOffset = contactSection.offsetTop - 200;
 //console.log(`contactSectionOffset: ${contactOffset}`);
 
 
 //listen for window resizing & update section heights accordingly
 window.addEventListener('resize', function() {
-    portfolioOffset = portfolioSection.offsetTop - 100;
-    aboutOffset = aboutSection.offsetTop - 100;
-    contactOffset = contactSection.offsetTop - 100;
+    portfolioOffset = portfolioSection.offsetTop - 200;
+    aboutOffset = aboutSection.offsetTop - 200;
+    contactOffset = contactSection.offsetTop - 200;
 })
 
 //set underline starting positions
@@ -196,7 +197,7 @@ for (let i = 0; i < navLinksDivs.length; i++)
     backToTop.style.opacity = 0;
 }
 
-//listen for scrolling and change underline accordingly
+//listen for scrolling and change nav underline accordingly
 window.addEventListener('scroll', function(){
     let currScrollPos = window.scrollY;
 
@@ -269,3 +270,85 @@ window.addEventListener('scroll', function(){
         backToTop.style.opacity = 1;
     }
 })
+
+
+//------------------- Portfolio Links ------------------------
+const linksContainers = document.querySelectorAll('.linksContainer');
+const githubLinks = document.querySelectorAll('.githubLink');
+const viewLiveLinks = document.querySelectorAll('.viewLive');
+const learnMoreLinks = document.querySelectorAll('.learnMore');
+const linksLabelDivs = document.querySelectorAll('.linksLabelDiv');
+const linkTexts = document.querySelectorAll('.linkText');
+const triangles = document.querySelectorAll('.triangle');
+
+function findParent(event){
+    let parent = event.target.parentElement;
+    let index;
+    for (let i = 0; i < linksContainers.length; i ++){
+        if (linksContainers[i] === parent){
+            index = i;
+            console.log(index);
+            return index;
+        }
+    }
+}
+
+
+function viewLiveHover(event){
+    console.log(event.target);
+    let index = findParent(event);
+    linksLabelDivs[index].style.display = 'flex';
+    triangles[index].style.left = "1px";
+    linkTexts[index].innerText = 'see live';
+}
+
+function viewLiveExit(event){
+    let index = findParent(event);
+    linksLabelDivs[index].style.display = 'none';
+}
+
+for (let i = 0; i < viewLiveLinks.length; i++){
+    viewLiveLinks[i].addEventListener('mouseover', viewLiveHover);
+    viewLiveLinks[i].addEventListener('mouseout', viewLiveExit);
+}
+
+function viewLiveExit(event){
+    console.log('leaving target');
+    let index = findParent(event);
+    linksLabelDivs[index].style.display = 'none';
+}
+
+function learnMoreHover(event){
+    let index = findParent(event);
+    linksLabelDivs[index].style.display = 'flex';
+    triangles[index].style.left = "33px";
+    linkTexts[index].innerText = 'learn more';
+}
+ 
+function learnMoreExit(event){
+    let index = findParent(event);
+    linksLabelDivs[index].style.display = 'none';
+}
+
+for (let i = 0; i < githubLinks.length; i++){
+    learnMoreLinks[i].addEventListener('mouseover', learnMoreHover);
+    learnMoreLinks[i].addEventListener('mouseout', learnMoreExit);
+}
+
+function gitHubHover(event){
+    console.log(event.target);
+    let index = findParent(event);
+    linksLabelDivs[index].style.display = 'flex';
+    triangles[index].style.left = "65px";
+    linkTexts[index].innerText = 'view on GitHub';
+}
+
+function gitHubExit(event){
+    let index = findParent(event);
+    linksLabelDivs[index].style.display = 'none';
+}
+
+for (let i = 0; i < githubLinks.length; i++){
+    githubLinks[i].addEventListener('mouseover', gitHubHover);
+    githubLinks[i].addEventListener('mouseout', gitHubExit);
+}

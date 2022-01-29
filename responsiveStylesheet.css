@@ -1,4 +1,4 @@
-@media (max-width: 1850px) {
+/* @media (max-width: 1850px) {
     .projectTitle {
         font-size: 35pt;
     }
@@ -27,7 +27,7 @@
     .projects a img{
         width: 18px;
     }
-}
+} */
 
 @media (max-width: 1600px) {
     .infoContainer{
