@@ -282,7 +282,8 @@ const linkTexts = document.querySelectorAll('.linkText');
 const triangles = document.querySelectorAll('.triangle');
 
 function findParent(event){
-    let parent = event.target.parentElement;
+    let parent = event.target.parentElement.parentElement;
+    console.log(parent);
     let index;
     for (let i = 0; i < linksContainers.length; i ++){
         if (linksContainers[i] === parent){
@@ -295,39 +296,42 @@ function findParent(event){
 
 
 function viewLiveHover(event){
-    console.log(event.target);
+    // console.log(event.target);
     let index = findParent(event);
-    linksLabelDivs[index].style.display = 'flex';
-    triangles[index].style.left = "1px";
+    let triangleIndex = index * 3;
+    linksLabelDivs[index].style.opacity = '1';
+    triangles[triangleIndex].style.opacity = '1';
     linkTexts[index].innerText = 'see live';
 }
 
 function viewLiveExit(event){
     let index = findParent(event);
-    linksLabelDivs[index].style.display = 'none';
+    let triangleIndex = index * 3;
+    triangles[triangleIndex].style.opacity = '0';
+    linksLabelDivs[index].style.opacity = '0';
 }
+
 
 for (let i = 0; i < viewLiveLinks.length; i++){
     viewLiveLinks[i].addEventListener('mouseover', viewLiveHover);
     viewLiveLinks[i].addEventListener('mouseout', viewLiveExit);
 }
 
-function viewLiveExit(event){
-    console.log('leaving target');
-    let index = findParent(event);
-    linksLabelDivs[index].style.display = 'none';
-}
+
 
 function learnMoreHover(event){
     let index = findParent(event);
-    linksLabelDivs[index].style.display = 'flex';
-    triangles[index].style.left = "33px";
+    let triangleIndex = index * 3 + 1;
+    linksLabelDivs[index].style.opacity = '1';
+    triangles[triangleIndex].style.opacity = '1';
     linkTexts[index].innerText = 'learn more';
 }
  
 function learnMoreExit(event){
     let index = findParent(event);
-    linksLabelDivs[index].style.display = 'none';
+    let triangleIndex = index * 3 + 1;
+    triangles[triangleIndex].style.opacity = '0';
+    linksLabelDivs[index].style.opacity = '0';
 }
 
 for (let i = 0; i < githubLinks.length; i++){
@@ -335,17 +339,20 @@ for (let i = 0; i < githubLinks.length; i++){
     learnMoreLinks[i].addEventListener('mouseout', learnMoreExit);
 }
 
+
 function gitHubHover(event){
-    console.log(event.target);
     let index = findParent(event);
-    linksLabelDivs[index].style.display = 'flex';
-    triangles[index].style.left = "65px";
+    let triangleIndex = index * 3 + 2;
+    linksLabelDivs[index].style.opacity = '1';
+    triangles[triangleIndex].style.opacity = '1';
     linkTexts[index].innerText = 'view on GitHub';
 }
 
 function gitHubExit(event){
     let index = findParent(event);
-    linksLabelDivs[index].style.display = 'none';
+    let triangleIndex = index * 3 + 2;
+    triangles[triangleIndex].style.opacity = '0';
+    linksLabelDivs[index].style.opacity = '0';
 }
 
 for (let i = 0; i < githubLinks.length; i++){

@@ -11,8 +11,8 @@ html {
     --drkYellow: #ffbf47;
     --baseYellow: #ffcd70;
     --ltYellow: #ffe2ad;
-    --serifFont: museo-slab, 'Courier New', monospace;
-    --sansSerifFont: "Inter", Arial, sans-serif;
+    --serifFont: 'Azeret Mono', museo-slab, 'Courier New', monospace;
+    --sansSerifFont: "Manrope", Arial, sans-serif;
 }
 
 body {
@@ -32,7 +32,7 @@ main {
 /* section headers */
 h2 {
     font-family: var(--sansSerifFont);;
-    font-weight: 700;
+    font-weight: 900;
     font-style: normal;
     font-size: 45pt;
     line-height: 115%;
@@ -212,7 +212,7 @@ header nav a div{
 .introWords{
     box-sizing: border-box;
     margin: 0 auto 0 0;
-    font-size: 55pt;
+    font-size: 50pt;
     font-weight: 300;
     position: relative;
     top: -53px;
@@ -272,6 +272,7 @@ header nav a div{
     padding: 0;
     font-weight: 300;
     font-size: 0.80rem;
+    letter-spacing: 2px;
     text-decoration: none;
     color: black;
     writing-mode: vertical-lr;
@@ -305,8 +306,9 @@ header nav a div{
 #splashList{
     appearance: none;
     -webkit-appearance: none;
-    font-family: "Helvetica";
-    font-size: 22pt;
+    font-family: var(--sansSerifFont);
+    font-size: 20pt;
+    font-weight: 500;
     list-style-type: none;
     /* text-decoration: 2px underline black; */
     line-height: 55px;
@@ -514,10 +516,10 @@ header nav a div{
 
 .langsList{
     font-size: 10pt;
-    letter-spacing: 1.5px;
+    letter-spacing: 3px;
     font-weight: 300;
     margin: 0;
-    line-height: 100%;
+    line-height: 125%;
 }
 
 /* .stackHeading{
@@ -564,6 +566,19 @@ header nav a div{
 }
 
 
+.linkBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.linkBox:nth-of-type(2){
+    margin-left: 10px;
+    margin-right: 14px;
+}
+
 .projects a{
     box-sizing: border-box;
     display: flex;
@@ -593,8 +608,6 @@ header nav a div{
 
 .learnMore{
     background-image: url("Assets/read_more.svg");
-    margin-left: 10px;
-    margin-right: 14px;
 }
 
 .githubLink{
@@ -636,19 +649,18 @@ header nav a div{
 
 
 .linksLabelDiv{
-    display: none;
-    /* display: flex; */
+    opacity: 0;
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    position: relative;
-    top: 3px;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .triangle{
-    /* display: none; */
+    opacity: 0;
     width: 20px;
-    margin: 0;
-    position: relative;
+    margin: 5px 0 0 0;
+    transition: opacity 0.2s ease-in-out;
     /* left: 12.5px; */
 }
 
@@ -656,8 +668,8 @@ header nav a div{
     font-family: var(--serifFont);
     color: black;
     font-weight: 300;
-    font-size: 10pt;
-    letter-spacing: 1.5px;
+    font-size: 9pt;
+    /* letter-spacing: 1.5px; */
     background-color:rgb(0, 0, 0);
     color: white;
     padding: 5px 9px 6px 9px;
@@ -720,9 +732,10 @@ header nav a div{
 /* ------------------- ABOUT SECTION ------------------- */
 
 #aboutParagraph{
-    font-size: 1.4rem;
-    font-weight: 100;
+    font-size: 14pt;
+    font-weight: 200;
     line-height: 3rem;
+    /* letter-spacing: 2px; */
     margin: 0;
     padding: 0;
 }
@@ -740,6 +753,7 @@ header nav a div{
 h3{
     font-family: var(--sansSerifFont);;
     font-size: 2.25rem;
+    font-weight: 800;
     margin: 0 0 75px 0;
     display: flex;
     justify-content: center;
@@ -783,11 +797,12 @@ h3{
 
 .langsContents ul{
     list-style-type: none;
-    font-weight: 300;
-    font-size: 1.1rem;
+    font-weight: 200;
+    font-size: 12pt;
     line-height: 2.6rem;
     margin: 0;
     padding-left: 0;
+    letter-spacing: 2px;
 }
 
 .borderSquare{
@@ -816,7 +831,7 @@ h3{
 
 #resume h5{
     font-family: var(--sansSerifFont);;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 18pt;
     margin-bottom: 5px;
 }
@@ -874,9 +889,9 @@ h3{
 }
 
 .resumeSubheader{
-    letter-spacing: 0.75px;
+    letter-spacing: 1.5px;
     font-size: 9pt;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 #FM{
@@ -889,7 +904,7 @@ h3{
 
 #resume ul .subBullets{
     font-family: var(--sansSerifFont);
-    font-weight: 300;
+    font-weight: 400;
     font-size: 11pt;
     letter-spacing: 0.25px;
 }
@@ -920,7 +935,7 @@ h3{
     background-color: var(--baseYellow);
     height: 600px;
     width: 75%;
-    font-family: museo-slab, monospace;
+    font-family: svar(--sansSerifFont);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -933,8 +948,9 @@ h3{
 
 .formField{
     margin: 0.5rem 0 3rem 0;
-    font-family: "museo-slab", sans-serif;
+    font-family: var(--serifFont);
     font-weight: 300;
+    letter-spacing: 1px;
     padding: 10px;
     color: black;
     background-color: var(--baseYellow);
@@ -966,7 +982,7 @@ h3{
 }
 
 #contactForm label {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 14pt;
     font-family: var(--sansSerifFont);;
 }
@@ -977,7 +993,7 @@ h3{
     font-size: 14pt;
     text-align: center;
     font-family: var(--sansSerifFont);;
-    font-weight: 600;
+    font-weight: 700;
     background-color: var(--baseYellow);
     /* padding: 12px 10px; */
     padding: auto;
