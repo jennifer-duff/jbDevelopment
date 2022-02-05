@@ -168,6 +168,7 @@
         font-size: 12pt;
         border-left: 1.5px solid black;
         height: 40vh;
+        letter-spacing: 2px;
     }
 
     #checkItOut span{
@@ -615,6 +616,10 @@
         padding-right: 0px;
     }
 
+    #extraUnderline{
+        top: 70px;
+    }
+
     /*----------- Back To Top Button -----------*/
     #backToTopContainer{
        right: 10px;
@@ -968,9 +973,9 @@
         /* display: none; */
     }
 
-    /* #navbar{
-        width: 100%;
-    } */
+    #extraUnderline{
+        top: 65px;
+    }
 
     .introWords{
         font-size: 16pt;
