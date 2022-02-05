@@ -468,7 +468,7 @@ header nav a div{
 
 .projectTitle {
     font-family: var(--sansSerifFont);;
-    font-size: 40pt;
+    font-size: 35pt;
     margin: 0 0 25px 0;
     width: 100%;
     line-height: 100%;
@@ -705,7 +705,7 @@ header nav a div{
 } */
 
 .projects:nth-child(1){
-    background-image: url(Assets/portfolio5_square.jpg);
+    background-image: url(Assets/weatherAppScreenshot.png);
 }
 
 .projects:nth-child(2){
@@ -987,7 +987,7 @@ h3{
 }
 
 .formField::placeholder {
-    color: rgb(62, 64, 66);
+    color: rgb(56, 55, 54);
     opacity: 1;
 }
 
@@ -1002,7 +1002,7 @@ h3{
     -webkit-appearance: none;
     font-size: 14pt;
     text-align: center;
-    font-family: var(--sansSerifFont);;
+    font-family: var(--sansSerifFont);
     font-weight: 700;
     background-color: var(--baseYellow);
     /* padding: 12px 10px; */
