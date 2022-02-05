@@ -401,7 +401,7 @@
     }
 
     #hamburgerNav{
-        position: absolute;
+        position: fixed;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
@@ -414,7 +414,7 @@
         height: auto;
         background-color: white;
         box-shadow: 10px 10px 0 rgb(105, 105, 105);
-        z-index: 3;
+        z-index: 4;
     }
 
     #hamburgerNav a{
@@ -443,10 +443,10 @@
     #hamburgerNav div{
         /* background-color: var(--drkYellow);  */
         height: 7px;
-        top: 0px;
+        top: -2px;
         padding: 0;
         position: relative;
-        z-index: -1;
+        /* z-index: -1; */
         transition: opacity 0.3s ease-in-out;
     }
 
@@ -676,15 +676,20 @@
         margin: 50px 0 0 0;
     }
 
-    #verticalLine{
+    /* #verticalLine{
         width: 2px;
         position: relative;
         z-index: 1;
-    }
+    } */
 
     #checkItOut{
         font-size: 9pt;
-
+        top: 0px;
+        margin: 0;
+        border-left: 1.5px solid black;
+        height: 35vh;
+        letter-spacing: 2px;
+    
     }
 
     #checkItOut span{
@@ -697,7 +702,7 @@
         width: 90%;
         padding-left: 20px;
         align-self: flex-start;
-        margin: 125px 0 0 0;
+        margin: 100px 0 0 0;
     }
 
     #RectangleCircleOutline{
@@ -708,14 +713,9 @@
 
     #CircleOutlineSolid1{
         width: 50px;
-        bottom: -5vh;
+        bottom: -10vh;
         left: 35px;
         z-index: -1;
-    }
-
-    #verticalLine{
-        width: 2px;
-        
     }
 
     /*----------- Portfolio -----------*/

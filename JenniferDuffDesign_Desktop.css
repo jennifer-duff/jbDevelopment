@@ -101,11 +101,12 @@ button:active {
 }
 
 #extraUnderline{
-    width: 100%;
+    width: 110%;
     background-color: #ffbf47;
     height: 1px;
     position: fixed;
     top: 80px;
+    left: -10px;
     z-index: 2;
 }
 
