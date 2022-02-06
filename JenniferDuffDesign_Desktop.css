@@ -442,20 +442,17 @@ header nav a div{
     box-shadow: 15px 15px 0 rgb(150, 150, 150);
 }
 
-.infoContainer{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
 .projects:hover .infoContainer{
     opacity: 0.96;
     cursor: default;
 }
 
 .infoContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
     transition: opacity 0.4s ease-in-out;
     height: 24vw;
     padding: 10%;
@@ -468,61 +465,16 @@ header nav a div{
 
 .projectTitle {
     font-family: var(--sansSerifFont);;
-    font-size: 35pt;
-    margin: 0 0 25px 0;
+    font-size: 30pt;
+    margin: 0 0 30px 0;
     width: 100%;
     line-height: 100%;
-    /* grid-area: title; */
 }
-
-.projectDescription {
-    font-size: 14pt;
-    line-height: 115%;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    width: 100%;
-    /* position: relative;
-    top: -20px;
-    grid-area: description; */
-    /* font-family: var(--sansSerifFont);; */
-}
-
-/* .lowerTile{
-    display: grid;
-    grid-template-areas: 
-        "a b";
-    height: 150px;
-} */
-
-/* .projectLangs, .linksContainer{
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0;
-    width: 100%;
-} */
 
 .projectLangs{
-    /* border: 1px solid black; */
-    /* display: inline-block; */
-    /* grid-area: langs; */
-    /* text-align: left; */
-    /* padding: 10px; */
-    /* font-family: var(--sansSerifFont);;   */
-    margin: 0px 0 5px 0;
+    margin: 0;
     flex-wrap: wrap;
-    /* border: 1px solid black; */
 }
-
-/* .stackHeader{
-    padding: 0;
-    font-family: var(--sansSerifFont);;
-    font-weight: 600;
-    font-size: 12pt;
-    margin: 0 0 3px 0;
-    width: 100%;
-} */
 
 .langsList{
     font-size: 10pt;
@@ -532,84 +484,29 @@ header nav a div{
     line-height: 125%;
 }
 
-/* .stackHeading{
-    margin: 0 0 -3px 0;
-    padding: 0;
-    font-family: var(--sansSerifFont);;
-    font-weight: 600;
-    font-size: 12.5pt;
-}
-
-.stackUL{
-    font-size: 10.5pt;
-    font-weight: 300;
-    list-style-type: "> ";
-    padding-left: 10px;
-}
-
-.stackUL li{
-    padding-bottom: 15px;
-    line-height: 100%;
-}
-
-.stackUL li:last-of-type{
-    padding-bottom: 0px;
-} */
-
-
 .linksContainer{
-    /* border: 1px solid black; */
-    display: flex;
-    /* grid-area: links; */
-    box-sizing: border-box;
-    /* margin-top: 10px; */
-    width: auto;
-    height: auto;
-    margin-top: 15px;
-        /* width: 200px;
-    height: 30px; */
-    /* padding: 15px; */
-    /* justify-content: flex-start;
-    align-items: center; */
-    /* background-color: rgb(153, 153, 153); */
-    /* height: 150px; */
-}
-
-
-.linkBox{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     box-sizing: border-box;
-}
-
-.linkBox:nth-of-type(2){
-    margin-left: 10px;
-    margin-right: 14px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .projects a{
     box-sizing: border-box;
-    display: flex;
-    /* flex-direction: column; */
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
     text-decoration: none;
-    /* padding: 5px 0; */
-    flex-wrap: nowrap;
     text-align: left;
-    height: 20px;
-    width: 20px;
-    /* font-family: var(--sansSerifFont);; */
-    /* border: 1px solid black; */
-    /* padding: 10px; */
+    height: 34px;
+    width: 34px;
     background-clip: padding-box;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     transition: transform 0.2s ease-in-out;
+    margin: 0 0 0 2.5px;
 }
 
 .viewLive{
@@ -624,85 +521,60 @@ header nav a div{
     background-image: url("Assets/GitHub_icon.png");
 }
 
-.projects a:nth-of-type(2){
-    border-right: none;
-    border-left: none;
-}
-
-/* .projects a span{
-    transition: text-decoration 0.2s ease-in-out;
-} */
-
-/* .projects a img{
-    height: 20px;
-    opacity: 0.8;
-    vertical-align: middle;
-    transition: transform 0.2s ease-in-out;
-    position: relative;
-} */
-
 .projects a:hover{
     transform: scale(1.2);
 }
 
-/* .projects a:hover span,
-.projects a:active span,
-.projects a:focus span{
-    color: black;
-    text-decoration: underline solid 2.5px black;
+.linkBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2.5px 0;
+    height: auto;
 }
 
-.projects a:visited span{
-    color: rgb(71, 71, 71);
-    text-decoration: underline solid 2.5px  rgb(105, 105, 105);
-} */
+.linkBox:first-of-type{
+    padding-top: 0;
+}
 
+.linkBox:last-of-type{
+    padding-bottom: 0;
+}
 
 .linksLabelDiv{
-    opacity: 0;
+    opacity: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
     transition: opacity 0.2s ease-in-out;
+    width: 100%;
 }
 
 .triangle{
-    opacity: 0;
-    width: 20px;
-    margin: 5px 0 0 0;
+    opacity: 0.95;
+    height: 8px;
+    transform: rotate(90deg);
     transition: opacity 0.2s ease-in-out;
+    margin: 0 0 0px -4.75px;
     /* left: 12.5px; */
 }
 
 .linkText{
     font-family: var(--serifFont);
-    color: black;
     font-weight: 300;
-    font-size: 9pt;
-    /* letter-spacing: 1.5px; */
+    font-size: 8pt;
     background-color:rgb(0, 0, 0);
     color: white;
     padding: 5px 9px 6px 9px;
+    margin: 0 0 1px 0;
+    opacity: 0.95;
 }
 
 
-/* .carrot{
-    font-weight: 700;
-}
-
-.githubLink{
-    width: 35%;
-    margin: 0;
-}
-
-.viewLive{
-    width: 23%;
-    margin: 10px 0;
-}
-
-.learnMore{
-    width: 29%;
-} */
 
 .projects:nth-child(1){
     background-image: url(Assets/weatherAppScreenshot.png);
@@ -860,23 +732,24 @@ h3{
 
 .resumeUnderline:nth-of-type(1)
 {
-    width: 117px;
+    width: 123px;
 }
 
 .resumeUnderline:nth-of-type(2)
 {
-    width: 195px;
+    width: 199px;
 }
 
 .resumeUnderline:nth-of-type(3)
 {
-    width: 155px;
+    width: 167px;
 }
 
 .resumeUnderline:nth-of-type(4)
 {
-    width: 63px;
+    width: 67px;
 }
+
 
 #resume ul{
     line-height: 150%;
@@ -1005,7 +878,7 @@ h3{
     font-family: var(--sansSerifFont);
     font-weight: 700;
     background-color: var(--baseYellow);
-    /* padding: 12px 10px; */
+    padding: 0 0 2px 0;
     padding: auto;
     border: 2px solid black;
     margin-top: 2%;
@@ -1059,6 +932,11 @@ footer{
 
 #footerFullLogo{
     width: 250px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#footerFullLogo:hover{
+    transform: scale(1.05);
 }
 
 footer nav {

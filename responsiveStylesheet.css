@@ -1,35 +1,5 @@
-/* @media (max-width: 1850px) {
-    .projectTitle {
-        font-size: 35pt;
-    }
-
-    .projectDescription{
-        font-size: 12pt;
-    }
-
-    .projectLangs{
-        margin: 2.5% 0;
-    }
-
-    .stackHeader{
-        font-size: 11pt;
-    }
-
-    .langsList{
-        font-size: 10pt;
-    }
-
-    .projects a{
-        font-size: 11pt;
-        padding: 2px 0;
-    }
-
-    .projects a img{
-        width: 18px;
-    }
-} */
-
-@media (max-width: 1618px) {
+@media (max-width: 1785px) {
+    /*----------- splash box -----------*/
     .introWords{
         font-size: 40pt;
     }
@@ -38,33 +8,18 @@
         font-size: 18pt;
     }
 
+
+    /*----------- Portfolio Section -----------*/
     .infoContainer{
         padding: 7%;
     }
 
     .projectTitle {
-        font-size: 32pt;
-    }
-
-    .projectDescription{
-        font-size: 11pt;
-    }
-
-    .stackHeader{
-        font-size: 10.5pt;
+        font-size: 27pt;
     }
 
     .langsList{
-        font-size: 9.5pt;
-    }
-
-    .projects a{
-        font-size: 10pt;
-        padding: 1px 0;
-    }
-
-    .projects a img{
-        width: 16px;
+        font-size: 9pt;
     }
 }
 
@@ -100,28 +55,12 @@
     }
 
     .projectTitle {
-        font-size: 40pt;
-    }
-
-    .projectDescription{
-        font-size: 13pt;
-    }
-
-    .stackHeader{
-        font-size: 12pt;
+        font-size: 35pt;
+        margin: 0 0 40px 0;
     }
 
     .langsList{
         font-size: 11pt;
-    }
-
-    .projects a{
-        font-size: 12pt;
-        padding: 2px 0;
-    }
-
-    .projects a img{
-        width: 20px;
     }
 }
 
@@ -157,9 +96,7 @@
     }
 
     #verticalLine{
-        /* height: 35vh; */
         display: none;
-        /* margin-top: -100px; */
     }
 
     #checkItOut{
@@ -192,7 +129,19 @@
         right: 50px;
     }
 
-/* ------- About Section -------*/
+
+    /* ------- Portfolio Section -------*/
+    .projectTitle {
+        font-size: 30pt;
+        margin: 0 0 30px 0;
+    }
+
+    .langsList{
+        font-size: 10pt;
+    }
+
+
+    /* ------- About Section -------*/
     #arrows{
         width: 250px;
         /* margin-top: 20px */
@@ -216,16 +165,7 @@
 
     /* ------- Portfolio Section -------*/
     .projectTitle {
-        font-size: 32pt;
-    }
-
-    .projectDescription{
-        font-size: 12pt;
-        margin: 5px 0 0 0;
-    }
-
-    .stackHeader{
-        font-size: 11pt;
+        font-size: 25pt;
     }
 
     .projectLangs{
@@ -233,27 +173,49 @@
     }
 
     .langsList{
-        font-size: 10pt;
+        font-size: 9pt;
     }
 
-    .linksContainer{
-        padding: 10px 15px;
+    .linkBox{
+        padding: 0px;
     }
 
     .projects a{
-        font-size: 11pt;
-        padding: 0;
-        letter-spacing: 0px;
+        height: 30px;
+        width: 30px;
     }
 
-    .projects a img{
-        width: 18px;
+    .linkText{
+        font-size: 7.5pt;
+        padding: 5px 8px 5px 8px;
     }
+
 
     /* ------- About Section -------*/
     #arrows{
         width: 225px;
     }
+
+    /* .resumeUnderline:nth-of-type(1)
+    {
+        width: 123px;
+    }
+
+    .resumeUnderline:nth-of-type(2)
+    {
+        width: 199px;
+    }
+
+    .resumeUnderline:nth-of-type(3)
+    {
+        width: 167px;
+    }
+
+    .resumeUnderline:nth-of-type(4)
+    {
+        width: 67px;
+    } */
+
 
     /* ------- Contact Section -------*/
     #contactForm{
@@ -265,7 +227,7 @@
     }
 }
 
-@media (max-width: 845px) {
+@media (max-width: 870px) {
     /*----------- splash box -----------*/
     #introBox{
         align-self: flex-end;
@@ -309,38 +271,25 @@
 
     .projectTitle {
         font-size: 45pt;
-        margin-bottom: -40px;
-    }
-
-    .projectDescription{
-        font-size: 14pt;
-        margin: 5px 0 0 0;
-    }
-
-    .stackHeader{
-        font-size: 13pt;
-    }
-
-    .projectLangs{
-        margin: 5px 0;
+        margin: 0 0 50px 0;
     }
 
     .langsList{
         font-size: 12pt;
     }
 
-    .linksContainer{
-        padding: 15px;
+    .linkBox{
+        padding: 5px;
+    }
+
+    .linkText{
+        font-size: 10pt;
+        padding: 6px 11px 6px 11px;
     }
 
     .projects a{
-        font-size: 13pt;
-        padding: 10px 0;
-        letter-spacing: 0px;
-    }
-
-    .projects a img{
-        width: 20px;
+        height: 34px;
+        width: 34px;
     }
 
     /* ------- About Section -------*/
@@ -366,8 +315,6 @@
         width: 250px;
         height: 250px;
         margin: 0;
-        /* margin-top: -25px;
-        margin-right: 13px; */
     }
 
     .langsContents{
@@ -377,6 +324,27 @@
         top: -275px;
         padding: 18%;
     }
+
+    /* .resumeUnderline:nth-of-type(1)
+    {
+        width: 123px;
+    }
+
+    .resumeUnderline:nth-of-type(2)
+    {
+        width: 199px;
+    }
+
+    .resumeUnderline:nth-of-type(3)
+    {
+        width: 167px;
+    }
+
+    .resumeUnderline:nth-of-type(4)
+    {
+        width: 67px;
+    } */
+
 }
 
 @media (max-width: 650px) {
@@ -451,19 +419,19 @@
     }
 
         #hamHomeUnderline{
-            width: 50px;
+            width: 53px;
         }
 
         #hamPortfolioUnderline{
-            width: 76px;
+            width: 81px;
         }
 
         #hamAboutUnderline{
-            width: 52px;
+            width: 54px;
         }
 
         #hamContactUnderline{
-            width: 68px;
+            width: 73px;
         }
 
     /*----------- splash box -----------*/
@@ -497,13 +465,20 @@
 
     /* ------- Portfolio Section -------*/
     .projectTitle {
-        font-size: 35pt;
-        margin-bottom: -10px;
+        font-size: 30pt;
     }
 
-    .projects a{
-        padding: 5px 0;
-        letter-spacing: 0px;
+    .langsList{
+        font-size: 10pt;
+    }
+
+    .linkBox{
+        padding: 1px;
+    }
+
+    .linkText{
+        font-size:8pt;
+        padding: 5px 8px 5px 8px;
     }
 
     /* ------- About Section -------*/
@@ -562,6 +537,26 @@
         padding-left: 5%;
     }
 
+    /* .resumeUnderline:nth-of-type(1)
+    {
+        width: 123px;
+    }
+
+    .resumeUnderline:nth-of-type(2)
+    {
+        width: 199px;
+    }
+
+    .resumeUnderline:nth-of-type(3)
+    {
+        width: 167px;
+    }
+
+    .resumeUnderline:nth-of-type(4)
+    {
+        width: 67px;
+    } */
+
     /* ------- Footer -------*/
     #footerOutline2{
         flex-wrap: wrap;
@@ -578,7 +573,7 @@
     
 }
 
-@media (max-width: 475px) {
+@media (max-width: 511px) {
     /*----------- General -----------*/
     main{
         padding: 5vw;
@@ -665,8 +660,6 @@
         border-right: 2px solid black;
         top: -19px;
         letter-spacing: 0.75px;
-        /* positioN: static; */
-        /* height: 150%; */
         line-height: 115%;
     }
 
@@ -676,12 +669,6 @@
         margin: 50px 0 0 0;
     }
 
-    /* #verticalLine{
-        width: 2px;
-        position: relative;
-        z-index: 1;
-    } */
-
     #checkItOut{
         font-size: 9pt;
         top: 0px;
@@ -690,7 +677,6 @@
         border-left: 1.5px solid black;
         height: 35vh;
         letter-spacing: 2px;
-    
     }
 
     #checkItOut span{
@@ -747,39 +733,22 @@
         height: 83vw;
     }
 
-
     .projectTitle{
         font-size: 25pt;
-        margin-bottom: 0;
-    }
-
-    .projectDescription{
-        font-size: 10pt;
-    }
-
-    .projectLangs{
-        padding: 8px;
-    }
-
-    .stackHeader{
-        font-size: 9pt;
-        margin-bottom: -1px;
+        margin: 0 0 20px 0;
     }
 
     .langsList{
-        font-size: 9pt;
+        font-size: 8pt;
     }
 
-    .linksContainer{
-        padding: 8px;
+    .linkBox{
+        padding: 1px 0;
     }
 
-    .linksContainer a{
-        font-size: 9pt;
-    }
-
-    .projects a img{
-        width: 15px;
+    .projects a{
+        width: 25px;
+        height: 25px;
     }
     
     /*----------- About Me -----------*/
@@ -963,8 +932,8 @@
 
 }
 
-@media (max-width: 325px) {
-
+@media (max-width: 330px) {
+    /*----------- Header -----------*/
     #navbar{
         width: 100%;
     }
@@ -982,6 +951,7 @@
         top: 65px;
     }
 
+    /*----------- splash box -----------*/
     .introWords{
         font-size: 16pt;
         letter-spacing: 0.7;
@@ -997,5 +967,28 @@
 
     #resume{
         width: 85%;
+    }
+
+    /*----------- Portfolio -----------*/
+    .projectTitle{
+        font-size: 18pt;
+        margin: 0 0 10px 0;
+    }
+
+    .langsList{
+        font-size: 7pt;
+    }
+
+    .linkBox{
+        padding: 1px 0;
+    }
+
+    .linkText{
+        font-size: 7pt;
+    }
+
+    .projects a{
+        width: 25px;
+        height: 25px;
     }
 }

@@ -273,89 +273,89 @@ window.addEventListener('scroll', function(){
 
 
 //------------------- Portfolio Links ------------------------
-const linksContainers = document.querySelectorAll('.linksContainer');
-const githubLinks = document.querySelectorAll('.githubLink');
-const viewLiveLinks = document.querySelectorAll('.viewLive');
-const learnMoreLinks = document.querySelectorAll('.learnMore');
-const linksLabelDivs = document.querySelectorAll('.linksLabelDiv');
-const linkTexts = document.querySelectorAll('.linkText');
-const triangles = document.querySelectorAll('.triangle');
+// const linksContainers = document.querySelectorAll('.linksContainer');
+// const githubLinks = document.querySelectorAll('.githubLink');
+// const viewLiveLinks = document.querySelectorAll('.viewLive');
+// const learnMoreLinks = document.querySelectorAll('.learnMore');
+// const linksLabelDivs = document.querySelectorAll('.linksLabelDiv');
+// const linkTexts = document.querySelectorAll('.linkText');
+// const triangles = document.querySelectorAll('.triangle');
 
-function findParent(event){
-    let parent = event.target.parentElement.parentElement;
-    console.log(parent);
-    let index;
-    for (let i = 0; i < linksContainers.length; i ++){
-        if (linksContainers[i] === parent){
-            index = i;
-            console.log(index);
-            return index;
-        }
-    }
-}
-
-
-function viewLiveHover(event){
-    // console.log(event.target);
-    let index = findParent(event);
-    let triangleIndex = index * 3;
-    linksLabelDivs[index].style.opacity = '1';
-    triangles[triangleIndex].style.opacity = '1';
-    linkTexts[index].innerText = 'see live';
-}
-
-function viewLiveExit(event){
-    let index = findParent(event);
-    let triangleIndex = index * 3;
-    triangles[triangleIndex].style.opacity = '0';
-    linksLabelDivs[index].style.opacity = '0';
-}
+// function findParent(event){
+//     let parent = event.target.parentElement.parentElement;
+//     console.log(parent);
+//     let index;
+//     for (let i = 0; i < linksContainers.length; i ++){
+//         if (linksContainers[i] === parent){
+//             index = i;
+//             console.log(index);
+//             return index;
+//         }
+//     }
+// }
 
 
-for (let i = 0; i < viewLiveLinks.length; i++){
-    viewLiveLinks[i].addEventListener('mouseover', viewLiveHover);
-    viewLiveLinks[i].addEventListener('mouseout', viewLiveExit);
-}
+// function viewLiveHover(event){
+//     // console.log(event.target);
+//     let index = findParent(event);
+//     let triangleIndex = index * 3;
+//     linksLabelDivs[index].style.opacity = '1';
+//     triangles[triangleIndex].style.opacity = '1';
+//     linkTexts[index].innerText = 'see live';
+// }
+
+// function viewLiveExit(event){
+//     let index = findParent(event);
+//     let triangleIndex = index * 3;
+//     triangles[triangleIndex].style.opacity = '0';
+//     linksLabelDivs[index].style.opacity = '0';
+// }
+
+
+// for (let i = 0; i < viewLiveLinks.length; i++){
+//     viewLiveLinks[i].addEventListener('mouseover', viewLiveHover);
+//     viewLiveLinks[i].addEventListener('mouseout', viewLiveExit);
+// }
 
 
 
-function learnMoreHover(event){
-    let index = findParent(event);
-    let triangleIndex = index * 3 + 1;
-    linksLabelDivs[index].style.opacity = '1';
-    triangles[triangleIndex].style.opacity = '1';
-    linkTexts[index].innerText = 'learn more';
-}
+// function learnMoreHover(event){
+//     let index = findParent(event);
+//     let triangleIndex = index * 3 + 1;
+//     linksLabelDivs[index].style.opacity = '1';
+//     triangles[triangleIndex].style.opacity = '1';
+//     linkTexts[index].innerText = 'learn more';
+// }
  
-function learnMoreExit(event){
-    let index = findParent(event);
-    let triangleIndex = index * 3 + 1;
-    triangles[triangleIndex].style.opacity = '0';
-    linksLabelDivs[index].style.opacity = '0';
-}
+// function learnMoreExit(event){
+//     let index = findParent(event);
+//     let triangleIndex = index * 3 + 1;
+//     triangles[triangleIndex].style.opacity = '0';
+//     linksLabelDivs[index].style.opacity = '0';
+// }
 
-for (let i = 0; i < githubLinks.length; i++){
-    learnMoreLinks[i].addEventListener('mouseover', learnMoreHover);
-    learnMoreLinks[i].addEventListener('mouseout', learnMoreExit);
-}
+// for (let i = 0; i < githubLinks.length; i++){
+//     learnMoreLinks[i].addEventListener('mouseover', learnMoreHover);
+//     learnMoreLinks[i].addEventListener('mouseout', learnMoreExit);
+// }
 
 
-function gitHubHover(event){
-    let index = findParent(event);
-    let triangleIndex = index * 3 + 2;
-    linksLabelDivs[index].style.opacity = '1';
-    triangles[triangleIndex].style.opacity = '1';
-    linkTexts[index].innerText = 'view on GitHub';
-}
+// function gitHubHover(event){
+//     let index = findParent(event);
+//     let triangleIndex = index * 3 + 2;
+//     linksLabelDivs[index].style.opacity = '1';
+//     triangles[triangleIndex].style.opacity = '1';
+//     linkTexts[index].innerText = 'view on GitHub';
+// }
 
-function gitHubExit(event){
-    let index = findParent(event);
-    let triangleIndex = index * 3 + 2;
-    triangles[triangleIndex].style.opacity = '0';
-    linksLabelDivs[index].style.opacity = '0';
-}
+// function gitHubExit(event){
+//     let index = findParent(event);
+//     let triangleIndex = index * 3 + 2;
+//     triangles[triangleIndex].style.opacity = '0';
+//     linksLabelDivs[index].style.opacity = '0';
+// }
 
-for (let i = 0; i < githubLinks.length; i++){
-    githubLinks[i].addEventListener('mouseover', gitHubHover);
-    githubLinks[i].addEventListener('mouseout', gitHubExit);
-}
+// for (let i = 0; i < githubLinks.length; i++){
+//     githubLinks[i].addEventListener('mouseover', gitHubHover);
+//     githubLinks[i].addEventListener('mouseout', gitHubExit);
+// }
