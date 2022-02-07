@@ -827,43 +827,109 @@ h3{
     margin-bottom: 30px;
 }
 
+#contactDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.contactP{
+    margin: 0 0 20px 0;
+}
+
+.contactSubDivs{
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: var(--baseYellow);
+    /* background-clip: padding-box; */
+    /* border: 2px solid black; */
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    pointer-events: none;
+    /* box-shadow: 10px 10px 0 var(--baseYellow); */
+}
+
+.contactOutline{
+    border: 2.5px solid black;
+    height: 128px;
+    margin-top: -13px;
+}
+
+#onTheWebDiv{
+    margin: 0 0 0 20px;
+    width: 260px;
+}
+
+#onTheWebOutline{
+    width: 257px;
+    margin-left: -273px;
+}
+
+#sendMeAMsgDiv{
+    width: 280px;
+    margin: 0 0px 0 60px;
+}
+
+#sendMeAMsgOutline{
+    width: 278px;
+    margin-left: -293px;
+}
+
+.socialIconsDiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
 .socialLinks{
+    box-sizing: border-box;
     text-decoration: none;
+    /* height: 34px;
+    width: 34px; */
     background-clip: padding-box;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
+    margin: 0 0 0 2.5px;
 }
 
 .socialIcons{
     width: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.socialIcons:hover{
+    transform: scale(1.1);
 }
 
 #email{
-    color: var(--drkYellow);
+    /* color: var(--drkYellow); */
+    margin: 0;
+    font-weight: 700;
 }
 
-/* .socialLinks:nth-of-type(1){
-    background-image: url('Assets/linkedIn_logo.svg');
-}
-.socialLinks:nth-of-type(2){
-    background-image: url('Assets/GitHub_icon.png');
-} */
-
-#contactOutline{
+/* .contactOutline{
     border: 2px solid black;
-    width: 75%;
-    height: 600px;
     margin: 0;
     padding: 0;
     position: relative;
     box-sizing: border-box;
     pointer-events: none;
-    bottom: 622px;
-    left: 5px;
+    height: 130px;
+    bottom: 10px;
+    right: 175px;
+} */
+
+/* #onTheWebOutline{
+    width: 260px;
 }
+
+#sendMeAMsgOutline{
+    width: 375px;
+} */
 
 #contactForm{
     margin: 50px 0 0 0;
