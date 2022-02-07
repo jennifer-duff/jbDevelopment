@@ -359,6 +359,10 @@
                 <div class = 'headingWrapper'>
                     <h3 id = 'resumeHeader'>my resume<span class="accent">:</span></h3>
                 </div>
+                <div id = 'pdfBox'>
+                    <a id = 'resumeLink' href = '/Assets/JenniferDuffResume_2022.pdf' target='_blank'>view as pdf</a>
+                    <img id = 'openNewTab_icon' src = '/Assets/openNewTab_icon.svg'>
+                </div>
                 <article id = 'resume'>
                     <h5>Education</h5>
                     <div class = 'resumeUnderline'></div>
@@ -423,7 +427,22 @@
                 <div class = 'headingWrapper'>
                     <h2>let's get in touch<span class="accent">.</span></h2>
                 </div>
-                <form action="#" method="GET" id="contactForm">
+
+                <p class = 'contactP'>find me on the web:</p>
+
+                <div id = 'socialIconsDiv'>
+                    <a class = 'socialLinks' href = 'https://www.linkedin.com/in/jenniferduff202/' target = '_blank'>
+                        <img src = 'Assets/linkedIn_logo.svg' class = 'socialIcons'>
+                    </a>
+                    <a class = 'socialLinks' href = 'https://github.com/jennifer-duff' target = '_blank'>
+                        <img src = 'Assets/GitHub_icon.png' class = 'socialIcons'>
+                    </a>
+                </div>
+
+                <p class = 'contactP'>or send me a message:</p>
+                <p id = 'email'>jduffbowser@gmail.com</p>
+
+                <!-- <form action="mailto:jduffbowser@gmail.com" method="post" enctype="multipart/form-data" id="contactForm">
                     
                     <label for="name">what's your name?</label>
                     <input name="name" id="name" type="text" class="formField" placeholder="ex: Jennifer Bowser" />
@@ -436,7 +455,7 @@
 
                     <input type="submit" value="submit!" id="submitButton">  
                 </form>
-            <div id="contactOutline"></div>
+            <div id="contactOutline"></div> -->
             </section>
         </main>
 

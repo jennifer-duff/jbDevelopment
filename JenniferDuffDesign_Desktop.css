@@ -382,10 +382,11 @@ header nav a div{
     box-sizing: border-box;
     /* box-shadow: 5px 5px 25px -2px #c0c0c0; */
     box-shadow: 3px 3px 0 rgb(105, 105, 105);
-    transition: transform 0.3s ease-in-out, padding 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1.5px solid black;
 }
 
 #arrow{
@@ -577,7 +578,7 @@ header nav a div{
 
 
 .projects:nth-child(1){
-    background-image: url(Assets/weatherAppScreenshot.png);
+    background-image: url('Assets/weatherAppScreenshot.png');
 }
 
 .projects:nth-child(2){
@@ -703,6 +704,31 @@ h3{
     margin-bottom: 20px;
 }
 
+#pdfBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -5px 0 20px 0;
+}
+
+#resumeLink{
+    color: black;
+    font-weight: 400;
+    text-decoration: 1px solid underline var(--drkYellow);
+    /* transition: text-decoration 0.2s ease-in-out, font-weight 0.2s ease-in-out; */
+}
+
+#openNewTab_icon{
+    width: 14px;
+    margin: 0 0 0 8px;
+}
+
+#resumeLink:hover{
+    text-decoration: 2px solid underline var(--drkYellow);
+    font-weight: 500;
+}
+
 #resume{
     border: 2px solid black;
     box-shadow: 10px 10px 0 var(--baseYellow);
@@ -793,13 +819,38 @@ h3{
 }
 
 /* ------------------- CONTACT ------------------- */
-#contact{
+/* #contact{
     height: 700px;
-}
+} */
 
 #contact h2{
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
+
+.socialLinks{
+    text-decoration: none;
+    background-clip: padding-box;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.socialIcons{
+    width: 30px;
+}
+
+#email{
+    color: var(--drkYellow);
+}
+
+/* .socialLinks:nth-of-type(1){
+    background-image: url('Assets/linkedIn_logo.svg');
+}
+.socialLinks:nth-of-type(2){
+    background-image: url('Assets/GitHub_icon.png');
+} */
 
 #contactOutline{
     border: 2px solid black;
@@ -815,6 +866,7 @@ h3{
 }
 
 #contactForm{
+    margin: 50px 0 0 0;
     background-color: var(--baseYellow);
     height: 600px;
     width: 75%;
