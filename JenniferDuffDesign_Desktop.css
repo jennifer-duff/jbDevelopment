@@ -833,6 +833,7 @@ h3{
 }
 
 .contactP{
+    font-size: 16pt;
     margin: 0 0 20px 0;
 }
 
@@ -840,41 +841,39 @@ h3{
     box-sizing: border-box;
     padding: 30px;
     background-color: var(--baseYellow);
-    /* background-clip: padding-box; */
-    /* border: 2px solid black; */
-    height: 130px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    pointer-events: none;
-    /* box-shadow: 10px 10px 0 var(--baseYellow); */
+    justify-content: center;
 }
 
 .contactOutline{
     border: 2.5px solid black;
-    height: 128px;
-    margin-top: -13px;
+    height: 198px;
+    margin-top: -215px;
+    pointer-events: none;
 }
 
 #onTheWebDiv{
     margin: 0 0 0 20px;
-    width: 260px;
+    width: 500px;
 }
 
 #onTheWebOutline{
-    width: 257px;
-    margin-left: -273px;
+    width: 497px;
+    margin-left: 5px;
+    
 }
 
 #sendMeAMsgDiv{
-    width: 280px;
+    width: 500px;
     margin: 0 0px 0 60px;
 }
 
 #sendMeAMsgOutline{
-    width: 278px;
-    margin-left: -293px;
+    width: 497px;
+    margin-left: 45px;
 }
 
 .socialIconsDiv{
@@ -897,7 +896,7 @@ h3{
 }
 
 .socialIcons{
-    width: 30px;
+    width: 40px;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -906,30 +905,19 @@ h3{
 }
 
 #email{
-    /* color: var(--drkYellow); */
+    color: black;
     margin: 0;
     font-weight: 700;
+    font-size: 16pt;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
 }
 
-/* .contactOutline{
-    border: 2px solid black;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    box-sizing: border-box;
-    pointer-events: none;
-    height: 130px;
-    bottom: 10px;
-    right: 175px;
-} */
-
-/* #onTheWebOutline{
-    width: 260px;
+#email:hover{
+    transform: scale(1.05);
 }
 
-#sendMeAMsgOutline{
-    width: 375px;
-} */
+
 
 #contactForm{
     margin: 50px 0 0 0;
