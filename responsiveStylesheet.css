@@ -371,6 +371,7 @@
     /* ------- Contact Section -------*/
     #contactDiv{
         justify-content: space-between;
+        margin-left: 12px;
     }
     
     .contactSubDivs{
@@ -628,10 +629,6 @@
         flex-direction: column;
     }
 
-    #contactDiv{
-        justify-content: space-between;
-    }
-    
     /* .contactSubDivs{
         height: 125px;
     } */

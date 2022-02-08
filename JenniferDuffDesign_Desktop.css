@@ -511,15 +511,15 @@ header nav a div{
 }
 
 .viewLive{
-    background-image: url("Assets/eye_icon.svg");
+    background-image: url("Assets/icons/eye_icon.svg");
 }
 
 .learnMore{
-    background-image: url("Assets/read_more.svg");
+    background-image: url("Assets/icons/read_more.svg");
 }
 
 .githubLink{
-    background-image: url("Assets/GitHub_icon.png");
+    background-image: url("Assets/icons/GitHub_icon.png");
 }
 
 .projects a:hover{
@@ -578,27 +578,27 @@ header nav a div{
 
 
 .projects:nth-child(1){
-    background-image: url('Assets/weatherAppScreenshot.png');
+    background-image: url('Assets/portfolioImgs/weatherAppScreenshot.png');
 }
 
 .projects:nth-child(2){
-    background-image: url(Assets/portfolio4_square.jpg)
+    background-image: url('Assets/portfolioImgs/portfolio4_square.jpg')
 }
 
 .projects:nth-child(3){
-    background-image: url(Assets/portfolio7_square.jpg)
+    background-image: url('Assets/portfolioImgs/portfolio7_square.jpg')
 }
 
 .projects:nth-child(4){
-    background-image: url(Assets/portfolio2_square.jpg)
+    background-image: url('Assets/portfolioImgs/portfolio2_square.jpg')
 }
 
 .projects:nth-child(5){
-    background-image: url(Assets/portfolio1_square.png)
+    background-image: url('Assets/portfolioImgs//portfolio3_square.jpg')
 }
 
 .projects:nth-child(6){
-    background-image: url(Assets/portfolio6_square.png)
+    background-image: url('Assets/portfolioImgs/portfolio6_square.png')
 }
 
 #CircleOutlineSolid2{
@@ -660,37 +660,42 @@ h3{
 }
 
 .langGroup{
-    margin: 0 50px;
+    /* margin: 0 50px; */
     height: 300px;
 }
 
 .langsContents{
     background-color: var(--baseYellow);
     box-sizing: border-box;
-    width: 285px;
+    width: 700px;
     height: 285px;
-    padding: 60px;
+    padding: 30px 40px;
     position: relative;
     z-index: -1;
     bottom: 308px;
     left: 16px;
     margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     /* border: 1px solid black; */
 }
 
 .langsContents ul{
     list-style-type: none;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 12pt;
     line-height: 2.6rem;
     margin: 0;
     padding-left: 0;
-    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .borderSquare{
     border: 2.5px solid black;
-    width: 282px;
+    width: 700px;
     height: 282px;
     margin-top: -25px;
     margin-right: 13px;
@@ -830,6 +835,7 @@ h3{
 #contactDiv{
     display: flex;
     flex-direction: row;
+    margin-left: 20px;
 }
 
 .contactP{
@@ -856,13 +862,12 @@ h3{
 }
 
 #onTheWebDiv{
-    margin: 0 0 0 20px;
     width: 500px;
 }
 
 #onTheWebOutline{
     width: 497px;
-    margin-left: 5px;
+    margin-left: -15px;
     
 }
 
