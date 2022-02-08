@@ -679,11 +679,15 @@ h3{
     align-items: center;
     transition: transform 0.3s ease-in-out;
     margin: 25px 40px;
-    height: 140px;
+    height: 120px;
     position: relative;
     z-index: 2;
     /* width: 400px; */
     /* text-shadow: 1px 1px 0px var(--baseYellow); */
+}
+
+.stackWrapper:last-of-type{
+    margin-bottom: 40px
 }
 
 
@@ -730,16 +734,17 @@ h3{
     width: 50px;
 }
 
+
 .bracketDiv:first-of-type{
     border-right: none;
     box-shadow: -5px 5px 0px var(--baseYellow);
-    margin-right: -2.5%;
+    margin-right: -4%;
 }
 
 .bracketDiv:last-of-type{
     border-left: none;
     box-shadow: 5px 5px 0px var(--baseYellow);
-    margin-left: -2.5%;
+    margin-left: -4%;
 }
 
 
