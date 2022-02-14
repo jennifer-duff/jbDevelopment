@@ -23,7 +23,7 @@
     }
 }
 
-@media (max-width: 1445px) {
+@media (max-width: 1476px) {
     /*----------- splash box -----------*/
     #introBox{
         height: 70px;
@@ -56,11 +56,16 @@
 
     .projectTitle {
         font-size: 35pt;
-        margin: 0 0 40px 0;
+        margin: 0 0 30px 0;
     }
 
     .langsList{
-        font-size: 11pt;
+        font-size: 10pt;
+    }
+
+    .projectDescription{
+        font-size: 9.5pt;
+        margin: 20px 0 0px 0;
     }
 
     /*----------- Contact Section -----------*/
@@ -156,9 +161,17 @@
     }
 
     .langsList{
-        font-size: 10pt;
+        font-size: 9pt;
     }
 
+    .linkBox{
+        padding: 1px 0;
+    }
+
+    .linkText{
+        font-size: 7pt;
+        padding: 4px 8px 4.25px 8px;
+    }
 
     /* ------- About Section -------*/
     #arrows{
@@ -195,6 +208,33 @@
     }
 }
 
+@media (max-width: 1270px) {
+    .linksContainer{
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .linkBox{
+        padding: 0;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .linkBox:nth-of-type(2){
+        padding: 0 12px 0 9px;
+    }
+    
+    .linksLabelDiv{
+        display: none;
+    }
+
+    .projects a{
+        width: 21px;
+        height: 21px;
+    }
+}
+
 @media (max-width: 1075px) {
     /*----------- splash box -----------*/
     #splashbox{
@@ -207,30 +247,35 @@
 
     /* ------- Portfolio Section -------*/
     .projectTitle {
-        font-size: 25pt;
+        font-size: 23pt;
+        margin-bottom: 20px;
     }
 
     .projectLangs{
-        margin: 5px 0;
+        margin: 0 0 5px 0;
     }
 
     .langsList{
-        font-size: 9pt;
+        font-size: 8pt;
     }
 
-    .linkBox{
-        padding: 0px;
+    .projectDescription{
+        font-size: 8pt;
     }
+
+    /* .linkBox{
+        padding: 0px;
+    } */
 
     .projects a{
-        height: 30px;
-        width: 30px;
+        height: 18px;
+        width: 18px;
     }
 
-    .linkText{
+    /* .linkText{
         font-size: 7.5pt;
         padding: 5px 8px 5px 8px;
-    }
+    } */
 
 
     /* ------- About Section -------*/
@@ -320,18 +365,22 @@
         font-size: 12pt;
     }
 
-    .linkBox{
-        padding: 5px;
+    .projectDescription{
+        font-size: 12pt;
     }
 
-    .linkText{
+    /* .linkBox{
+        padding: 5px;
+    } */
+
+    /* .linkText{
         font-size: 10pt;
         padding: 6px 11px 6px 11px;
-    }
+    } */
 
     .projects a{
-        height: 34px;
         width: 34px;
+        height: 38px;
     }
 
     /* ------- About Section -------*/
@@ -532,19 +581,29 @@
     /* ------- Portfolio Section -------*/
     .projectTitle {
         font-size: 30pt;
+        margin-bottom: 25px; 
     }
 
     .langsList{
         font-size: 10pt;
     }
 
-    .linkBox{
+    /* .linkBox{
         padding: 1px;
-    }
+    } */
 
-    .linkText{
+    /* .linkText{
         font-size:8pt;
         padding: 5px 8px 5px 8px;
+    } */
+
+    .projectDescription{
+        font-size: 10pt;
+    }
+
+    .projects a{
+        width: 24px;
+        height: 28px;
     }
 
     /* ------- About Section -------*/
@@ -886,15 +945,19 @@
         font-size: 8pt;
     }
 
+    .projectDescription{
+        font-size: 8pt;
+    }
+/* 
     .linkBox{
         padding: 1px 0;
-    }
+    } */
+
 
     .projects a{
-        width: 25px;
+        width: 20px;
         height: 25px;
     }
-    
     /*----------- About Me -----------*/
     #aboutParagraph{
         /* font-size: 12pt; */
@@ -1109,7 +1172,7 @@
 
 }
 
-@media (max-width: 365px) {
+@media (max-width: 372px) {
     /*----------- Header -----------*/
     #navbar{
         width: 100%;
@@ -1147,26 +1210,36 @@
     }
 
     /*----------- Portfolio -----------*/
+    .infoContainer{
+        padding: 5%;
+    }
+    
     .projectTitle{
-        font-size: 18pt;
-        margin: 0 0 10px 0;
+        font-size: 16pt;
+        margin: 0 0 15px 0;
     }
 
     .langsList{
+        font-size: 6pt;
+        margin: 0 0 10px 0;
+    }
+
+    .projectDescription{
+        margin: 0;
         font-size: 7pt;
     }
 
-    .linkBox{
+    /* .linkBox{
         padding: 1px 0;
     }
 
     .linkText{
         font-size: 7pt;
-    }
+    } */
 
     .projects a{
-        width: 25px;
-        height: 25px;
+        width: 14px;
+        height: 18px;
     }
 
 /*----------- About -----------*/
