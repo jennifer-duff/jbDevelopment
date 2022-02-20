@@ -579,7 +579,7 @@ header nav a div{
 
 
 .projects:nth-child(1){
-    background-image: url('Assets/portfolioImgs/weatherAppScreenshot.png');
+    background-image: url('Assets/portfolioImgs/portfolio6_square.png');
 }
 
 .projects:nth-child(2){
@@ -591,16 +591,16 @@ header nav a div{
 }
 
 .projects:nth-child(4){
-    background-image: url('Assets/portfolioImgs/portfolio2_square.jpg')
+    background-image: url('Assets/portfolioImgs/weatherAppScreenshot.png')
 }
 
-.projects:nth-child(5){
-    background-image: url('Assets/portfolioImgs//portfolio3_square.jpg')
+/* .projects:nth-child(5){
+    background-image: url()
 }
 
 .projects:nth-child(6){
-    background-image: url('Assets/portfolioImgs/portfolio6_square.png')
-}
+    background-image: url('Assets/portfolioImgs//portfolio3_square.jpg')
+} */
 
 #CircleOutlineSolid2{
     width: 100px;
