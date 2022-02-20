@@ -578,6 +578,12 @@
         left: 2px;
     }
 
+
+    /* ------- Back To Top -------*/
+    #backToTopContainer{
+        bottom: 2.5vw;
+    }
+
     /* ------- Portfolio Section -------*/
     .projectTitle {
         font-size: 30pt;
@@ -762,16 +768,31 @@
 
 
     /* ------- Footer -------*/
+    #footerOutline1{
+        height: 150px;
+    }
+    
     #footerOutline2{
+        height: 153px;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
         padding: 20px;
         box-sizing: border-box;
     }
 
+    footer nav{
+        margin: 0 45% 5px 45%;
+        grid-template-columns: 60px 88px 64px 80px;
+        grid-column-gap: 20px;
+    }
+
+    footer nav a{
+        font-size: 14pt;
+    }
+
     #footerFullLogo{
-        width: 150px;
+        width: 250px;
         padding: 10px 10px 0 10px
     }
     
@@ -1171,30 +1192,35 @@
     /* ------- Footer -------*/
     
     #footerOutline1{
+        height: 120px;
         width: 90%;
         margin-left: -8px;
     }
 
     #footerOutline2{
+        height: 123px;
         width: 100.2%;
         flex-wrap: wrap;
         justify-content: center;
         align-items: flex-end;
-        padding: 15px 20px 20px 10px;
+        padding: 20px 20px 25px 10px;
         box-sizing: border-box;
     }
 
     footer nav{
         width: auto;
-        grid-template-columns: 38px 59px 39px 52px;
+        grid-template-columns: 50px 75px 53px 68px;
         grid-column-gap: 10px;
         margin-bottom: 5px;
-
     }
 
     footer nav a{
-        font-size: 11pt;
+        font-size: 12pt;
 
+    }
+
+    #footerFullLogo{
+        width: 175px;
     }
 
 }
@@ -1277,4 +1303,28 @@
     .stackWrapper{
         width: 100%;
     }
+
+    
+/*----------- FOOTER -----------*/
+
+    #footerOutline1{
+        height: 110px;
+    }
+
+    #footerOutline2{
+        height: 113px;
+    }
+
+    footer nav{
+        width: auto;
+        grid-template-columns: 45px 65px 45px 56px;
+        grid-column-gap: 7px;
+        margin-bottom: 5px;
+    }
+
+    footer nav a{
+        font-size: 10pt;
+
+    }
+
 }
