@@ -937,7 +937,7 @@
     }
 
     .projectTitle{
-        font-size: 25pt;
+        font-size: 20pt;
         margin: 0 0 20px 0;
     }
 
@@ -1105,9 +1105,9 @@
         line-height: 150%;
     }
     /*----------- Contact -----------*/
-    #contact{
+    /* #contact{
         height: 500px;
-    }
+    } */
     
     #contactOutline{
         bottom: 430px;

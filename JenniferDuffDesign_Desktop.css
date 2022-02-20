@@ -811,10 +811,11 @@ h3{
 }
 
 #resumeLink{
+    appearance: none;
     color: black;
     font-weight: 400;
-    text-decoration: 1px solid underline var(--drkYellow);
-    /* transition: text-decoration 0.2s ease-in-out, font-weight 0.2s ease-in-out; */
+    text-decoration: 1.5px solid underline var(--drkYellow);
+    /* transition: font-weight 0.2s ease-in-out; */
 }
 
 #openNewTab_icon{
@@ -823,7 +824,7 @@ h3{
 }
 
 #resumeLink:hover{
-    text-decoration: 2px solid underline var(--drkYellow);
+    text-decoration: 2.5px solid underline var(--drkYellow);
     font-weight: 500;
 }
 
