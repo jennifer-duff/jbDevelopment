@@ -356,7 +356,7 @@ header nav a div{
 /* ---------Back to Top Button ------------*/
 #backToTopContainer{
     position: fixed;
-    bottom: 100px;
+    bottom: 70px;
     right: 2.5vw;
     width: 50px;
     display: flex;
@@ -814,7 +814,7 @@ h3{
     appearance: none;
     color: black;
     font-weight: 400;
-    text-decoration: 2px solid underline var(--drkYellow);
+    text-decoration: 2px solid underline var(--drkYellow) !important;
     /* transition: font-weight 0.2s ease-in-out; */
 }
 
