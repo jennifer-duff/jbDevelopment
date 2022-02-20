@@ -723,7 +723,7 @@ h3{
 }
 
 #sqlLogo{
-    width: 100px;
+    width: 115px;
 }
 
 #mongoDBlogo{
@@ -814,7 +814,7 @@ h3{
     appearance: none;
     color: black;
     font-weight: 400;
-    text-decoration: 1.5px solid underline var(--drkYellow);
+    text-decoration: 2px solid underline var(--drkYellow);
     /* transition: font-weight 0.2s ease-in-out; */
 }
 

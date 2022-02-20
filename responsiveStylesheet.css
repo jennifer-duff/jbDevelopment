@@ -462,7 +462,7 @@
 
 }
 
-@media (max-width: 650px) {
+@media (max-width: 660px) {
     /* ------- Mobile Nav -------*/
     #navbar{
         align-items: center;
@@ -629,10 +629,11 @@
 
     .stackWrapper{
         height: 130px;
+        margin: 20px 30px;
     }
 
     #javaLogo{
-        width: 55px;
+        width: 60px;
     }
     
     #jsLogo, #htmlLogo, #cssLogo{
@@ -652,11 +653,11 @@
     }
     
     #sqlLogo{
-        width: 85px;
+        width: 100px;
     }
     
     #mongoDBlogo{
-        width: 185px;
+        width: 175px;
     }
     /* #langs{
         display: flex;
@@ -776,7 +777,7 @@
     
 }
 
-@media (max-width: 511px) {
+@media (max-width: 528px) {
     /*----------- General -----------*/
     main{
         padding: 5vw;
@@ -970,37 +971,63 @@
         margin-top: 0;
     }
 
+    #langs{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .bracketDiv:first-of-type{
+        /* box-shadow: -5px 5px 0px var(--baseYellow); */
+        margin-right: -15%;
+    }
+    
+    .bracketDiv:last-of-type{
+        /* box-shadow: 5px 5px 0px var(--baseYellow); */
+        margin-left: -15%;
+    }
+
     .stackWrapper{
+        height: 150px;
+        margin: 30px 0px;
+        justify-content: center;
+    }
+
+    .shortStackLogo{
         height: 120px;
-        margin: 15px 30px;
+        margin-top: 20px;
+    }
+
+    .stackWrapper:first-of-type{
+        /* height: 150px; */
+        margin-top: 40px;
     }
 
     #javaLogo{
-        width: 45px;
+        width: 80px;
     }
     
     #jsLogo, #htmlLogo, #cssLogo{
-        width: 35px;
+        width: 70px;
     }
     
     #nodeLogo{
-        width: 145px;
+        width: 160px;
+    }
+    
+    /* #pythonLogo{
+        width: 35px;
+    } */
+    
+    #mongoDBlogo{
+        width: 180px;
+    }
+
+    #sqlLogo{
+        width: 110px;
     }
     
     #expressLogo{
-        width: 115px;
-    }
-    
-    #pythonLogo{
-        width: 35px;
-    }
-    
-    #sqlLogo{
-        width: 75px;
-    }
-    
-    #mongoDBlogo{
-        width: 175px;
+        width: 150px;
     }
     
     /* #langs{
@@ -1244,7 +1271,7 @@
 
 /*----------- About -----------*/
     #langs{
-       width: 60%; 
+       width: 80%; 
     }    
 
     .stackWrapper{
