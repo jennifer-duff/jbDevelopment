@@ -137,6 +137,13 @@ document.body.addEventListener('click', function(event){
     }
 })
 
+//hide/show hamburger automatically based on resize - for cases where menu is open when document is resized.
+window.addEventListener('resize', function() {
+    if(window.innerWidth > 660){
+        hideHamburgerMenu();
+    }
+})
+
 
 // let mediaQuery1 = window.matchMedia('(max-width: 650px)');
 // let mediaQuery2 = window.matchMedia('(max-width: 475px)');
@@ -172,7 +179,7 @@ let aboutOffset = aboutSection.offsetTop - 200;
 //console.log(`aboutSectionOffset: ${aboutOffset}`);
 
 let contactSection = sections[3];
-let contactOffset = contactSection.offsetTop - 200;
+let contactOffset = contactSection.offsetTop - 500;
 //console.log(`contactSectionOffset: ${contactOffset}`);
 
 
@@ -180,7 +187,7 @@ let contactOffset = contactSection.offsetTop - 200;
 window.addEventListener('resize', function() {
     portfolioOffset = portfolioSection.offsetTop - 200;
     aboutOffset = aboutSection.offsetTop - 200;
-    contactOffset = contactSection.offsetTop - 200;
+    contactOffset = contactSection.offsetTop - 500;
 })
 
 //set underline starting positions
@@ -204,7 +211,7 @@ window.addEventListener('scroll', function(){
     if (currScrollPos < portfolioOffset)
     {
         //console.log(`splashBox section: ${currScrollPos}`);
-        for (let i = 0; i < navLinksDivs.length; i++)
+        for (let i = 0; i < (navLinksDivs.length - 1); i++)
         {
             if ( i === 0 || i === 4)
             {

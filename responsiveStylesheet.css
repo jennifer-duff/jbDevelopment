@@ -523,6 +523,10 @@
         padding: 10px 0 20px 0;
     }
 
+    #hamburgerNav a:nth-of-type(4){
+        padding: 0px 0 20px 0;
+    }
+
     #hamburgerNav div{
         /* background-color: var(--drkYellow);  */
         height: 7px;
@@ -547,6 +551,20 @@
 
         #hamContactUnderline{
             width: 73px;
+        }
+
+        #hamburgerNav #hamResumeLink{
+            font-family: var(--serifFont) !important;
+            font-size: 11pt;
+            letter-spacing: 2px;
+            font-weight: 300;
+            border: 2px solid var(--baseYellow);
+            text-align: center;
+            padding: 2px;
+        }
+    
+        #hamburgerNav #hamResumeLink:hover a{
+            font-weight: 300;   
         }
 
     /*----------- splash box -----------*/
