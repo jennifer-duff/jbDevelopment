@@ -432,7 +432,7 @@ header nav a div{
 }
 
 #portfolio h2{
-    margin-bottom: 60px;
+    margin-bottom: 65px;
 }
 
 #portfolioContainer {
@@ -440,15 +440,23 @@ header nav a div{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-column-gap: 3vw;
-    grid-row-gap: 3.70vw;
+    grid-column-gap: 5vw;
+    grid-row-gap: 5vw;
 }
+
+.projectLabel{
+    font-size: 22pt;
+    font-weight: 300;
+    position: relative;
+    bottom: 37px;    
+}
+
 
 .projects{
     border: 1px solid black;
     margin: 0;
     width: 1fr;
-    height: 24vw;
+    height: 25vw;
     background-repeat: no-repeat;
     background-origin: border-box;
     background-size: 100%;
@@ -473,12 +481,14 @@ header nav a div{
     justify-content: space-between;
     align-items: flex-start;
     transition: opacity 0.4s ease-in-out;
-    height: 24vw;
-    padding: 7%;
+    height: 25vw;
+    padding: 6% 6% 3% 6%;
     box-sizing: border-box;
     opacity: 0;
     background: var(--baseYellow);
     visibility: none;
+    position: relative;
+    bottom: 34px;
 }
     
 
@@ -511,82 +521,78 @@ header nav a div{
 
 .linksContainer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     box-sizing: border-box;
     height: auto;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-end;
     width: 100%;
     float: right;
 }
 
-.projects a{
+.linkBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    /* padding: 2.5px 0; */
+    height: auto;
     box-sizing: border-box;
     text-decoration: none;
-    text-align: left;
-    height: 25px;
-    width: 25px;
-    background-clip: padding-box;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: transform 0.2s ease-in-out;
-    margin: 0 0 0 2.5px;
 }
 
-.viewLive{
-    background-image: url("Assets/icons/eye_icon.svg");
-}
-
-.learnMore{
-    background-image: url("Assets/icons/read_more.svg");
+.viewLiveLink{
+    align-items: flex-end;
 }
 
 .githubLink{
-    background-image: url("Assets/icons/GitHub_icon.png");
+    margin-left: 10px;
+    align-items: flex-start;
 }
 
-.projects a:hover{
+.linkBox:hover .linkIcon{
     transform: scale(1.2);
+
 }
 
-.linkBox{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 2.5px 0;
-    height: auto;
+.linkIcon{
+    transition: transform 0.2s ease-in-out;
 }
 
-.linkBox:first-of-type{
-    padding-top: 0;
+.viewLiveIcon{
+    width: 23px;
 }
 
-.linkBox:last-of-type{
-    padding-bottom: 0;
+.githubIcon{
+    width: 20px;
 }
 
 .linksLabelDiv{
     opacity: 1;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center;
     justify-content: flex-start;
     transition: opacity 0.2s ease-in-out;
     width: 100%;
-    margin: 0 0px 0 2.5px;
+    margin: 5px 0 0 0 ;
+}
+
+.viewLiveLink .linksLabelDiv{
+    align-items: flex-end;
+    margin-right: 4px;
+}
+
+.githubLink .linksLabelDiv{
+    align-items: flex-start;
+    margin-left: 3px;
 }
 
 .triangle{
     opacity: 0.95;
     height: 8px;
-    transform: rotate(-90deg);
     transition: opacity 0.2s ease-in-out;
-    margin: 0 0 0px 0px;
-    /* left: 12.5px; */
+    margin: 0;
 }
 
 .linkText{
@@ -596,21 +602,22 @@ header nav a div{
     background-color:rgb(0, 0, 0);
     color: white;
     padding: 5px 9px 5.25px 9px;
-    margin: 0 -0 0 -4.75px;
     opacity: 0.95;
 }
 
 
 /*ScheduleBooker background*/
 .projects:nth-child(1){
-    background-image: url('Assets/portfolioImgs/scheduleBooker.png');
+    background-image: url('Assets/portfolioImgs/scheduleBooker_customers.png');
     background-size: cover;
+    background-position: center;
 }
 
 /*TermTracker background*/
 .projects:nth-child(2){
     background-image: url('Assets/portfolioImgs/termTrackerImg.png');
     background-size: cover;
+    background-position: center;
 }
 
 
@@ -618,7 +625,7 @@ header nav a div{
 .projects:nth-child(3){
     background-image: url('Assets/portfolioImgs/Luma.png');
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
 }
 
 /*WeatherChecker background*/
