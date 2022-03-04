@@ -782,54 +782,6 @@ h3{
 }
 
 
-/* #langs{
-    display: flex;
-    justify-content: center;
-    height: 300px;
-    margin-top: 0px;
-} */
-
-/* .langGroup{
-    height: 300px;
-}
-
-.langsContents{
-    background-color: var(--baseYellow);
-    box-sizing: border-box;
-    width: 700px;
-    height: 285px;
-    padding: 30px 40px;
-    position: relative;
-    z-index: -1;
-    bottom: 308px;
-    left: 16px;
-    margin-top: 35px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.langsContents ul{
-    list-style-type: none;
-    font-weight: 300;
-    font-size: 12pt;
-    line-height: 2.6rem;
-    margin: 0;
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.borderSquare{
-    border: 2.5px solid black;
-    width: 700px;
-    height: 282px;
-    margin-top: -25px;
-    margin-right: 13px;
-} */
-
-
 #resumeSection{
     padding-top: 125px;
 }
@@ -867,25 +819,42 @@ h3{
 #resume{
     border: 2px solid black;
     box-shadow: 10px 10px 0 var(--baseYellow);
-    padding: 0;
+    padding: 4%;
     width: 800px;
     margin: 0 auto;
 }
 
-.viewSDK_hideOverflow{
+/* #resumeScreenshot{
+    width: 800px;
+} */
+
+/* .viewSDK_hideOverflow{
     padding: 0;
     margin: 0;
-}
+} */
 
 #resume h5{
     font-family: var(--sansSerifFont);;
     font-weight: 900;
     font-size: 18pt;
-    margin-bottom: 5px;
+    margin: 30px 0 5px 0;
 }
 
-#resume h5:first-of-type{
-    margin-top: 20px;
+#resume #firstResumeHeader{
+    margin-top: 0px;
+}
+
+#resumeFlexBox{
+    display: flex;
+    flex-direction: row;
+}
+
+#certificationsBox{
+    width: 40%;
+}
+
+#skillsBox{
+    width: 60%;
 }
 
 .resumeUnderline{
@@ -894,68 +863,67 @@ h3{
     position: relative;
     z-index: -1;
     top: -16px;
+    margin-bottom: -20px;
 }
 
-.resumeUnderline:nth-of-type(1)
-{
+
+#eduBox .resumeUnderline{
     width: 123px;
 }
 
-.resumeUnderline:nth-of-type(2)
-{
+#projectsBox .resumeUnderline{
+    width: 105px;
+}
+
+#workExperienceBox .resumeUnderline{
     width: 199px;
 }
 
-.resumeUnderline:nth-of-type(3)
-{
+#certificationsBox .resumeUnderline{
     width: 167px;
+    margin-bottom: -5px;
 }
 
-.resumeUnderline:nth-of-type(4)
-{
+#skillsBox .resumeUnderline{
     width: 67px;
+    margin-bottom: -5px;
 }
 
 
-#resume ul{
-    line-height: 150%;
-    margin-top: 0;
-}
-
-#resume ul li{
-    font-family: var(--sansSerifFont);;
-}
-
-#resume ul li:nth-of-type(2n){
-    padding: 10px 0;
-}
-
-.resumeBold{
+.resumeSubheader{
     font-family: var(--sansSerifFont);;
     font-weight: 700;
     font-size: 13pt;
-    padding-bottom: 10px;
+    margin: 15px 0 5px 0;
 }
 
-.resumeSubheader{
+.resumeSubtitle{
+    font-family: var(--serifFont);
     letter-spacing: 1.5px;
     font-size: 9pt;
-    font-weight:4500;
+    font-weight: 200;
+    margin: 0 0 6px 0;
 }
 
-#FM{
-    margin-bottom: 10px;
+#resume ul{
+    list-style: none;
+    margin: 0 0 0 19px;
+    padding-left: 0;
 }
 
-#Pepperdine{
-    margin-top: 15px;
+#resume li:before{
+    content: "—";
+    padding: 0 7px 0 0;
+    margin: 0;
 }
 
-#resume ul .subBullets{
+#resume li{
     font-family: var(--sansSerifFont);
     font-weight: 400;
     font-size: 11pt;
-    letter-spacing: 0.25px;
+    padding: 0 0 0 10;
+    text-indent: -19px;
+    margin: 0 0 6px 0;
 }
 
 /* ------------------- CONTACT ------------------- */

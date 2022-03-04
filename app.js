@@ -201,29 +201,10 @@ window.addEventListener('scroll', function(){
 //------------------- Embedded PDF ------------------------
 let resume = document.querySelector('#resume');
 let API_KEY = "c32fb517528e404db36e48ffb7fa1ef3" || "822039af784d499088a70d595b536fe3";
-document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-    var adobeDCView = new AdobeDC.View({clientId: API_KEY, divId: "resume"});
-    adobeDCView.previewFile({
-        content:{location: {url: "https://jennifer-duff.github.io/jbDevelopment/Assets/JenniferDuffResume_2022.pdf"}},
-        metaData:{fileName: "JenniferDuffResume_2022.pdf"}
-    }, {embedMode: "IN_LINE", showPageControls: false, showAnnotationTools: false, showLeftHandPanel: false, enableFormFiling: false, showDownloadPDF: false, showPrintPDF: false});
-});
-
-// try{
-//     document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-//         var adobeDCView = new AdobeDC.View({clientId: "c32fb517528e404db36e48ffb7fa1ef3", divId: "resume"});
-//         adobeDCView.previewFile({
-//             content:{location: {url: "https://jennifer-duff.github.io/jbDevelopment/Assets/JenniferDuffResume_2022.pdf"}},
-//             metaData:{fileName: "JenniferDuffResume_2022.pdf"}
-//         }, {embedMode: "IN_LINE"});
-//     });
-// }
-// catch{
-//     document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-//         var adobeDCView = new AdobeDC.View({clientId: "822039af784d499088a70d595b536fe3", divId: "resume"});
-//         adobeDCView.previewFile({
-//             content:{location: {url: "http://jennifer-duff.github.io/jbDevelopment/Assets/JenniferDuffResume_2022.pdf"}},
-//             metaData:{fileName: "JenniferDuffResume_2022.pdf"}
-//         }, {embedMode: "IN_LINE"});
-//     });
-// }
+// document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+//     var adobeDCView = new AdobeDC.View({clientId: API_KEY, divId: "resume"});
+//     adobeDCView.previewFile({
+//         content:{location: {url: "https://jennifer-duff.github.io/jbDevelopment/Assets/JenniferDuffResume_2022.pdf"}},
+//         metaData:{fileName: "JenniferDuffResume_2022.pdf"}
+//     }, {embedMode: "IN_LINE", showPageControls: false, showAnnotationTools: false, showLeftHandPanel: false, enableFormFiling: false, showDownloadPDF: false, showPrintPDF: false});
+// });

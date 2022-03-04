@@ -286,68 +286,101 @@
                     <div class = 'bracketDiv'></div>
                 </div>
 
+
                 <div id="resumeSection">
                     <div class = 'headingWrapper'>
                         <h3 id = 'resumeHeader'>my resume<span class="accent">:</span></h3>
                     </div>
                     <div id = 'pdfBox'>
-                        <a id = 'resumePDFLink' href = 'Assets/JenniferDuffResume_2022.pdf' target='_blank'>view as pdf</a>
-                        <img id = 'openNewTab_icon' src = 'Assets/icons/openNewTab_icon.svg'>
+                        <a id = 'resumePDFLink' href = 'Assets/JenniferDuffResume_2022.pdf' target='_blank'>view as pdf<img id = 'openNewTab_icon' src = 'Assets/icons/openNewTab_icon.svg'></a>
                     </div>
+
                     <article id = 'resume'>
-                        <!-- <h5>Education</h5>
+                        <div id = 'eduBox'>
+                            <h5 id = 'firstResumeHeader'>Education</h5>
+                            <div class = 'resumeUnderline'></div>
+                            <p class = 'resumeSubheader'>Western Governors University — B.S., Software Development</p> 
+                            <p class = 'resumeSubtitle'>SEATTLE, WA | EXPECTED MARCH 2022</p>
+                            
+                            <p class = 'resumeSubheader'> Pepperdine University — B.A., Biology</p>
+                            <p class = 'resumeSubtitle'>MALIBU, CA | MAY 2017</p>
+                        </div>
+                        
+                        <div id = 'projectsBox'>
+                        <h5>Projects</h5>
                         <div class = 'resumeUnderline'></div>
-                        <ul>
-                            <li>
-                                <span class = 'resumeBold'>Western Governors University &#8211; B.S., Software Development</span>
-                                <br>
-                                <span class = 'resumeSubheader'>SEATTLE, WA &nbsp;|&nbsp; EXPECTED MARCH 2022</span>
-                            <li>
-                                <span class = 'resumeBold'>Pepperdine University &#8211; B.A., Biology</span>
-                                <br>
-                                <span class = 'resumeSubheader'>MALIBU, CA &nbsp;|&nbsp; MAY 2017</span>
-                            </li>
-                        </ul>
 
-                        <h5>Work Experience</h5>
-                        <div class = 'resumeUnderline'></div>
-                        <ul id = 'workExperienceList'>
-                            <li id = 'FM'>
-                                <span class = 'resumeBold'>FM Global &#8211; Field Engineering Assistant II</span>
-                                <br>
-                                <span class = 'resumeSubheader'>BELLEVUE, WA &nbsp;|&nbsp; APRIL 2019 - SEPTEMBER 2021</span>
-                            </li>
-                            <ul >
-                                <li class = 'subBullets'>Pursue risk improvement and organize loss-prevention site visits and for a team of nine engineers to decrease the likelihood of client property loss.</li>
-                                <li class = 'subBullets'>Maintain and report engineer key performance indicators to organizational leaders.</li>
-                                <li class = 'subBullets'>Communicate with internal and external stakeholders to arrange a servicing plan that meets client and company needs.</li>
-                            </ul>
-                            <li id = 'Pepperdine'>
-                                <span class = 'resumeBold'>Pepperdine University &#8211; Researcher</span>
-                                <br>
-                                <span class = 'resumeSubheader'>MALIBU, CA &nbsp;|&nbsp; SEPTEMBER 2015 – MAY 2017</span>
-                            </li>
+                            <p class = 'resumeSubheader'>Desktop Program — Appointment Scheduling Software</p>
+                            <p class = 'resumeSubtitle'>JAVA | SQL | CSS</p>
                             <ul>
-                                <li class = 'subBullets'>Designed and implemented original research testing pollutant effects on cells, including project scoping, data collection using MATLAB, and statistical analysis.</li>
-                                <li class = 'subBullets'>Created report showcasing changes in cellular behavior for scientific board members and presented findings at several international scientific conferences.</li>
+                                <li class = 'subBullets'>
+                                    A program for managing customers and their appointments. Login to add new customers and appointments, see employee schedules, and view live dashboard summaries of appointment stats.
+                                </li>
+                                <li class = 'subBullets'>
+                                    Notable functionalities: authentication with MySQL database, create/read/update/delete capabilities for customer profiles and appointments, language, date, and time localization, and input verification/error-handling.
+                                </li>
                             </ul>
-                        </ul>
 
-                        <h5>Certifications</h5>
-                        <div class = 'resumeUnderline'></div>
-                        <ul>
-                            <li>CompTIA A+ Certification</li>
-                            <li>Google IT Support Certificate</li>
-                            <li>Cornell University, Digital Marketing Certificate  </li>
-                        </ul>
+                            <p class = 'resumeSubheader'>Android App — Student Course-Tracking Application</p>
+                            <p class = 'resumeSubtitle'>JAVA | FXML</p>
+                            <ul>
+                                <li>
+                                    A mobile application for students to track information pertaining to their terms, courses, and tests.
+                                </li>
+                                <li>
+                                    Notable functionalities: Create/read/update/delete capabilities for terms/courses/tests/notes, banner notifications for term/course start and end dates, and sharing feature for sending notes via email or SMS.
+                                </li>
+                            </ul>
 
-                        <h5>Skills</h5>
-                        <div class = 'resumeUnderline'></div>
-                        <ul>
-                            <li>Experience with Java, JavaScript, Python, SQL, CSS, C++, and Microsoft Excel.</li> 
-                            <li>Experienced with data and analysis and visualization.</li>
-                            <li>Experienced in research and project management in independent and collaborative settings.</li>
-                        </ul> -->
+                            <p class = 'resumeSubheader'>Web Application — Ecommerce Website</p>
+                            <p class = 'resumeSubtitle'>NODE.JS | JAVASCRIPT | EXPRESS | MONGODB | CSS | HTML</p>
+                            <ul>
+                                <li>
+                                    An eCommerce website built with Express using a MongoDB database of products.
+                                </li>
+                                <li>
+                                    Notable functionalities: Shopping cart, search feature, and full check-out flow. 
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id = 'workExperienceBox'>
+                            <h5>Work Experience</h5>
+                            <div class = 'resumeUnderline'></div>
+                                <p class = 'resumeSubheader'>FM Global — Field Engineering Assistant II</p>
+                                <p class = 'resumeSubtitle'>BELLEVUE, WA | APRIL 2019 - SEPTEMBER 2021</p>
+                                <ul>
+                                    <li class = 'subBullets'>
+                                        Pursue risk improvement and organize loss-prevention site visits and for a team of nine engineers to decrease the likelihood of client property loss.
+                                    </li>
+                                    <li class = 'subBullets'>
+                                        Maintain and report engineer key performance indicators to organizational leaders.
+                                    </li>
+                                    <li class = 'subBullets'>
+                                        Communicate with internal and external stakeholders to arrange a servicing plan that meets client and company needs.
+                                    </li>
+                                </ul>
+                        </div>
+                        
+                        <div id = resumeFlexBox>
+                            <div id = 'certificationsBox'>
+                                <h5>Certifications</h5>
+                                <div class = 'resumeUnderline'></div>
+                                <ul>
+                                    <li>CompTIA Project+ Certification</li>
+                                    <li>CompTIA A+ Certification</li>
+                                </ul>
+                            </div>
+                            <div id = 'skillsBox'>
+                                <h5>Skills</h5>
+                                <div class = 'resumeUnderline'></div>
+                                <ul>
+                                    <li>Java, JavaScript, Node.JS, SQL, MongoDB, C++, Express, Visual Basic, and HTML/CSS</li> 
+                                    <li>Adobe Creative Suite, InVision</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
 
                     </article>
                 </div>
