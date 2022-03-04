@@ -25,6 +25,10 @@
 
 @media (max-width: 1476px) {
     /*----------- splash box -----------*/
+    #navbar{
+        width: 100%;
+    }
+    
     #introBox{
         height: 70px;
     }

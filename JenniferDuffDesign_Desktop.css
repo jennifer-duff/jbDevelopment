@@ -89,10 +89,10 @@ button:active {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: 100%;
+    width: calc(100% + 10px);
     /* height: 60px; */
     position: fixed;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: white;
     margin: 0;
     padding: 20px 0 20px 17px; 
     z-index: 2;
@@ -126,19 +126,17 @@ button:active {
 
 #headerNav {
     width: auto;
-    height: 15px;
     display: grid;
     grid-template-columns: 3.1rem 4.6rem 3.2rem 4.1rem 80px;
     grid-column-gap: 20px;
-    margin: 0 20px 0 0;
+    margin: 0 20px -15px 0;
     padding: 0;
     text-align: center;
     vertical-align: baseline;
-    /* border: 1px solid black; */
 }
 
 header nav a {
-    text-decoration: none !important;
+    text-decoration: none;
     color: black;
     font-weight: 700;
     font-family: var(--sansSerifFont);;
@@ -152,9 +150,6 @@ header nav a:hover{
     background-color: var(--drkYellow);
 }
 
-/* #navbar a div{
-    transition: background-color 0.2s ease-in-out;
-} */
 
 header nav a div{
     background-color: var(--drkYellow); 
@@ -274,26 +269,6 @@ header nav a div{
     100% {border-right-color: transparent;}
 }
 
-/* .introCursor{
-    display: inline-block;
-    width: 4px;
-    height: 70px;
-    background-color: black;
-    margin-left: 10px;
-    margin-top: -50px;
-    animation-name: blink;
-    animation-duration: 0.8s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-@keyframes blink{
-    0% {opacity: 1;}
-    40% {opacity: 1;}
-    60% {opacity: 0;}
-    100% {opacity: 0;}
-} */
-
 
 #checkItOut{
     margin: 0 0 0 -20px;
@@ -361,7 +336,7 @@ header nav a div{
     width: 100px;
     position: absolute;
     top: 175px;
-    right: 150px;
+    right: 160px;
 }
 
 #CircleOutlineSolid1{
