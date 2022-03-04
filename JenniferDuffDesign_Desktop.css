@@ -495,18 +495,24 @@ header nav a div{
 .projectTitle {
     font-family: var(--sansSerifFont);;
     font-size: 30pt;
-    margin: 0 0 20px 0;
+    font-weight: 800;
+    margin: 0 0 10px 0;
     width: 100%;
     line-height: 110%;
 }
+
+/* .titleDescription{
+    font-weight: 400;
+} */
 
 .langsList{
     font-size: 10pt;
     letter-spacing: 3px;
     font-weight: 200;
     margin: 0;
-    line-height: 125%;
     text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 125%;
 }
 
 .projectDescription{
@@ -528,7 +534,7 @@ header nav a div{
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    float: right;
+    float: right;    
 }
 
 .linkBox{
@@ -536,7 +542,6 @@ header nav a div{
     flex-direction: column;
     justify-content: flex-end;
     box-sizing: border-box;
-    /* padding: 2.5px 0; */
     height: auto;
     box-sizing: border-box;
     text-decoration: none;
@@ -544,6 +549,7 @@ header nav a div{
 
 .viewLiveLink{
     align-items: flex-end;
+    margin-left: 5%;
 }
 
 .githubLink{

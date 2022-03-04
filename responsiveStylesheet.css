@@ -369,15 +369,6 @@
         font-size: 12pt;
     }
 
-    /* .linkBox{
-        padding: 5px;
-    } */
-
-    /* .linkText{
-        font-size: 10pt;
-        padding: 6px 11px 6px 11px;
-    } */
-
     .projects a{
         width: 34px;
         height: 38px;
@@ -414,6 +405,19 @@
         position: relative;
         top: -275px;
         padding: 18%;
+    }
+
+    #resumeFlexBox{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #certificationsBox{
+        width: 100%;
+    }
+    
+    #skillsBox{
+        width: 100%;
     }
 
 
