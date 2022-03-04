@@ -206,7 +206,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function(){
     adobeDCView.previewFile({
         content:{location: {url: "https://jennifer-duff.github.io/jbDevelopment/Assets/JenniferDuffResume_2022.pdf"}},
         metaData:{fileName: "JenniferDuffResume_2022.pdf"}
-    }, {embedMode: "IN_LINE", showDownloadPDF: false, showPageControls: false});
+    }, {embedMode: "IN_LINE", showPageControls: false, showAnnotationTools: false, showLeftHandPanel: false, enableFormFiling: false, showDownloadPDF: false, showPrintPDF: false});
 });
 
 // try{
