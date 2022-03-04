@@ -199,11 +199,11 @@ window.addEventListener('scroll', function(){
 
 
 //------------------- Embedded PDF ------------------------
-let resume = document.querySelector('#resume');
-document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-    var adobeDCView = new AdobeDC.View({clientId: "5e2aab6c4a094333b32fa64970764fc2", divId: "resume"});
-    adobeDCView.previewFile({
-        content:{location: {url: "/Assets/JenniferDuffResume_2022.pdf"}},
-        metaData:{fileName: "JenniferDuffResume_2022.pdf"}
-    }, {embedMode: "IN_LINE"});
-});
+// let resume = document.querySelector('#resume');
+// document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+//     var adobeDCView = new AdobeDC.View({clientId: "c32fb517528e404db36e48ffb7fa1ef3", divId: "resume"});
+//     adobeDCView.previewFile({
+//         content:{location: {url: "/Assets/JenniferDuffResume_2022.pdf"}},
+//         metaData:{fileName: "JenniferDuffResume_2022.pdf"}
+//     }, {embedMode: "IN_LINE"});
+// });
