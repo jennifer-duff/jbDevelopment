@@ -1,86 +1,5 @@
 'use strict'
 
-// --------------------- Title Typing Animation -------------------------
-// var i = 0;
-// var text = 'hi, i\'m jennifer';
-// var typeSpeed = 115;
-// let typeTime = 0;
-// let delay;
-// let totalRuntime = 0;
-
-// let typeTimeoutID;
-// let postTypePauseID;
-// let deleteTimeoutID;
-// let postDeletePauseID;
-// let iterationDelayID;
-
-
-// async function typeWriter() {
-//     clearTimeout(typeTimeoutID);
-//     let numLetters = text.length;
-//     typeTime = numLetters * typeSpeed;
-//     delay = typeTime + 1500;
-//     totalRuntime = typeTime + delay + typeTime + delay;
-
-//     if (i < text.length) {
-//         document.querySelector('.introWords').innerHTML += text.charAt(i);
-//         i++;
-//         typeTimeoutID = setTimeout(typeWriter, typeSpeed);
-//     }
-//     await new Promise(resolve => postTypePauseID = setTimeout(resolve, (delay + 500)));
-// }
-
-// async function deleting() {
-//     clearTimeout(deleteTimeoutID);
-//     let textCopy = text;
-//     if (i > 0) {
-//         textCopy = textCopy.slice(0, (i-1));
-//         document.querySelector('.introWords').innerHTML = textCopy;
-//         i--;
-//         deleteTimeoutID = setTimeout(deleting, typeSpeed);
-//     }
-//     await new Promise(resolve => postDeletePauseID = setTimeout(resolve, delay));
-// }
-
-// async function typeAndDelete(){
-//     await typeWriter();
-//     //await new Promise(resolve => setTimeout(resolve, (delay + 500)));
-//     await deleting();
-//     //await new Promise(resolve => setTimeout(resolve, delay));
-//     iterationDelayID = setTimeout(typeAndDelete, 500);
-    //requestAnimationFrame(typeAndDelete);
-//}
-//typeAndDelete();
-
-
-// async function typeAndDelete(){
-//     console.log('function start');
-//     await typeWriter();
-//     await deleting();
-//     setTimeout(typeAndDelete, 500);
-//     //requestAnimationFrame(typeAndDelete);
-// }
-// typeAndDelete();
-
-// document.addEventListener('visibilitychange', function(){
-//     if (document.visibilityState === 'visible')
-//     {
-//         console.log('page is visible');
-//         typeAndDelete();
-//     }
-//     else
-//     {
-//         console.log('page NOT visible');
-//         console.log(typeTimeoutID, postTypePauseID, deleteTimeoutID, postDeletePauseID, iterationDelayID);
-
-//         clearTimeout(typeTimeoutID, postTypePauseID, deleteTimeoutID, postDeletePauseID, iterationDelayID);
-//         // clearTimeout(postTypePauseID);
-//         // clearTimeout(deleteTimeoutID);
-//         // clearTimeout(postDeletePauseID);
-//         // clearTimeout(iterationDelayID);
-//     }
-// })
-
 // --------------------- H2 SlideIn Animation Trigger -------------------------
 const headings = document.querySelectorAll('.headingWrapper');
 //const h3s = document.
@@ -279,90 +198,12 @@ window.addEventListener('scroll', function(){
 })
 
 
-//------------------- Portfolio Links ------------------------
-// const linksContainers = document.querySelectorAll('.linksContainer');
-// const githubLinks = document.querySelectorAll('.githubLink');
-// const viewLiveLinks = document.querySelectorAll('.viewLive');
-// const learnMoreLinks = document.querySelectorAll('.learnMore');
-// const linksLabelDivs = document.querySelectorAll('.linksLabelDiv');
-// const linkTexts = document.querySelectorAll('.linkText');
-// const triangles = document.querySelectorAll('.triangle');
-
-// function findParent(event){
-//     let parent = event.target.parentElement.parentElement;
-//     console.log(parent);
-//     let index;
-//     for (let i = 0; i < linksContainers.length; i ++){
-//         if (linksContainers[i] === parent){
-//             index = i;
-//             console.log(index);
-//             return index;
-//         }
-//     }
-// }
-
-
-// function viewLiveHover(event){
-//     // console.log(event.target);
-//     let index = findParent(event);
-//     let triangleIndex = index * 3;
-//     linksLabelDivs[index].style.opacity = '1';
-//     triangles[triangleIndex].style.opacity = '1';
-//     linkTexts[index].innerText = 'see live';
-// }
-
-// function viewLiveExit(event){
-//     let index = findParent(event);
-//     let triangleIndex = index * 3;
-//     triangles[triangleIndex].style.opacity = '0';
-//     linksLabelDivs[index].style.opacity = '0';
-// }
-
-
-// for (let i = 0; i < viewLiveLinks.length; i++){
-//     viewLiveLinks[i].addEventListener('mouseover', viewLiveHover);
-//     viewLiveLinks[i].addEventListener('mouseout', viewLiveExit);
-// }
-
-
-
-// function learnMoreHover(event){
-//     let index = findParent(event);
-//     let triangleIndex = index * 3 + 1;
-//     linksLabelDivs[index].style.opacity = '1';
-//     triangles[triangleIndex].style.opacity = '1';
-//     linkTexts[index].innerText = 'learn more';
-// }
- 
-// function learnMoreExit(event){
-//     let index = findParent(event);
-//     let triangleIndex = index * 3 + 1;
-//     triangles[triangleIndex].style.opacity = '0';
-//     linksLabelDivs[index].style.opacity = '0';
-// }
-
-// for (let i = 0; i < githubLinks.length; i++){
-//     learnMoreLinks[i].addEventListener('mouseover', learnMoreHover);
-//     learnMoreLinks[i].addEventListener('mouseout', learnMoreExit);
-// }
-
-
-// function gitHubHover(event){
-//     let index = findParent(event);
-//     let triangleIndex = index * 3 + 2;
-//     linksLabelDivs[index].style.opacity = '1';
-//     triangles[triangleIndex].style.opacity = '1';
-//     linkTexts[index].innerText = 'view on GitHub';
-// }
-
-// function gitHubExit(event){
-//     let index = findParent(event);
-//     let triangleIndex = index * 3 + 2;
-//     triangles[triangleIndex].style.opacity = '0';
-//     linksLabelDivs[index].style.opacity = '0';
-// }
-
-// for (let i = 0; i < githubLinks.length; i++){
-//     githubLinks[i].addEventListener('mouseover', gitHubHover);
-//     githubLinks[i].addEventListener('mouseout', gitHubExit);
-// }
+//------------------- Embedded PDF ------------------------
+let resume = document.querySelector('#resume');
+document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+    var adobeDCView = new AdobeDC.View({clientId: "5e2aab6c4a094333b32fa64970764fc2", divId: "resume"});
+    adobeDCView.previewFile({
+        content:{location: {url: "/Assets/JenniferDuffResume_2022.pdf"}},
+        metaData:{fileName: "JenniferDuffResume_2022.pdf"}
+    }, {embedMode: "IN_LINE"});
+});

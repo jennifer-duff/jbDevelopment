@@ -506,6 +506,7 @@ header nav a div{
     font-weight: 200;
     margin: 0;
     line-height: 125%;
+    text-transform: uppercase;
 }
 
 .projectDescription{
@@ -524,7 +525,7 @@ header nav a div{
     flex-direction: row;
     box-sizing: border-box;
     height: auto;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-end;
     width: 100%;
     float: right;
