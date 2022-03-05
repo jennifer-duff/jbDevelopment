@@ -11,8 +11,8 @@ html {
     --drkYellow: #ffbf47;
     --baseYellow: #ffcd70;
     --ltYellow: #ffe2ad;
-    --serifFont: 'Azeret Mono', museo-slab, 'Courier New', monospace;
-    --sansSerifFont: "Manrope", Arial, sans-serif;
+    --serifFont: 'Azeret Mono', 'Consolas', monospace;
+    --sansSerifFont: "Manrope", Helvetica, sans-serif;
 }
 
 body {
@@ -89,7 +89,7 @@ button:active {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: calc(100% + 10px);
+    width: 100%;
     /* height: 60px; */
     position: fixed;
     background-color: white;
@@ -101,7 +101,8 @@ button:active {
 }
 
 #extraUnderline{
-    width: 110%;
+    display: none; /* TODO: REMOVE FOR PRODUCTION*/
+    width: calc(100% + 10px);
     background-color: #ffbf47;
     height: 1px;
     position: fixed;
@@ -414,8 +415,8 @@ header nav a div{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-column-gap: 5vw;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 7vw;
     grid-row-gap: 5vw;
 }
 
@@ -431,7 +432,7 @@ header nav a div{
     border: 1px solid black;
     margin: 0;
     width: 1fr;
-    height: 25vw;
+    height: auto;
     background-repeat: no-repeat;
     background-origin: border-box;
     background-size: 100%;
@@ -456,8 +457,8 @@ header nav a div{
     justify-content: space-between;
     align-items: flex-start;
     transition: opacity 0.4s ease-in-out;
-    height: 25vw;
-    padding: 6% 6% 3% 6%;
+    height: 100%;
+    padding: 6%;
     box-sizing: border-box;
     opacity: 0;
     background: var(--baseYellow);
@@ -465,23 +466,25 @@ header nav a div{
     position: relative;
     bottom: 34px;
 }
+
+/* TODO: REMOVE THIS FOR PRODUCTION*/
+#firstInfoContainer{
+    visibility: visible !important;
+    opacity: 0.95 !important;
+}
     
 
 .projectTitle {
     font-family: var(--sansSerifFont);;
     font-size: 30pt;
     font-weight: 800;
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
     width: 100%;
     line-height: 110%;
 }
 
-/* .titleDescription{
-    font-weight: 400;
-} */
-
 .langsList{
-    font-size: 10pt;
+    font-size: 11pt;
     letter-spacing: 3px;
     font-weight: 200;
     margin: 0;
@@ -507,74 +510,71 @@ header nav a div{
     box-sizing: border-box;
     height: auto;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     width: 100%;
-    float: right;    
+    float: right;
+    margin-top: 10px;
+    opacity: 0.85;    
 }
 
 .linkBox{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     height: auto;
     box-sizing: border-box;
     text-decoration: none;
 }
 
-.viewLiveLink{
-    align-items: flex-end;
-    margin-left: 5%;
-}
-
 .githubLink{
     margin-left: 10px;
-    align-items: flex-start;
-}
-
-.linkBox:hover .linkIcon{
-    transform: scale(1.2);
-
 }
 
 .linkIcon{
     transition: transform 0.2s ease-in-out;
 }
 
+.linkBox:hover .linkIcon{
+    transform: scale(1.2);
+}
+
 .viewLiveIcon{
-    width: 23px;
+    width: 28px;
+    margin-right: 7px;
 }
 
 .githubIcon{
-    width: 20px;
+    width: 24px;
+    margin-left: 7px;
 }
 
-.linksLabelDiv{
+/* .linksLabelDiv{
     opacity: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     transition: opacity 0.2s ease-in-out;
     width: 100%;
     margin: 5px 0 0 0 ;
-}
-
+} */
+/* 
 .viewLiveLink .linksLabelDiv{
-    align-items: flex-end;
-    margin-right: 4px;
+    margin-right: 5px;
 }
 
 .githubLink .linksLabelDiv{
-    align-items: flex-start;
-    margin-left: 3px;
-}
+    margin-left: 5px;
+} */
 
 .triangle{
-    opacity: 0.95;
-    height: 8px;
-    transition: opacity 0.2s ease-in-out;
+    height: 20.5px;
     margin: 0;
+    padding: 0;
+    position: static;
 }
 
 .linkText{
@@ -583,8 +583,9 @@ header nav a div{
     font-size: 7.5pt;
     background-color:rgb(0, 0, 0);
     color: white;
-    padding: 5px 9px 5.25px 9px;
-    opacity: 0.95;
+    padding: 5.25px 9px 5px 9px;
+    margin: 0;
+    line-height: 100%;
 }
 
 
@@ -610,7 +611,7 @@ header nav a div{
     /* background-position: center; */
 }
 
-/*WeatherChecker background*/
+/*Weather-Checker background*/
 .projects:nth-child(4){
     background-image: url('Assets/portfolioImgs/weatherAppScreenshot.png');
     background-size: cover;
