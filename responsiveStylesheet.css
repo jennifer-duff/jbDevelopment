@@ -955,12 +955,12 @@
     }
 
     #portfolioContainer {
-        grid-row-gap: 15vw;
+        grid-row-gap: 16vw;
     }
 
     .projects{
-        width: 83vw;
-        height: 83vw;
+        width: calc(100% - 5px);
+        height: auto;
     }
 
     .projects:hover{
@@ -973,7 +973,7 @@
     }
 
     .infoContainer{
-        height: 83vw;
+        height: 100%;
         bottom: 25px;
     }
 
@@ -1281,23 +1281,26 @@
     }
 
     /*----------- Portfolio -----------*/
+    #portfolioContainer {
+        grid-row-gap: 20vw;
+    }    
     .infoContainer{
         padding: 5%;
     }
 
     .langsList{
-        font-size: 7pt;
+        font-size: 8pt;
         margin: 0 0 10px 0;
     }
 
     .projectDescription{
         margin: 0;
-        font-size: 6.75pt;
+        font-size: 9pt;
     }
 
     .linkText{
-        font-size: 5pt;
-        padding: 3px 5px 1.6px 5px;
+        font-size: 7pt;
+        padding: 3.5px 5px;
     }
 
     .triangle{
@@ -1305,11 +1308,11 @@
     }
 
     .viewLiveLink .linkText{
-        padding-left: 1px;
+        padding-left: 4px;
     }
 
     .githubLink .linkText{
-        padding-right: 1px;
+        padding-right: 4px;
     }
 
     .viewLiveIcon{
