@@ -1,63 +1,70 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="jdDesign_logo.svg"/>
-    <link rel="stylesheet" href="ProjectPage.css">
-    <link rel="stylesheet" href="https://use.typekit.net/cok7ddm.css">
-    <title>jennifer duff design | Project 1</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Seattle-based full-stack web and software developer">
+        <meta name="keywords" content="developer, full-stack, web developer, software developer, Jennifer Bowser, software engineer">
+        <meta name="author" content="Jennifer Duff">
+
+        <!-- <link rel="stylesheet" href="https://use.typekit.net/cok7ddm.css"> -->
+        <link rel="stylesheet" href="JenniferDuffDesign_Desktop.css"/>
+        <link rel="stylesheet" href="responsiveStylesheet.css"/>
+        <link rel="stylesheet" href="ProjectPage.css"/>
+        <link rel="icon" href="Assets/logos/altLogo_whiteBackground.png">
+        <link rel="apple-touch-icon" href="Assets/logos/altLogo_whiteBackground.png" sizes = "120 X 120">
+        <link rel="apple-touch-icon" href="Assets/logos/altLogo_whiteBackground.png" sizes = "150 X 150">
+        <link rel="apple-touch-icon-precomposed" href="Assets/logos/altLogo_whiteBackground.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <title>jb development</title>
+    </head>
 <body>
 
     <header id="navbar">
-        <a href="#content"> <img  src = "jdDesign_FullLogo.svg" alt="jennifer duff design logo" id="fullLogo"/>  </a>
-        <nav>
-            <ul>
-                <li><a href="#content">home</a></li>
-                <li><a href="#my-experience">about</a></li>
-                <li><a href="#work">work</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
+        <a href="/"> <img  src="Assets/logos/altoLogo_full.svg" alt="jennifer bowser development logo" id="headerFullLogo"/> </a>
+        <nav id = 'headerNav'>
+            <a id="homeLink" href="#home">home<div id="homeUnderline"></div></a>
+            <a id="portfolioLink"href="#portfolio">portfolio<div id="portfolioUnderline"></div></a> 
+            <a id="aboutLink" href="#about">about<div id="AboutUnderline"></div></a>
+            <a id="contactLink" href="#contact">contact<div id="ContactUnderline"></div></a>
+            <a id="resumeLink" href="#resumeSection">resume<div id="resumeUnderline"></div></a>
         </nav>
+
+        <nav id = 'hamburgerNav'>
+            <a id="hamHomeLink" href="#home">home<div id="hamHomeUnderline"></div></a>
+            <a id="hamPortfolioLink"href="#portfolio">portfolio<div id="hamPortfolioUnderline"></div></a> 
+            <a id="hamAboutLink" href="#about">about<div id="hamAboutUnderline"></div></a>
+            <a id="hamContactLink" href="#contact">contact<div id="hamContactUnderline"></div></a>
+            <a id="hamResumeLink" href="#resumeSection">resume</a>
+        </nav>
+        <img src = 'Assets/icons/menuIcon.svg' id = 'menuIcon' alt = 'hamburger menu'>
+        <div id = 'extraUnderline'></div>
     </header>
 
-<main>  
-    <article class="heading">
-        <h1>Project 1<span class="accent">.</span></h1>
 
-        <section class="languages">
-            <h2>Languages Used:</h2>
-            <div class="underlineBox"></div>
-            <ul>
-                <li>Java</li>
-                <li>C#</li>
-            </ul>
-        </section>
+    <main>  
+        <h1>TermTracker<span class="accent">.</span></h1>
+        <h2 class = 'techStack'>Java | FXML</h2>
 
-        <section class="problem">
-            <h2>Problem:</h2>
-            <div class="underlineBox" id="prob"></div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis minima possimus ipsam doloribus. Provident dicta reiciendis fuga dolorem autem debitis sint earum iusto saepe? Nam praesentium sequi eligendi incidunt. Labore esse, corrupti optio, reprehenderit in eum atque veniam alias maxime ad iure sunt sequi illo numquam perferendis soluta voluptate, quae non harum voluptas ratione dolore porro quo rem!
-            </p>
-        </section>
+        
 
-        <section class="solution">
-            <h2>Solution:</h2>
-            <div class="underlineBox" id="soln"></div>
-            <p>
-                Vitae excepturi voluptatem nostrum nesciunt atque omnis dicta officia illo molestiae quas, a possimus rerum provident maxime at quidem repudiandae fugiat! Expedita! Beatae perspiciatis rem et illum, rerum accusantium quam! At ipsam delectus iste, est optio totam aliquid. Alias totam natus perferendis iusto itaque. Sunt porro totam neque ducimus reiciendis eligendi non!
-            </p>
-        </section>
+    </main>
 
-        <section class="imageSection">
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-        <div class="image"></div>
-        </section>
-
-    </article>
-</main>
+    <footer>
+        <div id="footerOutline1">
+            <div id="footerOutline2">
+                <nav>
+                    <a id="homeLink" href="#home">home<div id="homeUnderline"></div></a>
+                    <a id="portfolioLink"href="#portfolio">portfolio<div id="portfolioUnderline"></div></a> 
+                    <a id="aboutLink" href="#about">about<div id="AboutUnderline"></div></a>
+                    <a id="contactLink" href="#contact">contact<div id="ContactUnderline"></div></a>
+                </nav>
+                <a href="#home"> <img  src="Assets/logos/altoLogo_full.svg" alt="jennifer bowser development logo" id="footerFullLogo"/> </a>
+            </div>
+        </div>
+    </footer>
+    <script src = 'app.js'></script>
 </body>
 </html>
