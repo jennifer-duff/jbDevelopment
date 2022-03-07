@@ -171,6 +171,10 @@
         font-size: 10pt;
     }
 
+    #qualifier{
+        font-size: 8.5pt;
+    }
+
     .linksLabelDiv{
         margin: 2px 0 -5px 0 ;
     }
@@ -254,6 +258,10 @@
 
     .projectDescription{
         font-size: 9pt;
+    }
+
+    #qualifier{
+        font-size: 7.5pt;
     }
 
     .linksContainer{
@@ -358,6 +366,10 @@
 
     .projectDescription{
         font-size: 13pt;
+    }
+
+    #qualifier{
+        font-size: 11pt;
     }
 
     .linkText{
@@ -615,7 +627,7 @@
     
     .projectTitle {
         font-size: 30pt;
-        margin-bottom: 25px; 
+        margin-bottom: 15px; 
     }
 
     .langsList{
@@ -624,6 +636,10 @@
 
     .projectDescription{
         font-size: 10pt;
+    }
+
+    #qualifier{
+        font-size: 9pt;
     }
     /* ------- About Section -------*/
     
@@ -980,7 +996,11 @@
     }
 
     .projectDescription{
-        font-size: 9.4pt;
+        font-size: 9.5pt;
+    }
+
+    #qualifier{
+        font-size: 8pt;
     }
 
     .linkText{
@@ -1288,8 +1308,12 @@
     }
 
     .projectDescription{
-        margin: 0;
+        /* margin: 0; */
         font-size: 9pt;
+    }
+
+    #qualifier{
+        font-size: 7.5pt;
     }
 
     .linkText{

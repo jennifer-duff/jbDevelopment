@@ -199,8 +199,8 @@ window.addEventListener('scroll', function(){
 
 
 //------------------- Embedded PDF ------------------------
-let resume = document.querySelector('#resume');
-let API_KEY = "c32fb517528e404db36e48ffb7fa1ef3" || "822039af784d499088a70d595b536fe3";
+// let resume = document.querySelector('#resume');
+// let API_KEY = "c32fb517528e404db36e48ffb7fa1ef3" || "822039af784d499088a70d595b536fe3";
 // document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
 //     var adobeDCView = new AdobeDC.View({clientId: API_KEY, divId: "resume"});
 //     adobeDCView.previewFile({
@@ -208,3 +208,38 @@ let API_KEY = "c32fb517528e404db36e48ffb7fa1ef3" || "822039af784d499088a70d595b5
 //         metaData:{fileName: "JenniferDuffResume_2022.pdf"}
 //     }, {embedMode: "IN_LINE", showPageControls: false, showAnnotationTools: false, showLeftHandPanel: false, enableFormFiling: false, showDownloadPDF: false, showPrintPDF: false});
 // });
+
+
+//-------------- Make ProjectTile links unclickable until revealed --------------------
+let infoContainers = document.querySelectorAll('.infoContainer');
+let linkBoxes = document.querySelectorAll('.linkBox');
+
+// console.log(infoContainers);
+
+// for(let i = 0; i < infoContainers.length; i++){
+//     console.log(infoContainers[i]);
+// }
+
+// function revealLinksOnHover(){
+//     for(let linkBox of linkBoxes){
+//         if(linkBox.style.opacity = 0){
+//             linkBox.style.pointerEvents = 'none';
+//             linkBox.style.cursor = 'default';
+//         }
+//     }
+// }
+
+// function revealLinksOnHover(event){
+//     let parent = event.target;
+//     console.log(event.target)
+//     for(let i = 0; i < infoContainers.length; i++){
+//         if(infoContainers[i] === parent){
+//             linkBoxes[i].style.visibility = 'visible';
+//         }
+//     }
+// }
+
+// for(let tile of infoContainers){
+//     tile.addEventListener('hover', revealLinksOnHover);
+//     tile.addEventListener('click', revealLinksOnHover);
+// }
