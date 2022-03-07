@@ -483,10 +483,10 @@ header nav a div{
 }
 
 /* TODO: REMOVE THIS FOR PRODUCTION*/
-#firstInfoContainer{
+/* #firstInfoContainer{
     visibility: visible !important;
     opacity: 0.95 !important;
-}
+} */
     
 
 .projectTitle {
