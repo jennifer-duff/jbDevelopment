@@ -14,11 +14,6 @@
         font-size: 20pt;
         font-weight: 300;
         position: relative;
-        bottom: 34px;    
-    }
-
-    .infoContainer{
-        bottom: 31px;
     }
 
     .projectTitle {
@@ -63,7 +58,7 @@
     }
 
     .infoContainer{
-        height: 35vw;
+        /* height: 35vw; */
         padding: 7%;
     }
 
@@ -344,9 +339,9 @@
         height: 67vw;
     }
 
-    .infoContainer{
+    /* .infoContainer{
         height: 67vw;
-    }
+    } */
 
     .projectTitle {
         font-size: 40pt;
@@ -969,12 +964,6 @@
 
     .projectLabel{
         font-size: 16pt;
-        bottom: 28px;
-    }
-
-    .infoContainer{
-        height: 100%;
-        bottom: 25px;
     }
 
     .projectTitle{
@@ -1283,7 +1272,8 @@
     /*----------- Portfolio -----------*/
     #portfolioContainer {
         grid-row-gap: 20vw;
-    }    
+    }
+        
     .infoContainer{
         padding: 5%;
     }

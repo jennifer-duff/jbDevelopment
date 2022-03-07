@@ -420,15 +420,29 @@ header nav a div{
     grid-row-gap: 5vw;
 }
 
+
+
+
+.projects{
+    /* border: 1px solid black;
+    margin: 0;
+    width: 1fr;
+    height: auto;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 100%;
+    box-shadow: 10px 10px 0 rgb(105, 105, 105);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; */
+    transition: transform 0.3s ease-in-out;
+}
+
 .projectLabel{
     font-size: 22pt;
     font-weight: 300;
     position: relative;
-    bottom: 37px;    
 }
 
-
-.projects{
+.projectTile{
     border: 1px solid black;
     margin: 0;
     width: 1fr;
@@ -442,10 +456,13 @@ header nav a div{
 
 .projects:hover{
     transform: scale(1.075);
+}
+
+.projects:hover .projectTile{
     box-shadow: 15px 15px 0 rgb(150, 150, 150);
 }
 
-.projects:hover .infoContainer{
+.projectTile:hover .infoContainer{
     opacity: 0.96;
     cursor: default;
 }
@@ -464,7 +481,6 @@ header nav a div{
     background: var(--baseYellow);
     visibility: none;
     position: relative;
-    bottom: 34px;
 }
 
 /* TODO: REMOVE THIS FOR PRODUCTION*/
@@ -590,14 +606,14 @@ header nav a div{
 
 
 /*ScheduleBooker background*/
-.projects:nth-child(1){
+#scheduleBookerTile{
     background-image: url('Assets/portfolioImgs/scheduleBooker_customers.png');
     background-size: cover;
     background-position: center;
 }
 
 /*TermTracker background*/
-.projects:nth-child(2){
+#termTrackerTile{
     background-image: url('Assets/portfolioImgs/termTrackerImg.png');
     background-size: cover;
     background-position: center;
@@ -605,14 +621,14 @@ header nav a div{
 
 
 /*Luma background*/
-.projects:nth-child(3){
+#lumaTile{
     background-image: url('Assets/portfolioImgs/Luma.png');
     background-size: cover;
     /* background-position: center; */
 }
 
 /*Weather-Checker background*/
-.projects:nth-child(4){
+#weatherCheckerTile{
     background-image: url('Assets/portfolioImgs/weatherAppScreenshot.png');
     background-size: cover;
 }
@@ -1185,4 +1201,12 @@ footer a div{
     padding: 0;
     position: absolute;
     z-index: -1;
+}
+
+/* ----- TEST -----*/
+#test{
+    width: 50px;
+    height: 50px;
+    background: yellow left top no-repeat, red right bottom no-repeat;
+    background-size: 20px, 30px,
 }
