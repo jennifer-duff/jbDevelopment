@@ -256,6 +256,10 @@
         font-size: 9pt;
     }
 
+    .linksContainer{
+        margin-top: 20px;
+    }
+
     .linkText{
         font-size: 6pt;
     }
@@ -1273,7 +1277,7 @@
     #portfolioContainer {
         grid-row-gap: 20vw;
     }
-        
+
     .infoContainer{
         padding: 5%;
     }

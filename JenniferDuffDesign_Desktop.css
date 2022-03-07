@@ -439,14 +439,13 @@ header nav a div{
 .projectLabel{
     font-size: 22pt;
     font-weight: 300;
-    position: relative;
 }
 
 .projectTile{
     border: 1px solid black;
     margin: 0;
     width: 1fr;
-    height: auto;
+    height: 100%;
     background-repeat: no-repeat;
     background-origin: border-box;
     background-size: 100%;
@@ -528,8 +527,7 @@ header nav a div{
     justify-content: center;
     align-items: center;
     width: 100%;
-    float: right;
-    margin-top: 10px;
+    margin-top: 30px;
     opacity: 0.85;    
 }
 
@@ -566,26 +564,6 @@ header nav a div{
     margin-left: 7px;
 }
 
-/* .linksLabelDiv{
-    opacity: 1;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.2s ease-in-out;
-    width: 100%;
-    margin: 5px 0 0 0 ;
-} */
-/* 
-.viewLiveLink .linksLabelDiv{
-    margin-right: 5px;
-}
-
-.githubLink .linksLabelDiv{
-    margin-left: 5px;
-} */
-
 .triangle{
     height: 20.5px;
     margin: 0;
@@ -604,6 +582,13 @@ header nav a div{
     line-height: 100%;
 }
 
+#qualifier{
+    font-family: var(--sansSerifFont);
+    font-size: 10pt;
+    font-style: italic;
+    margin: 0;
+    line-height: 110%;
+}
 
 /*ScheduleBooker background*/
 #scheduleBookerTile{
@@ -1201,12 +1186,4 @@ footer a div{
     padding: 0;
     position: absolute;
     z-index: -1;
-}
-
-/* ----- TEST -----*/
-#test{
-    width: 50px;
-    height: 50px;
-    background: yellow left top no-repeat, red right bottom no-repeat;
-    background-size: 20px, 30px,
 }
