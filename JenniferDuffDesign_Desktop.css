@@ -666,15 +666,12 @@ h3{
     justify-content: center;
 }
 
-/* .stackSubHeading{
-    appearance: none;
-    -webkit-appearance: none;
-    font-family: var(--sansSerifFont);;
-    font-size: 16pt;
-    font-weight: 600;
-    text-decoration: black solid underline 2px;
-    margin: 0 0 7px 0.6rem;
-} */
+#stackListSub{
+    text-align: center;
+    font-weight: 300;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
 
 #langBoxWrapper{
     display: flex;
