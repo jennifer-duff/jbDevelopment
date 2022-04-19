@@ -1,4 +1,3 @@
-
 /* ------------------- GENERAL ------------------- */
 
 html {
@@ -7,11 +6,11 @@ html {
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --drkYellow: #ffbf47;
     --baseYellow: #ffcd70;
     --ltYellow: #ffe2ad;
-    --serifFont: 'Azeret Mono', 'Consolas', monospace;
+    --serifFont: "Azeret Mono", "Consolas", monospace;
     --sansSerifFont: "Manrope", Helvetica, sans-serif;
 }
 
@@ -32,7 +31,7 @@ main {
 
 /* section headers */
 h2 {
-    font-family: var(--sansSerifFont);;
+    font-family: var(--sansSerifFont);
     font-weight: 900;
     font-style: normal;
     font-size: 45pt;
@@ -40,7 +39,7 @@ h2 {
     margin: 0 0 40px 0;
 }
 
-.headingAnimation{
+.headingAnimation {
     animation-name: slideIn;
     animation-duration: 0.8s;
     animation-iteration-count: 1;
@@ -48,7 +47,7 @@ h2 {
     animation-fill-mode: forwards;
 }
 
-@keyframes slideIn{
+@keyframes slideIn {
     0% {
         opacity: 0;
         transform: translateY(40px);
@@ -59,8 +58,7 @@ h2 {
     }
 }
 
-
-section{
+section {
     margin: 0;
     padding: 175px 0 0 0;
 }
@@ -72,16 +70,16 @@ button:active {
     cursor: pointer;
 }
 
-.accent{
-    color: var(--baseYellow)
+.accent {
+    color: var(--baseYellow);
 }
 
 /* ------------------- NAV BAR ------------------- */
-#menuIcon{
+#menuIcon {
     display: none;
 }
 
-#hamburgerNav{
+#hamburgerNav {
     display: none;
 }
 
@@ -95,13 +93,13 @@ button:active {
     top: 0;
     background-color: white;
     margin: 0;
-    padding: 20px 0 20px 17px; 
+    padding: 20px 0 20px 17px;
     z-index: 2;
     border-bottom: 2px solid black;
     height: auto;
 }
 
-#extraUnderline{
+#extraUnderline {
     width: calc(100% + 10px);
     background-color: #ffbf47;
     height: 1px;
@@ -111,7 +109,7 @@ button:active {
     z-index: 2;
 }
 
-#headerFullLogo{
+#headerFullLogo {
     box-sizing: border-box;
     width: 250px;
     margin: 0;
@@ -121,7 +119,7 @@ button:active {
     transition: transform 0.2s ease-in-out;
 }
 
-#headerFullLogo:hover{
+#headerFullLogo:hover {
     transform: scale(1.05);
 }
 
@@ -140,20 +138,19 @@ header nav a {
     text-decoration: none;
     color: black;
     font-weight: 700;
-    font-family: var(--sansSerifFont);;
+    font-family: var(--sansSerifFont);
     font-size: 13pt;
     text-align: center;
     vertical-align: baseline;
     transition: background-color 0.3s ease-in-out;
 }
 
-header nav a:hover{
+header nav a:hover {
     background-color: var(--drkYellow);
 }
 
-
-header nav a div{
-    background-color: var(--drkYellow); 
+header nav a div {
+    background-color: var(--drkYellow);
     height: 7px;
     margin-top: -8px;
     padding: 0;
@@ -163,47 +160,38 @@ header nav a div{
     width: auto;
 }
 
-/* #navbar a:visited{
-    color: rgb(77, 77, 77);
-} */
+#homeLink div {
+    width: 3.1rem;
+}
 
-    #homeLink div{
-        width: 3.1rem;
-    }
+#portfolioLink div {
+    width: 4.6rem;
+}
 
-    #portfolioLink div{
-        width: 4.6rem;
-    }
+#aboutLink div {
+    width: 3.2rem;
+}
 
-    #aboutLink div{
-        width: 3.2rem;
-    }
+#contactLink div {
+    width: 4.1rem;
+}
 
-    #contactLink div{
-        width: 4.1rem;
-    }
+#resumeLink {
+    font-family: var(--serifFont);
+    font-size: 10pt;
+    letter-spacing: 2px;
+    font-weight: 300;
+    border: 2px solid var(--baseYellow);
+    padding: 3px 0 0 0;
+    height: 20px;
+}
 
-    #resumeLink{
-        font-family: var(--serifFont);
-        font-size: 10pt;
-        letter-spacing: 2px;
-        font-weight: 300;
-        border: 2px solid var(--baseYellow);
-        padding: 3px 0 0 0 ;
-        height: 20px;
-    }
-
-    #resumeLink:hover a{
-        font-weight: 300;   
-    }
-
-    /* #resumeLink div{
-        width: 4.1rem;
-    } */
-
+#resumeLink:hover a {
+    font-weight: 300;
+}
 
 /* ------------------- SplashBox ------------------- */
-#splashbox{
+#splashbox {
     margin-top: 80px;
     height: calc(100vh - 75px);
     justify-items: center;
@@ -214,13 +202,7 @@ header nav a div{
     padding-top: 0;
 }
 
-/* #hi_im_jennifer {
-    width: 400px;
-    position: relative;
-    top: -100px;
-} */
-
-#introBox{
+#introBox {
     display: flex;
     flex-wrap: nowrap;
     align-content: flex-start;
@@ -233,7 +215,7 @@ header nav a div{
     margin-top: -100px;
 }
 
-.introWords{
+.introWords {
     box-sizing: border-box;
     margin: 0 auto 0 0;
     font-size: 50pt;
@@ -245,37 +227,42 @@ header nav a div{
     letter-spacing: 5px;
     text-align: left;
     border-right: 4px solid black;
-    animation: 
-        type 7s steps(16) infinite,
-        cursorBlink 0.75s step-end infinite;
+    animation: type 7s steps(16) infinite, cursorBlink 0.75s step-end infinite;
 }
 
 @keyframes type {
     0%,
     15%,
     100% {
-        width: 1%
+        width: 1%;
     }
 
     45%,
     70% {
-        width: 100%
+        width: 100%;
     }
 }
 
-@keyframes cursorBlink{
-    0% {border-right-color: black;}
-    40% {border-right-color: black;}
-    60% {border-right-color: transparent;}
-    100% {border-right-color: transparent;}
+@keyframes cursorBlink {
+    0% {
+        border-right-color: black;
+    }
+    40% {
+        border-right-color: black;
+    }
+    60% {
+        border-right-color: transparent;
+    }
+    100% {
+        border-right-color: transparent;
+    }
 }
 
-
-#checkItOut{
+#checkItOut {
     margin: 0 0 0 -20px;
     padding: 0;
     font-weight: 300;
-    font-size: 0.80rem;
+    font-size: 0.8rem;
     letter-spacing: 2px;
     text-decoration: none;
     color: black;
@@ -286,7 +273,7 @@ header nav a div{
     transition: font-weight 0.2s ease-in-out, transform 0.3s ease-in-out;
 }
 
-#checkItOut span{
+#checkItOut span {
     color: var(--drkYellow);
     font-weight: 900;
     font-size: 1rem;
@@ -294,12 +281,11 @@ header nav a div{
 
 #checkItOut:hover,
 #checkItOut:active,
-#checkItOut:focus{
-    /* font-weight: 700; */
+#checkItOut:focus {
     transform: scale(1.075) rotate(180deg);
 }
 
-#verticalLine{
+#verticalLine {
     width: 1.4px;
     height: 600px;
     background-color: black;
@@ -307,14 +293,13 @@ header nav a div{
     padding: 0;
 }
 
-#splashList{
+#splashList {
     appearance: none;
     -webkit-appearance: none;
     font-family: var(--sansSerifFont);
     font-size: 20pt;
     font-weight: 500;
     list-style-type: none;
-    /* text-decoration: 2px underline black; */
     line-height: 55px;
     width: calc(100% / 2 - 2px - (125 * 2));
     padding: 0;
@@ -323,24 +308,24 @@ header nav a div{
     top: 140px;
 }
 
-#splashList li{
+#splashList li {
     appearance: none;
     -webkit-appearance: none;
     text-decoration: 2px solid underline black;
 }
 
-#splashList .accent{
+#splashList .accent {
     text-decoration: none;
 }
 
-#RectangleCircleOutline{
+#RectangleCircleOutline {
     width: 100px;
     position: absolute;
     top: 175px;
     right: 160px;
 }
 
-#CircleOutlineSolid1{
+#CircleOutlineSolid1 {
     width: 100px;
     position: absolute;
     bottom: 100px;
@@ -348,7 +333,7 @@ header nav a div{
 }
 
 /* ---------Back to Top Button ------------*/
-#backToTopContainer{
+#backToTopContainer {
     position: fixed;
     bottom: 70px;
     right: 2.5vw;
@@ -358,15 +343,14 @@ header nav a div{
     justify-content: center;
     z-index: 5;
     transition: opacity 0.2s ease-in-out;
-    /* background-color: lightblue; */
 }
 
-#backToTopLink{
+#backToTopLink {
     text-decoration: none;
     color: black;
 }
 
-#circle{
+#circle {
     margin-left: 0px;
     padding: 10px;
     background-color: var(--baseYellow);
@@ -374,40 +358,39 @@ header nav a div{
     width: 50px;
     border-radius: 50%;
     box-sizing: border-box;
-    /* box-shadow: 5px 5px 25px -2px #c0c0c0; */
     box-shadow: 3px 3px 0 rgb(105, 105, 105);
-    transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out,
+        box-shadow 0.2s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1.5px solid black;
 }
 
-#arrow{
+#arrow {
     text-decoration: none;
     width: 15px;
-    transition: transform 0.3s ease-in-out
+    transition: transform 0.3s ease-in-out;
 }
-#circle:hover{
+#circle:hover {
     transform: scale(1.1);
     box-shadow: 5px 5px 0 rgb(138, 137, 137);
     padding: 5px;
 }
 
-#circle:hover #arrow{
+#circle:hover #arrow {
     transform: scale(1.1);
 }
 
-
 /* ------------------- Portfolio Section ------------------- */
-#dots{
+#dots {
     width: 75px;
     position: absolute;
     left: 87vw;
     bottom: -190px;
 }
 
-#portfolio h2{
+#portfolio h2 {
     margin-bottom: 65px;
 }
 
@@ -420,28 +403,16 @@ header nav a div{
     grid-row-gap: 5vw;
 }
 
-
-
-
-.projects{
-    /* border: 1px solid black;
-    margin: 0;
-    width: 1fr;
-    height: auto;
-    background-repeat: no-repeat;
-    background-origin: border-box;
-    background-size: 100%;
-    box-shadow: 10px 10px 0 rgb(105, 105, 105);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; */
+.projects {
     transition: transform 0.3s ease-in-out;
 }
 
-.projectLabel{
+.projectLabel {
     font-size: 22pt;
     font-weight: 300;
 }
 
-.projectTile{
+.projectTile {
     border: 1px solid black;
     margin: 0;
     width: 1fr;
@@ -453,25 +424,20 @@ header nav a div{
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.projects:hover{
+.projects:hover {
     transform: scale(1.075);
 }
 
-.projects:hover .projectTile{
+.projects:hover .projectTile {
     box-shadow: 15px 15px 0 rgb(150, 150, 150);
 }
 
-.projectTile:hover .infoContainer{
+.projectTile:hover .infoContainer {
     opacity: 0.96;
     cursor: default;
 }
 
-/* .projectTile:hover .linkbox{
-    pointer-events: all;
-    cursor: pointer;
-} */
-
-.infoContainer{
+.infoContainer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -487,15 +453,8 @@ header nav a div{
     position: relative;
 }
 
-/* TODO: REMOVE THIS FOR PRODUCTION*/
-/* #firstInfoContainer{
-    visibility: visible !important;
-    opacity: 0.95 !important;
-} */
-    
-
 .projectTitle {
-    font-family: var(--sansSerifFont);;
+    font-family: var(--sansSerifFont);
     font-size: 30pt;
     font-weight: 800;
     margin: 0 0 15px 0;
@@ -503,7 +462,7 @@ header nav a div{
     line-height: 110%;
 }
 
-.langsList{
+.langsList {
     font-size: 11pt;
     letter-spacing: 3px;
     font-weight: 200;
@@ -513,18 +472,18 @@ header nav a div{
     line-height: 125%;
 }
 
-.projectDescription{
+.projectDescription {
     font-family: var(--sansSerifFont);
     font-weight: 400;
     font-size: 11.75pt;
     line-height: 140%;
 }
 
-.functionalities{
+.functionalities {
     font-weight: 600;
 }
 
-.linksContainer{
+.linksContainer {
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
@@ -533,11 +492,10 @@ header nav a div{
     align-items: center;
     width: 100%;
     margin-top: 30px;
-    opacity: 0.85;    
+    opacity: 0.85;
 }
 
-.linkBox{
-    /* visibility: hidden; */
+.linkBox {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -548,47 +506,47 @@ header nav a div{
     text-decoration: none;
 }
 
-.githubLink{
+.githubLink {
     margin-left: 10px;
 }
 
-.linkIcon{
+.linkIcon {
     transition: transform 0.2s ease-in-out;
 }
 
-.linkBox:hover .linkIcon{
+.linkBox:hover .linkIcon {
     transform: scale(1.2);
 }
 
-.viewLiveIcon{
+.viewLiveIcon {
     width: 28px;
     margin-right: 7px;
 }
 
-.githubIcon{
+.githubIcon {
     width: 24px;
     margin-left: 7px;
 }
 
-.triangle{
+.triangle {
     height: 20.5px;
     margin: 0;
     padding: 0;
     position: static;
 }
 
-.linkText{
+.linkText {
     font-family: var(--serifFont);
     font-weight: 300;
     font-size: 7.5pt;
-    background-color:rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
     color: white;
     padding: 5.25px 9px 5px 9px;
     margin: 0;
     line-height: 100%;
 }
 
-#qualifier{
+#qualifier {
     font-family: var(--sansSerifFont);
     font-size: 10pt;
     font-style: italic;
@@ -597,40 +555,38 @@ header nav a div{
 }
 
 /*ScheduleBooker background*/
-#scheduleBookerTile{
-    background-image: url('Assets/portfolioImgs/scheduleBooker_customers.png');
+#scheduleBookerTile {
+    background-image: url("Assets/portfolioImgs/scheduleBooker_customers.png");
     background-size: cover;
     background-position: center;
 }
 
 /*TermTracker background*/
-#termTrackerTile{
-    background-image: url('Assets/portfolioImgs/termTrackerImg.png');
+#termTrackerTile {
+    background-image: url("Assets/portfolioImgs/termTrackerImg.png");
     background-size: cover;
     background-position: center;
 }
 
-
 /*Luma background*/
-#lumaTile{
-    background-image: url('Assets/portfolioImgs/Luma.png');
+#lumaTile {
+    background-image: url("Assets/portfolioImgs/Luma.png");
     background-size: cover;
     /* background-position: center; */
 }
 
 /*Weather-Checker background*/
-#weatherCheckerTile{
-    background-image: url('Assets/portfolioImgs/weatherAppScreenshot.png');
+#weatherCheckerTile {
+    background-image: url("Assets/portfolioImgs/weatherAppScreenshot.png");
     background-size: cover;
     background-position: top;
 }
 
-#CircleOutlineSolid2{
+#CircleOutlineSolid2 {
     width: 100px;
     position: relative;
-    /* top: 2250px; */
     top: 75px;
-    left:-7vw;
+    left: -7vw;
     transform: rotate(90deg);
     margin: 0;
     padding: 0;
@@ -638,27 +594,26 @@ header nav a div{
 }
 /* ------------------- ABOUT SECTION ------------------- */
 
-#aboutParagraph{
+#aboutParagraph {
     font-size: 14pt;
     font-weight: 200;
     line-height: 3rem;
-    /* letter-spacing: 2px; */
     margin: 0;
     padding: 0;
 }
 
-#arrows{
+#arrows {
     height: 95px;
     display: inline;
-    margin-top: 20px
+    margin-top: 20px;
 }
 
-#wavyArrows{
+#wavyArrows {
     display: none;
 }
 
-h3{
-    font-family: var(--sansSerifFont);;
+h3 {
+    font-family: var(--sansSerifFont);
     font-size: 2.25rem;
     font-weight: 800;
     margin: 0 0 40px 0;
@@ -666,34 +621,32 @@ h3{
     justify-content: center;
 }
 
-#stackListSub{
+#stackListSub {
     text-align: center;
     font-weight: 300;
     margin-top: -20px;
     margin-bottom: 40px;
 }
 
-#langBoxWrapper{
+#langBoxWrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
 }
 
-#langs{
+#langs {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* margin-top: 0px; */
     width: 780px;
     margin: 0;
-    /* border: 2px solid black; */
     position: relative;
     z-index: 0;
 }
 
-.stackWrapper{
+.stackWrapper {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -703,81 +656,77 @@ h3{
     height: 120px;
     position: relative;
     z-index: 2;
-    /* width: 400px; */
-    /* text-shadow: 1px 1px 0px var(--baseYellow); */
 }
 
-.stackWrapper:last-of-type{
-    margin-bottom: 40px
+.stackWrapper:last-of-type {
+    margin-bottom: 40px;
 }
 
-
-.stackWrapper p{
+.stackWrapper p {
     margin: 20px 0 0 0;
     font-weight: 400;
 }
 
-/* .stackLogos{
-    height: 60px;
-} */
-
-
-#javaLogo{
+#javaLogo {
     width: 65px;
 }
 
-#jsLogo, #htmlLogo, #cssLogo{
+#jsLogo,
+#htmlLogo,
+#cssLogo {
     width: 50px;
 }
 
-#nodeLogo{
+#nodeLogo {
     width: 170px;
 }
 
-#expressLogo{
+#expressLogo {
     width: 140px;
 }
 
-#pythonLogo{
+#pythonLogo {
     width: 60px;
 }
 
-#sqlLogo{
+#sqlLogo {
     width: 115px;
 }
 
-#mongoDBlogo{
+#mongoDBlogo {
     width: 200px;
 }
 
-.bracketDiv{
+#reactLogo {
+    width: 70px;
+}
+
+.bracketDiv {
     border: 3px solid black;
     width: 50px;
 }
 
-
-.bracketDiv:first-of-type{
+.bracketDiv:first-of-type {
     border-right: none;
     box-shadow: -5px 5px 0px var(--baseYellow);
     margin-right: -4%;
 }
 
-.bracketDiv:last-of-type{
+.bracketDiv:last-of-type {
     border-left: none;
     box-shadow: 5px 5px 0px var(--baseYellow);
     margin-left: -4%;
 }
 
-
-#resumeSection{
+#resumeSection {
     padding-top: 125px;
 }
 
-#resumeHeader{
+#resumeHeader {
     margin-bottom: 20px;
 }
 
-#pdfBox{
+#pdfBox {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -785,7 +734,7 @@ h3{
     margin: -5px 0 20px 0;
 }
 
-#resumePDFLink{
+#resumePDFLink {
     appearance: none;
     color: black;
     font-weight: 400;
@@ -793,17 +742,17 @@ h3{
     /* transition: font-weight 0.2s ease-in-out; */
 }
 
-#openNewTab_icon{
+#openNewTab_icon {
     width: 14px;
     margin: 0 0 0 8px;
 }
 
-#resumePDFLink:hover{
+#resumePDFLink:hover {
     text-decoration: 2.5px solid underline var(--drkYellow);
     font-weight: 500;
 }
 
-#resume{
+#resume {
     border: 2px solid black;
     box-shadow: 10px 10px 0 var(--baseYellow);
     padding: 4%;
@@ -820,31 +769,31 @@ h3{
     margin: 0;
 } */
 
-#resume h5{
-    font-family: var(--sansSerifFont);;
+#resume h5 {
+    font-family: var(--sansSerifFont);
     font-weight: 900;
     font-size: 18pt;
     margin: 30px 0 5px 0;
 }
 
-#resume #firstResumeHeader{
+#resume #firstResumeHeader {
     margin-top: 0px;
 }
 
-#resumeFlexBox{
+#resumeFlexBox {
     display: flex;
     flex-direction: row;
 }
 
-#certificationsBox{
+#certificationsBox {
     width: 40%;
 }
 
-#skillsBox{
+#skillsBox {
     width: 60%;
 }
 
-.resumeUnderline{
+.resumeHeaderUnderline {
     background-color: var(--baseYellow);
     height: 10px;
     position: relative;
@@ -853,38 +802,36 @@ h3{
     margin-bottom: -20px;
 }
 
-
-#eduBox .resumeUnderline{
+#eduBox .resumeHeaderUnderline {
     width: 123px;
 }
 
-#projectsBox .resumeUnderline{
+#projectsBox .resumeHeaderUnderline {
     width: 105px;
 }
 
-#workExperienceBox .resumeUnderline{
+#workExperienceBox .resumeHeaderUnderline {
     width: 199px;
 }
 
-#certificationsBox .resumeUnderline{
+#certificationsBox .resumeHeaderUnderline {
     width: 167px;
     margin-bottom: -5px;
 }
 
-#skillsBox .resumeUnderline{
+#skillsBox .resumeHeaderUnderline {
     width: 67px;
     margin-bottom: -5px;
 }
 
-
-.resumeSubheader{
-    font-family: var(--sansSerifFont);;
+.resumeSubheader {
+    font-family: var(--sansSerifFont);
     font-weight: 700;
     font-size: 13pt;
     margin: 15px 0 5px 0;
 }
 
-.resumeSubtitle{
+.resumeSubtitle {
     font-family: var(--serifFont);
     letter-spacing: 1.5px;
     font-size: 9pt;
@@ -892,19 +839,19 @@ h3{
     margin: 0 0 6px 0;
 }
 
-#resume ul{
+#resume ul {
     list-style: none;
     margin: 0 0 0 19px;
     padding-left: 0;
 }
 
-#resume li:before{
+#resume li:before {
     content: "—";
     padding: 0 7px 0 0;
     margin: 0;
 }
 
-#resume li{
+#resume li {
     font-family: var(--sansSerifFont);
     font-weight: 400;
     font-size: 11pt;
@@ -918,22 +865,22 @@ h3{
     height: 700px;
 } */
 
-#contact h2{
+#contact h2 {
     margin-bottom: 60px;
 }
 
-#contactDiv{
+#contactDiv {
     display: flex;
     flex-direction: row;
     margin-left: 20px;
 }
 
-.contactP{
+.contactP {
     font-size: 16pt;
     margin: 0 0 20px 0;
 }
 
-.contactSubDivs{
+.contactSubDivs {
     box-sizing: border-box;
     padding: 30px;
     background-color: var(--baseYellow);
@@ -944,41 +891,40 @@ h3{
     justify-content: center;
 }
 
-.contactOutline{
+.contactOutline {
     border: 2.5px solid black;
     height: 198px;
     margin-top: -215px;
     pointer-events: none;
 }
 
-#onTheWebDiv{
+#onTheWebDiv {
     width: 500px;
 }
 
-#onTheWebOutline{
+#onTheWebOutline {
     width: 497px;
     margin-left: -15px;
-    
 }
 
-#sendMeAMsgDiv{
+#sendMeAMsgDiv {
     width: 500px;
     margin: 0 0px 0 60px;
 }
 
-#sendMeAMsgOutline{
+#sendMeAMsgOutline {
     width: 497px;
     margin-left: 45px;
 }
 
-.socialIconsDiv{
+.socialIconsDiv {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: auto;
 }
 
-.socialLinks{
+.socialLinks {
     box-sizing: border-box;
     text-decoration: none;
     /* height: 34px;
@@ -990,16 +936,16 @@ h3{
     margin: 0 0 0 2.5px;
 }
 
-.socialIcons{
+.socialIcons {
     width: 40px;
     transition: transform 0.2s ease-in-out;
 }
 
-.socialIcons:hover{
+.socialIcons:hover {
     transform: scale(1.1);
 }
 
-#email{
+#email {
     color: black;
     margin: 0;
     font-weight: 700;
@@ -1008,13 +954,11 @@ h3{
     transition: transform 0.2s ease-in-out;
 }
 
-#email:hover{
+#email:hover {
     transform: scale(1.05);
 }
 
-
-
-#contactForm{
+#contactForm {
     margin: 50px 0 0 0;
     background-color: var(--baseYellow);
     height: 600px;
@@ -1030,7 +974,7 @@ h3{
     /* border: 2px solid black; */
 }
 
-.formField{
+.formField {
     margin: 0.5rem 0 3rem 0;
     font-family: var(--serifFont);
     font-weight: 300;
@@ -1067,7 +1011,7 @@ h3{
 #contactForm label {
     font-weight: 700;
     font-size: 14pt;
-    font-family: var(--sansSerifFont);;
+    font-family: var(--sansSerifFont);
 }
 
 #submitButton {
@@ -1085,7 +1029,8 @@ h3{
     width: 100px;
     height: 50px;
     border-radius: 0%;
-    transition: outline 0.2s ease-in-out, transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transition: outline 0.2s ease-in-out, transform 0.2s ease-in-out,
+        background-color 0.2s ease-in-out;
 }
 
 #submitButton:hover,
@@ -1093,13 +1038,13 @@ h3{
 #submitButton:focus {
     transform: scale(1.05);
     /* border: 3px solid black; */
-    outline: 1px solid black;;
+    outline: 1px solid black;
     /* background-color: var(--drkYellow); */
 }
 
 /* ------------------- FOOTER ------------------- */
 
-footer{
+footer {
     margin-top: 100px;
     display: flex;
     justify-content: center;
@@ -1107,14 +1052,13 @@ footer{
     width: 100%;
 }
 
-
-#footerOutline1{
+#footerOutline1 {
     width: 96%;
     height: 100px;
     border: 2px solid black;
 }
 
-#footerOutline2{
+#footerOutline2 {
     width: 100.2%;
     height: 103px;
     border: 2px solid black;
@@ -1130,12 +1074,12 @@ footer{
     box-sizing: border-box;
 }
 
-#footerFullLogo{
+#footerFullLogo {
     width: 250px;
     transition: transform 0.2s ease-in-out;
 }
 
-#footerFullLogo:hover{
+#footerFullLogo:hover {
     transform: scale(1.05);
 }
 
@@ -1150,41 +1094,40 @@ footer nav {
     /* border: 1px solid black; */
 }
 
-footer nav a{
+footer nav a {
     text-decoration: none;
     color: black;
     font-weight: 700;
-    font-family: var(--sansSerifFont);;
+    font-family: var(--sansSerifFont);
     font-size: 12pt;
     text-align: center;
     vertical-align: baseline;
     transition: background-color 0.3s ease-in-out;
 }
 
+#homeLink div {
+    width: 3.1rem;
+}
 
-    #homeLink div{
-        width: 3.1rem;
-    }
+#portfolioLink div {
+    width: 4.6rem;
+}
 
-    #portfolioLink div{
-        width: 4.6rem;
-    }
+#aboutLink div {
+    width: 3.2rem;
+}
 
-    #aboutLink div{
-        width: 3.2rem;
-    }
+#contactLink div {
+    width: 4.1rem;
+}
 
-    #contactLink div{
-        width: 4.1rem;
-    }
-
-footer nav a:hover{
+footer nav a:hover {
     background-color: var(--drkYellow);
 }
 
-footer a div{
+footer a div {
     transition: background-color 0.2s ease-in-out;
-    background-color: var(--drkYellow); 
+    background-color: var(--drkYellow);
     height: 7px;
     margin-top: -8px;
     padding: 0;

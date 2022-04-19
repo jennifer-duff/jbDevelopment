@@ -1,218 +1,143 @@
-'use strict'
+"use strict";
 
 // --------------------- H2 SlideIn Animation Trigger -------------------------
-const headings = document.querySelectorAll('.headingWrapper');
+const headings = document.querySelectorAll(".headingWrapper");
 //const h3s = document.
 
-function callback (entries) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting){
-            entry.target.childNodes[1].classList.add('headingAnimation');
+function callback(entries) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.childNodes[1].classList.add("headingAnimation");
             return;
         }
-        entry.target.childNodes[1].classList.remove('headingAnimation');
-    })
+        entry.target.childNodes[1].classList.remove("headingAnimation");
+    });
 }
 
 const observer = new IntersectionObserver(callback);
 
-for (let i = 0; i < headings.length; i++)
-{
+for (let i = 0; i < headings.length; i++) {
     observer.observe(headings[i]);
 }
 
 // --------------------- Hamburger Nav -------------------------
-let menuIcon = document.querySelector('#menuIcon');
-let hamburgerNav = document.querySelector('#hamburgerNav');
-// let navLinks = hamburgerNav.childNodes;
-// console.log(hamburgerNavLinks);
+let menuIcon = document.querySelector("#menuIcon");
+let hamburgerNav = document.querySelector("#hamburgerNav");
 
-function showHamburgerMenu(){
-    hamburgerNav.style.display = 'flex';
+function showHamburgerMenu() {
+    hamburgerNav.style.display = "flex";
 }
 
-function hideHamburgerMenu(){
-    hamburgerNav.style.display = 'none';
+function hideHamburgerMenu() {
+    hamburgerNav.style.display = "none";
 }
 
-hamburgerNav.addEventListener('mouseleave', function(){
+hamburgerNav.addEventListener("mouseleave", function () {
     hideHamburgerMenu();
-})
+});
 
-document.body.addEventListener('click', function(event){
-    if (event.target === menuIcon)
-    {
-        //console.log('Menu Icon clicked');
+document.body.addEventListener("click", function (event) {
+    if (event.target === menuIcon) {
         showHamburgerMenu();
-    }
-    else if(event.target === hamburgerNav || event.target === hamburgerNav.childNodes)
-    {
+    } else if (
+        event.target === hamburgerNav ||
+        event.target === hamburgerNav.childNodes
+    ) {
         showHamburgerMenu();
-        //console.log('hamburgerNav clicked');
-    }
-    else{
+    } else {
         hideHamburgerMenu();
-        //console.log('body clicked');
     }
-})
+});
 
 //hide/show hamburger automatically based on resize - for cases where menu is open when document is resized.
-window.addEventListener('resize', function() {
-    if(window.innerWidth > 660){
+window.addEventListener("resize", function () {
+    if (window.innerWidth > 660) {
         hideHamburgerMenu();
     }
-})
-
-
-// let mediaQuery1 = window.matchMedia('(max-width: 650px)');
-// let mediaQuery2 = window.matchMedia('(max-width: 475px)');
-
-// mediaQuery1.onchange = (e) => {
-//     if (e.matches)
-//     {
-//         console.log('hiding hamburger menu');
-//         hideHamburgerMenu();
-//     }
-// }
-
-// mediaQuery2.onchange = (e) => {
-//     if (e.matches)
-//     {
-//         console.log('hiding hamburger menu');
-//         hideHamburgerMenu();
-//     }
-// }
+});
 
 //------------------- Handle Navigation ------------------------
-let backToTop = document.querySelector('#backToTopContainer');
-let sections = document.querySelectorAll('section');
-let navLinksDivs = document.querySelectorAll('nav a div');
+let backToTop = document.querySelector("#backToTopContainer");
+let sections = document.querySelectorAll("section");
+let navLinksDivs = document.querySelectorAll("nav a div");
 
-//set initial section heights
-let portfolioSection = sections[1];
-let portfolioOffset = portfolioSection.offsetTop - 200;
-//console.log(`portfolioOffset: ${portfolioOffset}`);
+//set initial section heights + scroll position
+let currScrollPos = window.scrollY;
+let portfolioOffset;
+let aboutOffset;
+let contactOffset;
+window.addEventListener("load", setSectionOffsets);
+window.addEventListener("load", handleScroll);
 
-let aboutSection = sections[2];
-let aboutOffset = aboutSection.offsetTop - 200;
-//console.log(`aboutSectionOffset: ${aboutOffset}`);
-
-let contactSection = sections[3];
-let contactOffset = contactSection.offsetTop - 500;
-//console.log(`contactSectionOffset: ${contactOffset}`);
-
-
-//listen for window resizing & update section heights accordingly
-window.addEventListener('resize', function() {
+function setSectionOffsets() {
+    let portfolioSection = sections[1];
     portfolioOffset = portfolioSection.offsetTop - 200;
-    aboutOffset = aboutSection.offsetTop - 200;
-    contactOffset = contactSection.offsetTop - 500;
-})
 
-//set underline starting positions
-for (let i = 0; i < navLinksDivs.length; i++)
-{
-    if ( i === 0 || i === 4)
-    {
-        navLinksDivs[i].style.opacity = 1;
-    }
-    else
-    {
-        navLinksDivs[i].style.opacity = 0;
-    }
-    backToTop.style.opacity = 0;
+    let aboutSection = sections[2];
+    aboutOffset = aboutSection.offsetTop - 200;
+
+    let contactSection = sections[3];
+    contactOffset = contactSection.offsetTop - 500;
 }
 
-//listen for scrolling and change nav underline accordingly
-window.addEventListener('scroll', function(){
-    let currScrollPos = window.scrollY;
+//listen for window resizing & update section heights accordingly
+window.addEventListener("resize", setSectionOffsets);
 
-    if (currScrollPos < portfolioOffset)
-    {
-        //console.log(`splashBox section: ${currScrollPos}`);
-        for (let i = 0; i < (navLinksDivs.length - 1); i++)
-        {
-            if ( i === 0 || i === 4)
-            {
-                //console.log(navLinksDivs[i]);
+//listen for scrolling and change nav underline accordingly
+window.addEventListener("scroll", handleScroll);
+
+function handleScroll() {
+    currScrollPos = window.scrollY;
+
+    // show Home underline
+    if (currScrollPos < portfolioOffset) {
+        for (let i = 0; i < navLinksDivs.length; i++) {
+            if (i === 0 || i === 4) {
                 navLinksDivs[i].style.opacity = 1;
-            }
-            else
-            {
+            } else {
                 navLinksDivs[i].style.opacity = 0;
             }
         }
         backToTop.style.opacity = 0;
     }
-
-    else if((currScrollPos >= portfolioOffset && currScrollPos < aboutOffset))
-    {
-        //console.log(`portfolio section: ${currScrollPos}`);
-        for (let i = 0; i < navLinksDivs.length; i++)
-        {
-            if ( i === 1 || i === 5)
-            {
+    // show Portfolio underline
+    else if (currScrollPos >= portfolioOffset && currScrollPos < aboutOffset) {
+        for (let i = 0; i < navLinksDivs.length; i++) {
+            if (i === 1 || i === 5) {
                 navLinksDivs[i].style.opacity = 1;
-            }
-            else
-            {
+            } else {
                 navLinksDivs[i].style.opacity = 0;
             }
         }
         backToTop.style.opacity = 1;
     }
-
-    else if((currScrollPos >= aboutOffset && currScrollPos < contactOffset))
-    {
-        //console.log(`about section: ${currScrollPos}`);
-        for (let i = 0; i < navLinksDivs.length; i++)
-        {
-            if ( i === 2 || i === 6)
-            {
+    // show About unerline
+    else if (currScrollPos >= aboutOffset && currScrollPos < contactOffset) {
+        for (let i = 0; i < navLinksDivs.length; i++) {
+            if (i === 2 || i === 6) {
                 navLinksDivs[i].style.opacity = 1;
-            }
-            else
-            {
+            } else {
                 navLinksDivs[i].style.opacity = 0;
             }
         }
         backToTop.style.opacity = 1;
     }
-
-    else if((currScrollPos >= contactOffset))
-    {
-        //console.log(`contact section: ${currScrollPos}`);
-        for (let i = 0; i < navLinksDivs.length; i++)
-        {
-            if ( i === 3 || i === 7)
-            {
+    // show Contact underline
+    else if (currScrollPos >= contactOffset) {
+        for (let i = 0; i < navLinksDivs.length; i++) {
+            if (i === 3 || i === 7) {
                 navLinksDivs[i].style.opacity = 1;
-            }
-            else
-            {
+            } else {
                 navLinksDivs[i].style.opacity = 0;
             }
         }
         backToTop.style.opacity = 1;
     }
-})
+}
 
-
-//------------------- Embedded PDF ------------------------
-// let resume = document.querySelector('#resume');
-// let API_KEY = "c32fb517528e404db36e48ffb7fa1ef3" || "822039af784d499088a70d595b536fe3";
-// document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-//     var adobeDCView = new AdobeDC.View({clientId: API_KEY, divId: "resume"});
-//     adobeDCView.previewFile({
-//         content:{location: {url: "https://jennifer-duff.github.io/jbDevelopment/Assets/JenniferDuffResume_2022.pdf"}},
-//         metaData:{fileName: "JenniferDuffResume_2022.pdf"}
-//     }, {embedMode: "IN_LINE", showPageControls: false, showAnnotationTools: false, showLeftHandPanel: false, enableFormFiling: false, showDownloadPDF: false, showPrintPDF: false});
-// });
-
-
-//-------------- Make ProjectTile links unclickable until revealed --------------------
-let infoContainers = document.querySelectorAll('.infoContainer');
-let linkBoxes = document.querySelectorAll('.linkBox');
+//------------- Make ProjectTile links unclickable until revealed -------------------
+let infoContainers = document.querySelectorAll(".infoContainer");
+let linkBoxes = document.querySelectorAll(".linkBox");
 
 // console.log(infoContainers);
 

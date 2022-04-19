@@ -1,16 +1,15 @@
 @media (max-width: 1785px) {
     /*----------- splash box -----------*/
-    .introWords{
+    .introWords {
         font-size: 40pt;
     }
 
-    .splashlist{
+    .splashlist {
         font-size: 18pt;
     }
 
-
     /*----------- Portfolio Section -----------*/
-    .projectLabel{
+    .projectLabel {
         font-size: 20pt;
         font-weight: 300;
         position: relative;
@@ -20,27 +19,26 @@
         font-size: 27pt;
     }
 
-    .linksContainer{
+    .linksContainer {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
-
 }
 
 @media (max-width: 1476px) {
     /*----------- splash box -----------*/
-    #introBox{
+    #introBox {
         height: 70px;
     }
 
-    .introWords{
+    .introWords {
         font-size: 35pt;
         top: -47px;
     }
 
-    #splashList{
+    #splashList {
         font-size: 16pt;
     }
 
@@ -51,13 +49,12 @@
         grid-row-gap: 8vw;
     }
 
-    .projects{
+    .projects {
         width: 35vw;
         height: 35vw;
-        
     }
 
-    .infoContainer{
+    .infoContainer {
         /* height: 35vw; */
         padding: 7%;
     }
@@ -67,25 +64,25 @@
         margin: 0 0 15px 0;
     }
 
-    .langsList{
+    .langsList {
         font-size: 10pt;
     }
 
     /*----------- Contact Section -----------*/
-    #onTheWebDiv{
+    #onTheWebDiv {
         width: 400px;
     }
-    
-    #onTheWebOutline{
+
+    #onTheWebOutline {
         width: 397px;
         /* margin-left: -413px; */
     }
-    
-    #sendMeAMsgDiv{
+
+    #sendMeAMsgDiv {
         width: 400px;
     }
-    
-    #sendMeAMsgOutline{
+
+    #sendMeAMsgOutline {
         width: 397px;
         /* margin-left: -413px; */
     }
@@ -93,28 +90,28 @@
 
 @media (max-width: 1270px) {
     /*----------- splash box -----------*/
-    #splashbox{
-        grid-template-areas: 
-            'a a a'
-            '. b c';
+    #splashbox {
+        grid-template-areas:
+            "a a a"
+            ". b c";
         grid-template-rows: 0.75fr 1.25fr;
         grid-template-columns: 0.75fr 40px 1.25fr;
         grid-gap: 0;
         padding: 0;
     }
 
-    #introBox{
+    #introBox {
         grid-area: a;
         margin-bottom: -40%;
         justify-self: flex-start;
         height: 90px;
     }
 
-    .introWords{
+    .introWords {
         font-size: 50pt;
     }
 
-    #lineBox{
+    #lineBox {
         grid-area: b;
         display: flex;
         align-content: flex-start;
@@ -122,11 +119,11 @@
         margin: 0;
     }
 
-    #verticalLine{
+    #verticalLine {
         display: none;
     }
 
-    #checkItOut{
+    #checkItOut {
         top: 20px;
         margin: 0;
         font-size: 12pt;
@@ -135,27 +132,25 @@
         letter-spacing: 2px;
     }
 
-    #checkItOut span{
+    #checkItOut span {
         font-size: 18pt;
         position: relative;
         left: 3px;
     }
 
-    #splashList{
+    #splashList {
         box-sizing: border-box;
         grid-area: c;
         top: 20px;
         font-size: 18pt;
         line-height: 54pt;
         /* border-left: 1.5px solid black; */
-
     }
 
-    #RectangleCircleOutline{
+    #RectangleCircleOutline {
         top: 150px;
         right: 50px;
     }
-
 
     /* ------- Portfolio Section -------*/
     .projectTitle {
@@ -163,81 +158,81 @@
         margin: 0 0 15px 0;
     }
 
-    .langsList{
+    .langsList {
         font-size: 9pt;
     }
 
-    .projectDescription{
+    .projectDescription {
         font-size: 10pt;
     }
 
-    #qualifier{
+    #qualifier {
         font-size: 8.5pt;
     }
 
-    .linksLabelDiv{
-        margin: 2px 0 -5px 0 ;
+    .linksLabelDiv {
+        margin: 2px 0 -5px 0;
     }
 
-    .linkText{
+    .linkText {
         font-size: 7pt;
         padding: 4px 8px;
     }
 
-    .triangle{
+    .triangle {
         height: 17px;
     }
 
-    .viewLiveIcon{
+    .viewLiveIcon {
         width: 20px;
     }
 
-    .githubIcon{
+    .githubIcon {
         width: 17px;
     }
 
     /* ------- About Section -------*/
-    #arrows{
+    #arrows {
         width: 250px;
         /* margin-top: 20px */
     }
 
-    #resume{
+    #resume {
         width: 90%;
     }
 
-
     /* ------- Contact Section -------*/
-    #onTheWebDiv{
+    #onTheWebDiv {
         width: 300px;
     }
-    
-    #onTheWebOutline{
-        width: 297px;
-        /* margin-left: -313px; */
-    }
-    
-    #sendMeAMsgDiv{
-        width: 300px;
-    }
-    
-    #sendMeAMsgOutline{
+
+    #onTheWebOutline {
         width: 297px;
         /* margin-left: -313px; */
     }
 
-    .contactP, #email{
+    #sendMeAMsgDiv {
+        width: 300px;
+    }
+
+    #sendMeAMsgOutline {
+        width: 297px;
+        /* margin-left: -313px; */
+    }
+
+    .contactP,
+    #email {
         font-size: 12pt;
     }
 }
 
 @media (max-width: 1075px) {
     /*----------- splash box -----------*/
-    #splashbox{
+    #splashbox {
         grid-template-columns: 0.3fr 50px 1.6fr;
     }
 
-    .introWords{
+    .introWords {
         font-size: 45pt;
     }
 
@@ -247,97 +242,75 @@
         margin-bottom: 10px;
     }
 
-    .projectBody{
+    .projectBody {
         margin: 0;
     }
-    
-    .langsList{
+
+    .langsList {
         font-size: 8pt;
         margin-bottom: 10px;
     }
 
-    .projectDescription{
+    .projectDescription {
         font-size: 9pt;
     }
 
-    #qualifier{
+    #qualifier {
         font-size: 7.5pt;
     }
 
-    .linksContainer{
+    .linksContainer {
         margin-top: 20px;
     }
 
-    .linkText{
+    .linkText {
         font-size: 6pt;
     }
 
-    .triangle{
+    .triangle {
         height: 15px;
     }
 
-
     /* ------- About Section -------*/
-    #arrows{
+    #arrows {
         width: 225px;
     }
 
-    /* .resumeUnderline:nth-of-type(1)
-    {
-        width: 123px;
-    }
-
-    .resumeUnderline:nth-of-type(2)
-    {
-        width: 199px;
-    }
-
-    .resumeUnderline:nth-of-type(3)
-    {
-        width: 167px;
-    }
-
-    .resumeUnderline:nth-of-type(4)
-    {
-        width: 67px;
-    } */
-
-
     /* ------- Contact Section -------*/
-    #contactForm{
+    #contactForm {
         width: 95%;
     }
 
-    #contactOutline{
+    #contactOutline {
         width: 95%;
     }
 }
 
 @media (max-width: 901px) {
     /*----------- splash box -----------*/
-    #introBox{
+    #introBox {
         align-self: flex-end;
         margin-bottom: 0;
         height: 75px;
     }
 
-    .introWords{
+    .introWords {
         font-size: 35pt;
         letter-spacing: 0.7px;
     }
 
-    #splashList{
+    #splashList {
         box-sizing: border-box;
         font-size: 16pt;
         width: 100%;
         padding: 0 0 0 10%;
     }
 
-    #checkItOut{
+    #checkItOut {
         font-size: 10pt;
     }
 
-    #CircleOutlineSolid1{
+    #CircleOutlineSolid1 {
         bottom: -50px;
     }
     /* ------- Portfolio Section -------*/
@@ -346,74 +319,69 @@
         grid-row-gap: 13vw;
     }
 
-    .projects{
+    .projects {
         width: 78vw;
         height: 67vw;
     }
-
-    /* .infoContainer{
-        height: 67vw;
-    } */
 
     .projectTitle {
         font-size: 40pt;
         margin: 0 0 15px 0;
     }
 
-    .langsList{
+    .langsList {
         font-size: 12pt;
     }
 
-    .projectDescription{
+    .projectDescription {
         font-size: 13pt;
     }
 
-    #qualifier{
+    #qualifier {
         font-size: 11pt;
     }
 
-    .linkText{
+    .linkText {
         font-size: 8pt;
     }
 
-    .triangle{
+    .triangle {
         height: 18px;
     }
 
-    .viewLiveIcon{
+    .viewLiveIcon {
         width: 23px;
     }
-    
-    .githubIcon{
+
+    .githubIcon {
         width: 20px;
     }
 
     /* ------- About Section -------*/
-    #aboutParagraph{
+    #aboutParagraph {
         font-size: 12pt;
     }
-    
-    #arrows{
+
+    #arrows {
         width: 30%;
-        margin-top: 20px
+        margin-top: 20px;
     }
 
-
-    .langGroup:first-of-type{
+    .langGroup:first-of-type {
         margin: 0 2.5% 0 0;
     }
 
-    .langGroup:last-of-type{
+    .langGroup:last-of-type {
         margin: 0 0 0 2.5%;
     }
 
-    .borderSquare{
+    .borderSquare {
         width: 250px;
         height: 250px;
         margin: 0;
     }
 
-    .langsContents{
+    .langsContents {
         width: 250px;
         height: 250px;
         position: relative;
@@ -421,78 +389,77 @@
         padding: 18%;
     }
 
-    #resumeFlexBox{
+    #resumeFlexBox {
         display: flex;
         flex-direction: column;
     }
-    
-    #certificationsBox{
-        width: 100%;
-    }
-    
-    #skillsBox{
+
+    #certificationsBox {
         width: 100%;
     }
 
+    #skillsBox {
+        width: 100%;
+    }
 
     /* ------- Contact Section -------*/
-    #contactDiv{
+    #contactDiv {
         justify-content: space-between;
         margin-left: 12px;
     }
-    
-    .contactSubDivs{
+
+    .contactSubDivs {
         height: 125px;
     }
 
-    .contactOutline{
+    .contactOutline {
         height: 123px;
         margin-top: -135px;
     }
-    
-    #onTheWebDiv{
+
+    #onTheWebDiv {
         width: 200px;
         margin: 0;
     }
-    
-    #onTheWebOutline{
+
+    #onTheWebOutline {
         width: 197px;
         margin-left: -10px;
     }
-    
-    #sendMeAMsgDiv{
+
+    #sendMeAMsgDiv {
         width: 275px;
         margin: 0;
     }
-    
-    #sendMeAMsgOutline{
+
+    #sendMeAMsgOutline {
         width: 273px;
         margin-left: -10px;
     }
 
-    .contactP, #email{
+    .contactP,
+    #email {
         font-size: 11pt;
     }
 
-    .socialIcons{
+    .socialIcons {
         width: 30px;
     }
-
 }
 
 @media (max-width: 660px) {
     /* ------- Mobile Nav -------*/
-    #navbar{
+    #navbar {
         align-items: center;
         padding: 20px;
-        height: auto; 
+        height: auto;
     }
 
-    #navbar nav{
+    #navbar nav {
         display: none;
     }
-    
-    #menuIcon{
+
+    #menuIcon {
         display: inline;
         width: 35px;
         padding-right: 5px;
@@ -501,7 +468,7 @@
         margin: 0 0 0 20px;
     }
 
-    #hamburgerNav{
+    #hamburgerNav {
         position: fixed;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -518,7 +485,7 @@
         z-index: 4;
     }
 
-    #hamburgerNav a{
+    #hamburgerNav a {
         text-decoration: none;
         color: black;
         font-weight: 700;
@@ -530,93 +497,89 @@
         position: relative;
         z-index: 2;
         margin: 0;
-        /* line-height: 200%; */
     }
 
-    #hamburgerNav a:nth-of-type(2){
+    #hamburgerNav a:nth-of-type(2) {
         padding: 20px 0 10px 0;
     }
 
-    #hamburgerNav a:nth-of-type(3){
+    #hamburgerNav a:nth-of-type(3) {
         padding: 10px 0 20px 0;
     }
 
-    #hamburgerNav a:nth-of-type(4){
+    #hamburgerNav a:nth-of-type(4) {
         padding: 0px 0 20px 0;
     }
 
-    #hamburgerNav div{
-        /* background-color: var(--drkYellow);  */
+    #hamburgerNav div {
         height: 7px;
         top: -2px;
         padding: 0;
         position: relative;
-        /* z-index: -1; */
         transition: opacity 0.3s ease-in-out;
     }
 
-        #hamHomeUnderline{
-            width: 53px;
-        }
+    #hamHomeUnderline {
+        width: 53px;
+    }
 
-        #hamPortfolioUnderline{
-            width: 81px;
-        }
+    #hamPortfolioUnderline {
+        width: 81px;
+    }
 
-        #hamAboutUnderline{
-            width: 54px;
-        }
+    #hamAboutUnderline {
+        width: 54px;
+    }
 
-        #hamContactUnderline{
-            width: 73px;
-        }
+    #hamContactUnderline {
+        width: 73px;
+    }
 
-        #hamburgerNav #hamResumeLink{
-            font-family: var(--serifFont) !important;
-            font-size: 11pt;
-            letter-spacing: 2px;
-            font-weight: 300;
-            border: 2px solid var(--baseYellow);
-            text-align: center;
-            padding: 2px;
-        }
-    
-        #hamburgerNav #hamResumeLink:hover a{
-            font-weight: 300;   
-        }
+    #hamburgerNav #hamResumeLink {
+        font-family: var(--serifFont) !important;
+        font-size: 11pt;
+        letter-spacing: 2px;
+        font-weight: 300;
+        border: 2px solid var(--baseYellow);
+        text-align: center;
+        padding: 2px;
+    }
+
+    #hamburgerNav #hamResumeLink:hover a {
+        font-weight: 300;
+    }
 
     /*----------- splash box -----------*/
-    #introBox{
+    #introBox {
         height: 65px;
     }
 
-    .introWords{
+    .introWords {
         font-size: 25pt;
         letter-spacing: 0.9px;
         top: -45px;
     }
 
-    #splashList{
+    #splashList {
         font-size: 14pt;
         line-height: 125%;
     }
 
-    #splashList li:nth-of-type(2){
+    #splashList li:nth-of-type(2) {
         padding: 45px 0;
     }
 
-    #checkItOut{
+    #checkItOut {
         font-size: 9pt;
     }
 
-    #checkItOut span{
+    #checkItOut span {
         font-size: 20pt;
         left: 2px;
     }
 
-
     /* ------- Back To Top -------*/
-    #backToTopContainer{
+    #backToTopContainer {
         bottom: 2.5vw;
     }
 
@@ -624,180 +587,110 @@
     #portfolioContainer {
         grid-row-gap: 13vw;
     }
-    
+
     .projectTitle {
         font-size: 30pt;
-        margin-bottom: 15px; 
+        margin-bottom: 15px;
     }
 
-    .langsList{
+    .langsList {
         font-size: 10pt;
     }
 
-    .projectDescription{
+    .projectDescription {
         font-size: 10pt;
     }
 
-    #qualifier{
+    #qualifier {
         font-size: 9pt;
     }
     /* ------- About Section -------*/
-    
-    #arrows{
+
+    #arrows {
         display: none;
     }
 
-    #wavyArrows{
+    #wavyArrows {
         display: block;
         width: 150px;
         margin: 20px 0 20px 0;
     }
-    
-    h3{
+
+    h3 {
         font-size: 20pt;
         margin-top: 5px;
     }
 
-    .stackWrapper{
+    .stackWrapper {
         height: 130px;
         margin: 20px 30px;
     }
 
-    #javaLogo{
-        width: 60px;
+    #javaLogo {
+        width: 65px;
     }
-    
-    #jsLogo, #htmlLogo, #cssLogo{
-        width: 40px;
+
+    #jsLogo,
+    #htmlLogo,
+    #cssLogo {
+        width: 50px;
     }
-    
-    #nodeLogo{
+
+    #nodeLogo {
         width: 155px;
     }
-    
-    #expressLogo{
+
+    #expressLogo {
         width: 125px;
     }
-    
-    #pythonLogo{
+
+    #pythonLogo {
         width: 45px;
     }
-    
-    #sqlLogo{
-        width: 100px;
-    }
-    
-    #mongoDBlogo{
-        width: 175px;
-    }
-    /* #langs{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        height: calc(2 * 250px + 100px);
-        margin-top: -5px;
+
+    #sqlLogo {
+        width: 110px;
     }
 
-    .langGroup{
-        margin: 0 0 0 0;
-        padding: 0;
-        height: 250px;
-        width: 100%;
-        padding: 0 25%;
+    #mongoDBlogo {
+        width: 180px;
     }
-
-    .langGroup:first-of-type{
-        margin: 0 0 5% 0;
-    }
-
-    .langGroup:last-of-type{
-        margin: 5% 0 0 0;
-    }
-
-    .borderSquare{
-        margin: 0;
-    }
-
-    #resume ul{
-        list-style-position: outside;
-        padding-left: 5%;
-    } */
-
-    /* .resumeUnderline:nth-of-type(1)
-    {
-        width: 123px;
-    }
-
-    .resumeUnderline:nth-of-type(2)
-    {
-        width: 199px;
-    }
-
-    .resumeUnderline:nth-of-type(3)
-    {
-        width: 167px;
-    }
-
-    .resumeUnderline:nth-of-type(4)
-    {
-        width: 67px;
-    } */
-
 
     /* ------- Contact Section -------*/
-    #contactDiv{
+    #contactDiv {
         flex-direction: column;
     }
 
-    /* .contactSubDivs{
-        height: 125px;
-    } */
-
-    /* .contactOutline{
-        height: 123px;
-        margin-top: -135px;
-    } */
-    
-    .contactWrapper:first-of-type{
+    .contactWrapper:first-of-type {
         margin-bottom: 50px;
     }
 
-    #onTheWebDiv{
+    #onTheWebDiv {
         width: 100%;
         margin: 0;
     }
-    
-    #onTheWebOutline{
-        width: 99%;
-        margin-left: -10px;
-    }
-    
-    #sendMeAMsgDiv{
-        width: 100%;
-        margin: 0;
-    }
-    
-    #sendMeAMsgOutline{
+
+    #onTheWebOutline {
         width: 99%;
         margin-left: -10px;
     }
 
-    /* .contactP, #email{
-        font-size: 11pt;
+    #sendMeAMsgDiv {
+        width: 100%;
+        margin: 0;
     }
 
-    .socialIcons{
-        width: 30px;
-    } */
-
+    #sendMeAMsgOutline {
+        width: 99%;
+        margin-left: -10px;
+    }
 
     /* ------- Footer -------*/
-    #footerOutline1{
+    #footerOutline1 {
         height: 150px;
     }
-    
-    #footerOutline2{
+
+    #footerOutline2 {
         height: 153px;
         flex-wrap: wrap;
         justify-content: center;
@@ -806,106 +699,104 @@
         box-sizing: border-box;
     }
 
-    footer nav{
+    footer nav {
         margin: 0 45% 5px 45%;
         grid-template-columns: 60px 88px 64px 80px;
         grid-column-gap: 20px;
     }
 
-    footer nav a{
+    footer nav a {
         font-size: 14pt;
     }
 
-    #footerFullLogo{
+    #footerFullLogo {
         width: 250px;
-        padding: 10px 10px 0 10px
+        padding: 10px 10px 0 10px;
     }
-    
 }
 
 @media (max-width: 528px) {
     /*----------- General -----------*/
-    main{
+    main {
         padding: 5vw;
     }
 
-    section{
+    section {
         padding-top: 115px;
     }
 
-    section:last-of-type{
+    section:last-of-type {
         margin-bottom: -50px;
     }
-    
-    h2{
+
+    h2 {
         font-size: 30pt;
         margin-bottom: 15px;
     }
 
-    #portfolio h2{
+    #portfolio h2 {
         margin-bottom: 50px;
     }
 
-    #contact h2{
+    #contact h2 {
         margin-bottom: 60px;
     }
-    
+
     /*----------- nav bar -----------*/
-    #headerFullLogo{
+    #headerFullLogo {
         min-width: 100px;
         max-width: 200px;
         margin-top: -5px;
     }
 
-    #menuIcon{
+    #menuIcon {
         padding-right: 0px;
     }
 
-    #extraUnderline{
+    #extraUnderline {
         top: 70px;
     }
 
     /*----------- Back To Top Button -----------*/
-    #backToTopContainer{
-       right: 10px;
+    #backToTopContainer {
+        right: 10px;
     }
-    
-    #circle{
+
+    #circle {
         width: 40px;
         height: 40px;
     }
 
-    #arrow{
+    #arrow {
         width: 11px;
     }
 
-    #circle:hover{
+    #circle:hover {
         height: 45px;
         width: 45px;
         padding: 5px;
     }
-    
-    #circle:hover #arrow{
+
+    #circle:hover #arrow {
         width: 15px;
     }
 
     /*----------- splash box -----------*/
-    #splashbox{
+    #splashbox {
         width: 100%;
-        grid-template-areas: 
-            'a a'
-            'b c';
+        grid-template-areas:
+            "a a"
+            "b c";
         grid-template-columns: 30px 100%;
         grid-template-rows: 0.55fr 1.45fr;
     }
-    
-    #introBox{
-        /* height: 12vw; */
+
+    #introBox {
         height: auto;
         margin-bottom: 20px;
     }
 
-    .introWords{
+    .introWords {
         font-size: 20pt;
         border-right: 2px solid black;
         top: -19px;
@@ -913,13 +804,13 @@
         line-height: 115%;
     }
 
-    #lineBox{
+    #lineBox {
         justify-self: flex-end;
         align-self: flex-start;
         margin: 50px 0 0 0;
     }
 
-    #checkItOut{
+    #checkItOut {
         font-size: 9pt;
         top: 0px;
         left: 0px;
@@ -929,12 +820,12 @@
         letter-spacing: 2px;
     }
 
-    #checkItOut span{
+    #checkItOut span {
         font-size: 15pt;
         left: 1.75px;
     }
 
-    #splashList{
+    #splashList {
         font-size: 12pt;
         width: 90%;
         padding-left: 30px;
@@ -942,13 +833,13 @@
         margin: 100px 0 0 0;
     }
 
-    #RectangleCircleOutline{
+    #RectangleCircleOutline {
         width: 50px;
         top: 100px;
         right: 10px;
     }
 
-    #CircleOutlineSolid1{
+    #CircleOutlineSolid1 {
         width: 50px;
         bottom: -7vh;
         left: 35px;
@@ -956,14 +847,14 @@
     }
 
     /*----------- Portfolio -----------*/
-    #dots{
+    #dots {
         width: 50px;
         left: auto;
         right: 10px;
         bottom: -100px;
     }
 
-    #CircleOutlineSolid2{
+    #CircleOutlineSolid2 {
         width: 60px;
         left: 5px;
         top: 40px;
@@ -973,213 +864,161 @@
         grid-row-gap: 16vw;
     }
 
-    .projects{
+    .projects {
         width: calc(100% - 5px);
         height: auto;
     }
 
-    .projects:hover{
-        transform: scale(1.035) translateX(5px) ;
+    .projects:hover {
+        transform: scale(1.035) translateX(5px);
     }
 
-    .projectLabel{
+    .projectLabel {
         font-size: 16pt;
     }
 
-    .projectTitle{
+    .projectTitle {
         font-size: 8vw;
         margin: 0 0 10px 0;
     }
 
-    .langsList{
+    .langsList {
         font-size: 8pt;
     }
 
-    .projectDescription{
+    .projectDescription {
         font-size: 9.5pt;
     }
 
-    #qualifier{
+    #qualifier {
         font-size: 8pt;
     }
 
-    .linkText{
+    .linkText {
         font-size: 7pt;
     }
 
-    .triangle{
+    .triangle {
         height: 14.5px;
     }
 
     /*----------- About Me -----------*/
-    #aboutParagraph{
-        /* font-size: 12pt; */
+    #aboutParagraph {
         line-height: 225%;
     }
 
-    h3{
+    h3 {
         font-size: 20pt;
         margin-bottom: 15px;
         margin-top: 0;
     }
 
-    #langs{
+    #langs {
         flex-direction: column;
         width: 80%;
     }
 
-    .bracketDiv:first-of-type{
-        /* box-shadow: -5px 5px 0px var(--baseYellow); */
+    .bracketDiv:first-of-type {
         margin-right: -15%;
     }
-    
-    .bracketDiv:last-of-type{
-        /* box-shadow: 5px 5px 0px var(--baseYellow); */
+
+    .bracketDiv:last-of-type {
         margin-left: -15%;
     }
 
-    .stackWrapper{
+    .stackWrapper {
         height: 150px;
         margin: 30px 0px;
         justify-content: center;
     }
 
-    .shortStackLogo{
+    .shortStackLogo {
         height: 120px;
         margin-top: 20px;
     }
 
-    .stackWrapper:first-of-type{
-        /* height: 150px; */
+    .stackWrapper:first-of-type {
         margin-top: 40px;
     }
 
-    #javaLogo{
+    #javaLogo {
         width: 80px;
     }
-    
-    #jsLogo, #htmlLogo, #cssLogo{
+
+    #jsLogo,
+    #htmlLogo,
+    #cssLogo {
         width: 70px;
     }
-    
-    #nodeLogo{
+
+    #nodeLogo {
         width: 160px;
     }
-    
-    /* #pythonLogo{
-        width: 35px;
-    } */
-    
-    #mongoDBlogo{
+
+    #mongoDBlogo {
         width: 180px;
     }
 
-    #sqlLogo{
-        width: 110px;
+    #sqlLogo {
+        width: 115px;
     }
-    
-    #expressLogo{
+
+    #expressLogo {
         width: 150px;
     }
-    
-    /* #langs{
-        height: 450px;
-        width: 230px;
-        flex: wrap;
-        margin: 0 auto;
-    }
-    
-    .langGroup{
-        margin: 0;
-        padding: 0;
-        height: 200px;
-        width: 200px;
-        padding: 0;
+
+    #reactLogo {
+        width: 90px;
     }
 
-    .langGroup:first-of-type{
-        margin: 0 0 5% 0;
-    }
-
-    .langGroup:last-of-type{
-        margin: 5% 0 0 0;
-    }
-
-    .langsContents{
-        width: 200px;
-        height: 200px;
-        top: -224px;
-    }
-
-    .stackSubHeading{
-        font-size: 16pt;
-        font-weight: 500;
-        margin-bottom: 10px;
-    }
-
-    .langsContents ul{
-        font-size: 10pt;
-        line-height: 200%;
-        letter-spacing: 1.5px;
-    }
-
-    .borderSquare{
-        margin: 0;
-        height: 200px;
-        width: 200px;
-    } */
-    
-    #resume{
+    #resume {
         width: 90%;
     }
 
-
-    #resume h5{
+    #resume h5 {
         font-size: 16pt;
     }
 
-    .resumeUnderline:nth-of-type(1)
-    {
+    #eduBox .resumeHeaderUnderline {
         width: 110px;
     }
 
-    .resumeUnderline:nth-of-type(2)
-    {
-        width: 180px;
+    #projectsBox .resumeHeaderUnderline {
+        width: 90px;
     }
 
-    .resumeUnderline:nth-of-type(3)
-    {
+    #workExperienceBox .resumeHeaderUnderline {
+        width: 177px;
+    }
+
+    #certificationsBox .resumeHeaderUnderline {
         width: 150px;
     }
 
-    .resumeUnderline:nth-of-type(4)
-    {
-        width: 59px;
+    #skillsBox .resumeHeaderUnderline {
+        width: 60px;
     }
 
-    #resume ul{
+    #resume ul {
         line-height: 115%;
         margin-top: 0;
     }
 
-    .resumeBold{
+    .resumeBold {
         font-size: 11.5pt;
-        /* padding-bottom: 20px; */
     }
 
-    .resumeSubheader{
+    .resumeSubheader {
         position: relative;
         top: 3px;
     }
-    
-    #resume ul .subBullets{
+
+    #resume ul .subBullets {
         font-size: 10pt;
         line-height: 150%;
     }
 
-
-    #resume ul li{
+    #resume ul li {
         font-size: 11pt;
         line-height: 150%;
     }
@@ -1187,13 +1026,13 @@
     /* #contact{
         height: 500px;
     } */
-    
-    #contactOutline{
+
+    #contactOutline {
         bottom: 430px;
         height: 400px;
     }
 
-    #contactForm{
+    #contactForm {
         padding: 20px 30px 40px 20px;
         left: 15px;
         bottom: 19px;
@@ -1204,16 +1043,16 @@
     #contactForm label {
         font-size: 12pt;
         margin-bottom: -25px;
-    }    
+    }
 
-    .formField{
+    .formField {
         font-size: 9pt;
         margin: 0;
         padding: 5px;
         letter-spacing: 0;
     }
 
-    #submitButton{
+    #submitButton {
         font-size: 12pt;
         margin: 0;
         /* padding: 8px 4px; */
@@ -1221,14 +1060,14 @@
         height: 40px;
     }
     /* ------- Footer -------*/
-    
-    #footerOutline1{
+
+    #footerOutline1 {
         height: 120px;
         width: 90%;
         margin-left: -8px;
     }
 
-    #footerOutline2{
+    #footerOutline2 {
         height: 123px;
         width: 100.2%;
         flex-wrap: wrap;
@@ -1238,58 +1077,56 @@
         box-sizing: border-box;
     }
 
-    footer nav{
+    footer nav {
         width: auto;
         grid-template-columns: 50px 75px 53px 68px;
         grid-column-gap: 10px;
         margin-bottom: 5px;
     }
 
-    footer nav a{
+    footer nav a {
         font-size: 12pt;
-
     }
 
-    #footerFullLogo{
+    #footerFullLogo {
         width: 175px;
     }
-
 }
 
 @media (max-width: 400px) {
     /*----------- Header -----------*/
-    #navbar{
+    #navbar {
         width: 100%;
     }
-    
-    #menuIcon{
+
+    #menuIcon {
         width: 30px;
     }
 
-    #headerFullLogo{
+    #headerFullLogo {
         width: 170px;
         /* display: none; */
     }
 
-    #extraUnderline{
+    #extraUnderline {
         top: 65px;
     }
 
     /*----------- splash box -----------*/
-    .introWords{
+    .introWords {
         font-size: 16pt;
         letter-spacing: 0.7;
         top: -15px;
     }
 
-    #splashList{
+    #splashList {
         font-size: 10pt;
         width: 80%;
         padding-left: 10px;
         margin: 75px 0 0 0;
     }
 
-    #resume{
+    #resume {
         width: 85%;
     }
 
@@ -1298,82 +1135,78 @@
         grid-row-gap: 20vw;
     }
 
-    .infoContainer{
+    .infoContainer {
         padding: 5%;
     }
 
-    .langsList{
+    .langsList {
         font-size: 8pt;
         margin: 0 0 10px 0;
     }
 
-    .projectDescription{
+    .projectDescription {
         /* margin: 0; */
         font-size: 9pt;
     }
 
-    #qualifier{
+    #qualifier {
         font-size: 7.5pt;
     }
 
-    .linkText{
+    .linkText {
         font-size: 7pt;
         padding: 3.5px 5px;
     }
 
-    .triangle{
+    .triangle {
         height: 10px;
     }
 
-    .viewLiveLink .linkText{
+    .viewLiveLink .linkText {
         padding-left: 4px;
     }
 
-    .githubLink .linkText{
+    .githubLink .linkText {
         padding-right: 4px;
     }
 
-    .viewLiveIcon{
+    .viewLiveIcon {
         width: 18px;
         margin-right: 3px;
     }
-    
-    .githubIcon{
+
+    .githubIcon {
         width: 14px;
         margin-left: 3px;
     }
-    
 
-/*----------- About -----------*/
-    #langs{
-       width: 80%; 
-    }    
+    /*----------- About -----------*/
+    #langs {
+        width: 80%;
+    }
 
-    .stackWrapper{
+    .stackWrapper {
         width: 100%;
     }
 
-    
-/*----------- FOOTER -----------*/
+    /*----------- FOOTER -----------*/
 
-    #footerOutline1{
+    #footerOutline1 {
         height: 110px;
     }
 
-    #footerOutline2{
+    #footerOutline2 {
         height: 113px;
     }
 
-    footer nav{
+    footer nav {
         width: auto;
         grid-template-columns: 45px 65px 45px 56px;
         grid-column-gap: 7px;
         margin-bottom: 5px;
     }
 
-    footer nav a{
+    footer nav a {
         font-size: 10pt;
-
     }
-
 }
